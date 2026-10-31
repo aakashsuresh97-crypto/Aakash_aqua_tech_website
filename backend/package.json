@@ -1,0 +1,36 @@
+{
+  "name": "category-api",
+  "version": "1.0.0",
+  "description": "Category CRUD REST API (Node.js, Express, MySQL)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "migrate": "node scripts/migrate.js",
+    "migrate:product": "node scripts/migrate-product.js",
+    "migrate:auth": "node scripts/migrate-auth.js",
+    "create-admin": "node scripts/create-admin.js",
+    "schema": "node scripts/inspect-schema.js",
+    "cleanup:uploads": "node scripts/cleanup-uploads.js",
+    "test": "node --test test/*.test.js",
+    "migrate:site": "node scripts/migrate-site.js",
+    "migrate:all": "npm run migrate && npm run migrate:product && npm run migrate:auth && npm run migrate:site && npm run migrate:banner && npm run migrate:customer-auth && npm run migrate:brand-link",
+    "import:data": "node scripts/import-data.js",
+    "migrate:banner": "node scripts/migrate-banner.js",
+    "migrate:customer-auth": "node scripts/migrate-customer-auth.js",
+    "migrate:brand-link": "node scripts/migrate-brand-link.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.4.0",
+    "mysql2": "^3.11.0",
+    "nodemailer": "^10.2.1",
+    "pdfkit": "^0.20.2",
+    "sanitize-html": "^2.18.1"
+  }
+}

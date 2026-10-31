@@ -1,0 +1,2 @@
+-- Subcategory is optional for most categories (required only for Domestic RO / Water Treatment Plant, enforced by the API).
+ALTER TABLE product MODIFY subcategory_id CHAR(36) CHARACTER SET ascii COLLATE ascii_general_ci NULL;
