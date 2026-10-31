@@ -1,0 +1,31 @@
+{
+  "name": "aakash-aquatech-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/gen-seo.mjs && node scripts/gen-redirects.mjs",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx}\" index.html scripts",
+    "export:catalogue": "node scripts/export-catalogue.mjs",
+    "images:localize": "node scripts/localize-images.mjs"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.21",
+    "tailwindcss": "^3.4.17",
+    "postcss": "^8.4.49",
+    "autoprefixer": "^10.4.20"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}

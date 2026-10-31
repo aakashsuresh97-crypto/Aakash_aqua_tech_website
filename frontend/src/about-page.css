@@ -1,0 +1,161 @@
+/* =====================================================================
+   ABOUT US PAGE  (ap-*)   hero palette: navy · blue · teal · Outfit
+                           product palette: cream · tan
+===================================================================== */
+.ap {
+  --navy: #0d2540; --blue: #0d8d97; --teal: #0d8d97; --teal-d: #0b3f66; --mute: #4a5d6e;
+  --cream-1: #fbf7f0; --cream-2: #f3e9da; --cream-3: #e8d7bd; --tan: #c9a273; --tan-d: #a77f4f;
+  font-family: 'Outfit', 'DM Sans', sans-serif; color: var(--navy);
+}
+.ap h1, .ap h2, .ap h3 { font-family: 'Outfit', sans-serif }
+.ap p { color: inherit; max-width: none }
+
+/* ---------------------------------------------------------------- hero */
+.ap-hero {
+  position: relative; display: flex; align-items: center; min-height: 92svh; padding: 8.6rem 0 6.2rem; overflow: hidden;
+  border-radius: 0 0 44px 44px;
+  background:
+    linear-gradient(90deg, rgba(255, 250, 242, .55) 0%, rgba(255, 250, 242, .12) 55%, rgba(255, 250, 242, 0) 100%),
+    var(--hx-bg) center bottom / cover no-repeat, #f3ece1;
+}
+.ap-hero-in { width: min(1280px, 92%); margin: 0 auto; display: grid; grid-template-columns: 1.1fr .9fr; gap: 2.5rem; align-items: center }
+.ap-bub { position: absolute; left: 44%; top: 15%; width: 38px; height: 38px; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle at 35% 35%, #fff, rgba(108, 208, 224, .35) 60%, rgba(108, 208, 224, .1));
+  border: 2px solid rgba(108, 208, 224, .7); box-shadow: 0 0 18px rgba(108, 208, 224, .55); animation: apBob 5s ease-in-out infinite }
+.ap-bub::after { content: ''; position: absolute; left: 9px; top: 14px; width: 7px; height: 7px; border-radius: 50%; background: #0d8d97 }
+@keyframes apBob { 50% { transform: translateY(-10px) } }
+@keyframes apUp { from { opacity: 0; transform: translateY(34px); filter: blur(8px) } }
+@keyframes apFloat { 50% { transform: translateY(-9px) } }
+
+.ap-copy > * { animation: apUp .9s cubic-bezier(.2, .8, .2, 1) backwards }
+.ap-copy > :nth-child(2) { animation-delay: .1s } .ap-copy > :nth-child(3) { animation-delay: .2s }
+.ap-copy > :nth-child(4) { animation-delay: .3s } .ap-copy > :nth-child(5) { animation-delay: .4s } .ap-copy > :nth-child(6) { animation-delay: .5s }
+
+.ap-crumb { display: flex; align-items: center; gap: .55rem; margin-bottom: 1.4rem; font: 500 .9rem/1 'Outfit', sans-serif; color: var(--mute) }
+.ap-crumb a { color: var(--teal-d); font-weight: 600 } .ap-crumb a:hover { color: var(--teal) }
+.ap-crumb i { font-style: normal; opacity: .5 } .ap-crumb span { color: var(--navy); font-weight: 600 }
+
+.ap-badge { display: inline-flex; align-items: center; gap: .55rem; padding: .55rem .95rem; border-radius: 999px;
+  background: rgba(223, 240, 243, .75); border: 1px solid #a6d0d8; color: #0f5f70;
+  font: 700 .74rem/1 'Outfit', sans-serif; letter-spacing: .07em; text-transform: uppercase }
+.ap-badge i { width: 12px; height: 12px; border-radius: 50%; background: #7fd6a8; box-shadow: 0 0 0 3px rgba(127, 214, 168, .3) }
+
+.ap .ap-title { margin: 1.4rem 0 1.2rem; font: 800 clamp(2.8rem, 6vw, 5.4rem)/1.02 'Outfit', sans-serif; letter-spacing: -.045em; color: var(--navy) }
+.ap-title em { font-style: normal; background: linear-gradient(100deg, #0b3f66, #0d8d97); -webkit-background-clip: text; background-clip: text; color: transparent }
+.ap .ap-lead { margin: 0 0 1rem; font: 700 clamp(1.25rem, 2vw, 1.7rem)/1.35 'Outfit', sans-serif; color: var(--tan-d) }
+.ap .ap-sub { max-width: 34rem; margin: 0 0 2rem; font: 400 1.14rem/1.7 'Outfit', sans-serif; color: var(--mute) }
+.ap-sub b { color: var(--navy); font-weight: 700 }
+
+.ap-cta { display: flex; flex-wrap: wrap; gap: 1rem }
+.btn.ap-btn { display: inline-flex; align-items: center; gap: .7rem; padding: 1.05rem 1.85rem; border-radius: 999px;
+  font: 700 .86rem/1 'Outfit', sans-serif; letter-spacing: .07em; text-transform: uppercase }
+.btn.ap-btn svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; transition: transform .3s }
+.btn.ap-btn:hover svg { transform: translateX(4px) }
+.btn.ap-btn.pri { color: #fff; background: linear-gradient(95deg, #0b3f66, #0d8d97); box-shadow: 0 16px 30px rgba(13, 110, 130, .32) }
+.btn.ap-btn.pri:hover { box-shadow: 0 20px 38px rgba(13, 110, 130, .45) }
+.btn.ap-btn.pri::before, .btn.ap-btn.light::before { background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .35), transparent) }
+.btn.ap-btn.sec { color: var(--navy); background: #fff; border: 2px solid #d9e4ea; box-shadow: none }
+.btn.ap-btn.sec:hover { border-color: var(--teal); color: var(--teal-d); box-shadow: 0 12px 26px rgba(13, 110, 130, .14) }
+.btn.ap-btn.light { color: var(--teal-d); background: #fff; box-shadow: 0 16px 34px rgba(0, 0, 0, .25) }
+
+/* founder photo in an arch + tan ring */
+.ap-photo { position: relative; width: min(100%, 440px); aspect-ratio: 3 / 4; margin: 0 auto; animation: apUp 1s .25s cubic-bezier(.2, .8, .2, 1) backwards }
+.ap-photo::before { content: ''; position: absolute; inset: -14px -14px 14px 14px; border-radius: 230px 230px 40px 40px;
+  background: linear-gradient(160deg, rgba(201, 162, 115, .7), rgba(13, 141, 151, .35)); }
+.ap-photo::after { content: ''; position: absolute; inset: -14px 14px 14px -14px; border-radius: 230px 230px 40px 40px; border: 2px solid rgba(255, 255, 255, .85) }
+.ap-photo img { position: relative; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  border-radius: 220px 220px 36px 36px; background: linear-gradient(#fff, var(--cream-2)); box-shadow: 0 34px 60px rgba(14, 60, 90, .28); animation: apFloat 7s ease-in-out infinite }
+.ap-plate { position: absolute; z-index: 2; left: -9%; bottom: 7%; display: flex; flex-direction: column; gap: .2rem; padding: .85rem 1.25rem; border-radius: 18px;
+  background: rgba(255, 255, 255, .95); border: 1px solid rgba(190, 214, 226, .8); box-shadow: 0 14px 30px rgba(20, 60, 90, .18) }
+.ap-plate b { font: 800 1.05rem/1.1 'Outfit', sans-serif; color: var(--navy) }
+.ap-plate small { font: 600 .74rem/1.2 'Outfit', sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--tan-d) }
+
+/* ---------------------------------------------------------------- stats (overlap the hero) */
+.ap-stats { position: relative; z-index: 3; width: min(1180px, 92%); margin: -3.4rem auto 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem }
+.ap-stat { padding: 1.5rem 1.3rem; text-align: center; border-radius: 24px; background: #fff; border: 1px solid rgba(255, 255, 255, .9);
+  box-shadow: 0 20px 44px rgba(13, 60, 90, .2) }
+.ap-stat b { display: block; font: 800 clamp(2rem, 3.6vw, 3rem)/1.1 'Outfit', sans-serif; letter-spacing: -.03em;
+  background: linear-gradient(120deg, var(--teal-d), var(--teal)); -webkit-background-clip: text; background-clip: text; color: transparent }
+.ap-stat span { display: block; margin-top: .35rem; font: 500 .92rem/1.4 'Outfit', sans-serif; color: var(--mute) }
+
+/* ---------------------------------------------------------------- cream band */
+.ap-band { position: relative; width: min(1320px, 94%); margin: 4rem auto 0; padding: clamp(2rem, 5vw, 4.5rem) clamp(1.2rem, 4vw, 4rem); border-radius: 44px; overflow: hidden;
+  background:
+    radial-gradient(560px 340px at 4% 0%, rgba(255, 255, 255, .95), transparent 70%),
+    radial-gradient(640px 400px at 100% 100%, rgba(201, 162, 115, .38), transparent 70%),
+    linear-gradient(160deg, var(--cream-1), var(--cream-2) 60%, var(--cream-3));
+  box-shadow: 0 30px 70px rgba(31, 80, 88, .32), inset 0 1px 0 #fff }
+
+.ap-story { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); gap: clamp(2rem, 5vw, 4.5rem); align-items: start }
+.ap-side { position: sticky; top: 7.2rem; display: grid; gap: 1.1rem }
+.ap-year { padding: 1.8rem 1.6rem; border-radius: 28px; text-align: center; color: #fff;
+  background: radial-gradient(260px 160px at 20% 0%, rgba(255, 255, 255, .22), transparent 70%), linear-gradient(135deg, #0b3f66, #0d8d97); box-shadow: 0 22px 44px rgba(13, 110, 130, .35) }
+.ap-year small { display: block; font: 600 .78rem/1 'Outfit', sans-serif; letter-spacing: .12em; text-transform: uppercase; opacity: .85 }
+.ap-year b { display: block; margin: .5rem 0 .2rem; font: 800 clamp(3.6rem, 6vw, 5.2rem)/1 'Outfit', sans-serif; letter-spacing: -.04em }
+.ap-year span { font: 600 1.05rem/1 'Outfit', sans-serif; opacity: .95 }
+
+.ap-places { list-style: none; margin: 0; padding: 0; display: grid; gap: .65rem }
+.ap-places li { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: .8rem; padding: .85rem 1.1rem; border-radius: 18px; background: rgba(255, 255, 255, .8); border: 1px solid rgba(201, 162, 115, .35); box-shadow: 0 8px 20px rgba(120, 90, 50, .1) }
+.ap-places svg { width: 22px; height: 22px; fill: none; stroke: var(--tan-d); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+.ap-places b { font: 700 1.02rem/1 'Outfit', sans-serif; color: var(--navy) }
+.ap-places em { font: 600 .72rem/1 'Outfit', sans-serif; font-style: normal; letter-spacing: .08em; text-transform: uppercase; padding: .35rem .65rem; border-radius: 999px; background: #efdfc6; color: var(--tan-d) }
+
+.ap-cert { display: flex; align-items: center; gap: .8rem; padding: 1rem 1.2rem; border-radius: 18px; background: rgba(223, 240, 243, .7); border: 1px solid #a6d0d8; font: 500 .95rem/1.4 'Outfit', sans-serif; color: #0f5f70 }
+.ap-cert svg { flex: none; width: 28px; height: 28px; fill: none; stroke: var(--teal); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round }
+.ap-cert b { color: var(--navy) }
+
+/* timeline of paragraphs */
+.ap-tl { position: relative; padding-left: 2.2rem; display: grid; gap: 1.5rem }
+.ap-tl::before { content: ''; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 3px; border-radius: 3px; background: linear-gradient(var(--tan), var(--teal)); opacity: .55 }
+.ap .ap-p { position: relative; margin: 0; font: 400 1.08rem/1.85 'Outfit', sans-serif; color: #4a5d6e }
+.ap-p::before { content: ''; position: absolute; left: -2.2rem; top: .62rem; width: 15px; height: 15px; border-radius: 50%; background: #fff; border: 3px solid var(--teal); box-shadow: 0 0 0 4px rgba(13, 141, 151, .15) }
+.ap .ap-p.big { font: 600 clamp(1.25rem, 1.9vw, 1.6rem)/1.55 'Outfit', sans-serif; color: var(--navy) }
+.ap-p b { color: var(--navy); font-weight: 700; background: linear-gradient(transparent 62%, rgba(201, 162, 115, .38) 62%); padding: 0 .1em }
+
+/* team */
+.ap-team { margin-top: clamp(3rem, 6vw, 5.5rem); text-align: center }
+.ap .ap-h2 { margin: 0 0 2rem; font: 800 clamp(2rem, 3.8vw, 3.2rem)/1.1 'Outfit', sans-serif; letter-spacing: -.04em;
+  background: linear-gradient(100deg, var(--navy) 10%, #0b3f66 55%, #0d8d97); -webkit-background-clip: text; background-clip: text; color: transparent }
+.ap-h2::after { content: ''; display: block; width: 74px; height: 5px; margin: .9rem auto 0; border-radius: 6px; background: linear-gradient(90deg, var(--tan), var(--teal)) }
+.ap-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 340px)); justify-content: center; gap: clamp(1.2rem, 3vw, 2.4rem) }
+.ap-card { overflow: hidden; border-radius: 30px; text-align: center; background: linear-gradient(180deg, #fffdf9, #f7efe2); border: 1px solid rgba(255, 255, 255, .9);
+  box-shadow: 0 18px 40px rgba(120, 90, 50, .2), inset 0 1px 0 #fff; transition: transform .5s cubic-bezier(.2, .8, .2, 1), box-shadow .5s }
+.ap-card:hover { transform: translateY(-8px); box-shadow: 0 30px 56px rgba(120, 90, 50, .3) }
+.ap-card-img { aspect-ratio: 4 / 4.6; overflow: hidden; background: radial-gradient(closest-side, #fff, #f3e7d4 95%) }
+.ap-card-img img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; transition: transform .8s cubic-bezier(.2, .8, .2, 1) }
+.ap-card:hover .ap-card-img img { transform: scale(1.06) }
+.ap-card-txt { padding: 1.2rem 1rem 1.5rem }
+.ap .ap-card-txt h3 { margin: 0 0 .3rem; font: 800 1.45rem/1.1 'Outfit', sans-serif; letter-spacing: -.02em; color: var(--navy) }
+.ap-card-txt span { display: inline-block; padding: .35rem .85rem; border-radius: 999px; background: #efdfc6; color: var(--tan-d); font: 700 .74rem/1 'Outfit', sans-serif; letter-spacing: .08em; text-transform: uppercase }
+
+/* ---------------------------------------------------------------- closing band */
+.ap-end { position: relative; overflow: hidden; width: min(1320px, 94%); margin: 4rem auto 5rem; padding: clamp(2.4rem, 6vw, 4.6rem) clamp(1.2rem, 4vw, 3rem); border-radius: 44px; text-align: center; color: #fff;
+  background: radial-gradient(520px 300px at 12% 0%, rgba(255, 255, 255, .2), transparent 70%), linear-gradient(120deg, #0b3f66, #0d8d97);
+  box-shadow: 0 30px 70px rgba(11, 63, 102, .4) }
+.ap-motto { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem 1.1rem; margin-bottom: 1.6rem }
+.ap-motto span { font: 800 clamp(1.5rem, 3.6vw, 2.9rem)/1.1 'Outfit', sans-serif; letter-spacing: -.03em; text-transform: capitalize }
+.ap-motto span:not(:last-child)::after { content: '·'; margin-left: 1.1rem; color: var(--tan); }
+.ap .ap-end p { max-width: 46rem; margin: 0 auto 2rem; font: 400 1.15rem/1.7 'Outfit', sans-serif; color: rgba(255, 255, 255, .9) }
+.ap-end-bub { position: absolute; border-radius: 50%; pointer-events: none; border: 2px solid rgba(255, 255, 255, .45); background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, .5), rgba(255, 255, 255, .04)); animation: apBob 6s ease-in-out infinite }
+.ap-end-bub.b1 { width: 70px; height: 70px; right: 8%; top: 14% } .ap-end-bub.b2 { width: 34px; height: 34px; left: 7%; bottom: 16%; animation-delay: -3s }
+
+/* ---------------------------------------------------------------- responsive */
+@media (max-width: 1000px) {
+  .ap-hero { min-height: auto; padding: 7.6rem 0 6rem }
+  .ap-hero-in { grid-template-columns: 1fr; gap: 3rem }
+  .ap-bub { display: none }
+  .ap-photo { width: min(100%, 360px) } .ap-plate { left: -2% }
+  .ap-stats { grid-template-columns: repeat(2, 1fr) }
+  .ap-story { grid-template-columns: 1fr } .ap-side { position: static }
+}
+@media (max-width: 640px) {
+  .ap-cards { grid-template-columns: 1fr } .ap-band, .ap-end { border-radius: 30px }
+  .btn.ap-btn { width: 100%; justify-content: center }
+  .ap-motto span:not(:last-child)::after { display: none }
+}
+@media (prefers-reduced-motion: reduce) { .ap *, .ap *::before, .ap *::after { animation: none !important } }
+
+/* nav helpers (used by App.jsx header) */
+.ni > a.act { color: var(--teal-d); background: rgba(84, 154, 162, .18) }
+.menu a.only-m { display: none }
+@media (max-width: 1279px) { .menu a.only-m { display: block } }

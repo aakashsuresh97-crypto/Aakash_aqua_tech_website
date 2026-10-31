@@ -1,0 +1,27 @@
+/* ===== BRANDS marquee (bm-*) : sits on the sandy cream background ===== */
+.bm { width: min(1400px, 96%); margin: 0 auto 5rem; text-align: center; font-family: 'Outfit', 'DM Sans', sans-serif; color: #0d2540 }
+.bm .bm-h { margin: 0 0 .9rem; font: 800 clamp(2rem, 4vw, 3.2rem)/1.1 'Outfit', sans-serif; letter-spacing: -.04em; color: #0d2540 }
+.bm-h em { font-style: normal; background: linear-gradient(100deg, #0b3f66, #0d8d97); -webkit-background-clip: text; background-clip: text; color: transparent }
+.bm-h::after { content: ''; display: block; width: 80px; height: 5px; margin: .9rem auto 0; border-radius: 6px; background: linear-gradient(90deg, #c9a273, #0d8d97) }
+.bm .bm-sub { max-width: 40rem; margin: 0 auto 2.6rem; font: 400 1.05rem/1.7 'Outfit', sans-serif; color: #4a5d6e }
+
+.bm-view { overflow: hidden; padding: 1.6rem 0 1.8rem;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) }
+.bm-track { display: flex; width: max-content; animation: bmMove 45s linear infinite }
+.bm-view:hover .bm-track { animation-play-state: paused }
+@keyframes bmMove { to { transform: translateX(-50%) } }
+
+/* every card + every logo box is EXACTLY the same size */
+.bm-item { flex: none; width: 220px; margin: 0 1.1rem 0 0; display: flex; flex-direction: column; align-items: center; gap: .9rem }   /* margin (not gap) keeps -50% exact */
+.bm-card { width: 100%; height: 160px; display: grid; place-items: center; padding: 1.4rem; border-radius: 30px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .94), rgba(255, 255, 255, .72));
+  border: 1px solid rgba(255, 255, 255, .95); box-shadow: 0 16px 34px rgba(120, 90, 50, .2), inset 0 1px 0 #fff;
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); transition: transform .4s cubic-bezier(.2, .8, .2, 1), box-shadow .4s }
+.bm-item:hover .bm-card { transform: translateY(-8px); box-shadow: 0 24px 44px rgba(120, 90, 50, .32) }
+.bm-logo { width: 100%; height: 100%; display: grid; place-items: center }       /* fixed logo box: 172 x 112 */
+.bm-logo img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block }
+.bm-item figcaption { font: 700 .95rem/1 'Outfit', sans-serif; color: #0b3f66 }
+
+@media (max-width: 640px) { .bm-item { width: 170px } .bm-card { height: 128px; padding: 1rem; border-radius: 24px } }
+@media (prefers-reduced-motion: reduce) { .bm-view { overflow-x: auto } .bm-track { animation: none } }

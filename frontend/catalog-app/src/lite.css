@@ -1,0 +1,31 @@
+/* Product page spec tables + brand mark */
+/* ---------- product page: real tables ---------- */
+.pd-tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid #eadfc2; border-radius: 12px }
+.pd-table { width: 100%; min-width: 0; border-collapse: collapse; font-size: 14px; line-height: 1.45; background: #fff }
+.pd-table caption { text-align: left }
+.pd-table th, .pd-table td { padding: 10px 14px; text-align: left; vertical-align: top; border-top: 1px solid #f0e8d2; overflow-wrap: anywhere }
+.pd-table tbody tr:first-child th, .pd-table tbody tr:first-child td { border-top: 0 }
+.pd-table tbody th { width: 38%; min-width: 130px; font-weight: 700; color: #4a3a22; background: #fbf5e6 }
+.pd-table tbody tr:nth-child(even) td { background: #fffdf8 }
+.pd-table thead th { background: #6b4f24; color: #fff; font-weight: 700; border: 0; position: sticky; top: 0 }
+.pd-table td ul { margin: 0; padding-left: 16px } .pd-table td li { margin: 1px 0 }
+.pd-notes { margin: 12px 0 0; padding-left: 18px; color: #6a5a3a; font-size: 13px; line-height: 1.5 }
+.pd-skel { height: 160px; border-radius: 12px; background: linear-gradient(90deg, #f3ead2, #fbf5e6, #f3ead2); background-size: 200% 100%; animation: pdsk 1.2s linear infinite }
+@keyframes pdsk { to { background-position: -200% 0 } }
+.pd-trust { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 13px; color: #6b4f24 } .pd-trust li { display: flex; align-items: center; gap: 5px }
+@media (max-width: 560px) { .pd-table { font-size: 13px } .pd-table th, .pd-table td { padding: 9px 10px } .pd-table tbody th { width: 42%; min-width: 0 } }
+
+.pd-table.two { table-layout: fixed }
+.pd-table.two tbody th { width: 40%; min-width: 0 }
+.pd-table.multi tbody th { position: sticky; left: 0; z-index: 1; box-shadow: 1px 0 0 #eadfc2; width: 190px; min-width: 150px }
+.pd-table.multi thead th:first-child { position: sticky; left: 0; z-index: 2 }
+.pd-hint { display: none; margin: 8px 2px 0; font-size: 12px; color: #8a7448 }
+@media (max-width: 700px) { .pd-hint { display: block } .pd-rel { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important } .pd-rel img { width: 100%; height: auto; aspect-ratio: 1; object-fit: contain } .pd-cols { grid-template-columns: 1fr !important } .pd-sec { padding: 16px 14px !important } }
+.pd-cols > *, .pd-sec, .pd-grid > * { min-width: 0 }
+@media (max-width: 700px) { .pd-cols { grid-template-columns: minmax(0, 1fr) !important } .pd-grid { grid-template-columns: minmax(0, 1fr) !important } }
+
+.brm { display: inline-flex; align-items: center; gap: .35em; vertical-align: middle; max-width: 100% }
+.brm img { height: 1.25em; width: auto; max-width: 2.2em; object-fit: contain; flex: none; border-radius: 3px }
+.brm span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.bk-tag .brm img { height: max(11px, 3.2cqw) }
+.pd-brand .brm img { height: 16px }

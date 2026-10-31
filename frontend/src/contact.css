@@ -1,0 +1,162 @@
+/* =====================================================================
+   CONTACT PAGE – sandal-cream cards + deep-blue → teal button (same as Home "About us").  Import AFTER cart.css.
+   cream #fbf7f0 → #f3e9da → #e8d7bd · tan #c9a273 / #a77f4f · navy #0d2540 · button #0b3f66 → #0d8d97
+===================================================================== */
+.cu-page, .cu-page * { box-sizing: border-box }
+.cu-page { position: relative; width: min(1240px, 94%); margin: 0 auto; padding: 8.6rem 0 5rem; color: #0d2540; font-family: 'Outfit', 'DM Sans', sans-serif }
+.cu-page a { text-decoration: none; color: inherit }
+
+.cu-head { margin-bottom: 2rem }
+.cu-head h1 { margin: 0; font: 700 clamp(2.5rem, 5vw, 3.7rem)/1.05 'Outfit', sans-serif; letter-spacing: -.03em; color: #0d2540; animation: cu-in .7s cubic-bezier(.2, .8, .2, 1) backwards }
+.cu-head h1::after { content: ''; display: block; width: 74px; height: 5px; margin-top: .8rem; border-radius: 6px; background: linear-gradient(90deg, #c9a273, #0d8d97); transform-origin: left; animation: cu-line .9s .3s cubic-bezier(.2, .8, .2, 1) backwards }
+.cu-head p { margin: 1rem 0 0; color: #5b4e40; font-size: 1.05rem; animation: cu-in .7s .15s cubic-bezier(.2, .8, .2, 1) backwards }
+.cu-quick { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.2rem }
+.cu-quick a, .cu-quick button { padding: .55rem 1.1rem; border-radius: 999px; cursor: pointer; font: 600 .88rem 'Outfit', sans-serif; color: #0b3f66; background: rgba(201, 162, 115, .26); border: 1px solid rgba(201, 162, 115, .6);
+  animation: cu-pop .5s calc(.4s + var(--q, 0) * .1s) cubic-bezier(.3, 1.6, .5, 1) backwards; transition: transform .25s, background .25s, box-shadow .25s }
+.cu-quick > :nth-child(2) { --q: 1 } .cu-quick > :nth-child(3) { --q: 2 }
+.cu-quick a:hover, .cu-quick button:hover { background: rgba(201, 162, 115, .45); transform: translateY(-3px); box-shadow: 0 10px 20px rgba(120, 90, 50, .2) }
+
+.cu-grid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: 1.6rem; align-items: start }
+.cu-col { display: grid; gap: 1.6rem; min-width: 0 }
+.cu-mapcol { position: sticky; top: 6.5rem }
+
+/* sandal-cream card (same recipe as the Home About card) */
+.cu-card { position: relative; overflow: hidden; padding: 2rem 2rem 2.2rem; border-radius: 36px; border: 1px solid rgba(255, 255, 255, .9);
+  background: radial-gradient(560px 340px at 4% 0%, rgba(255, 255, 255, .95), transparent 70%), radial-gradient(640px 400px at 100% 100%, rgba(201, 162, 115, .38), transparent 70%), linear-gradient(160deg, #fbf7f0, #f3e9da 60%, #e8d7bd);
+  box-shadow: 0 30px 70px rgba(120, 90, 50, .28), inset 0 1px 0 #fff; animation: cu-rise .85s cubic-bezier(.2, .8, .2, 1) backwards }
+.cu-offices { animation-delay: .12s } .cu-mapcard { animation-delay: .2s }
+.cu-card h2 { margin: 0 0 1.4rem; font: 700 1.7rem 'Outfit', sans-serif; letter-spacing: -.02em; color: #0d2540 }
+.cu-card h2::after { content: ''; display: block; width: 54px; height: 4px; margin-top: .55rem; border-radius: 4px; background: linear-gradient(90deg, #c9a273, #0d8d97) }
+
+/* ---------- floating-label fields ---------- */
+.cu-two { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem }
+.cu-f { position: relative; margin-bottom: 1.1rem; animation: cu-in .6s calc(.3s + var(--n, 0) * .08s) cubic-bezier(.2, .8, .2, 1) backwards }
+.cu-f.bad { animation: cu-shake .5s }
+.cu-f input, .cu-f textarea { display: block; width: 100%; padding: 1.5rem 1.1rem .55rem; border-radius: 18px; border: 1.5px solid rgba(201, 162, 115, .75); background: rgba(255, 255, 255, .72); color: #0d2540; font: 500 1rem 'Outfit', sans-serif; outline: 0; resize: vertical;
+  box-shadow: inset 0 2px 6px rgba(120, 90, 50, .06); transition: border-color .3s, box-shadow .3s, background .3s, transform .3s }
+.cu-f textarea { min-height: 130px }
+.cu-f input:focus, .cu-f textarea:focus { border-color: #0b3f66; background: #fff; transform: translateY(-2px); box-shadow: 0 0 0 4px rgba(11, 63, 102, .12), 0 14px 26px rgba(120, 90, 50, .16) }
+.cu-f label { position: absolute; left: 1.15rem; top: 1.05rem; color: #a77f4f; font-weight: 500; pointer-events: none; transform-origin: left top; transition: transform .3s cubic-bezier(.2, .8, .2, 1), color .3s }
+.cu-f input:focus + label, .cu-f input:not(:placeholder-shown) + label, .cu-f textarea:focus + label, .cu-f textarea:not(:placeholder-shown) + label { transform: translateY(-.62rem) scale(.78); color: #0b3f66; font-weight: 600 }
+.cu-bar { position: absolute; left: 18px; right: 18px; bottom: 1px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, #c9a273, #0d8d97); transform: scaleX(0); transform-origin: left; transition: transform .5s cubic-bezier(.2, .8, .2, 1); pointer-events: none }
+.cu-f input:focus ~ .cu-bar, .cu-f textarea:focus ~ .cu-bar { transform: scaleX(1) }
+.cu-f.bad input, .cu-f.bad textarea { border-color: #c0392b; background: #fff7f5 }
+.cu-f.bad label { color: #c0392b }
+.cu-f small { display: block; margin: .35rem 0 0 .4rem; color: #c0392b; font-weight: 600; animation: cu-in .35s backwards }
+.cu-formcard form > :nth-child(1) { --n: 0 } .cu-formcard form > :nth-child(2) { --n: 1 } .cu-formcard form > :nth-child(3) { --n: 2 }
+
+/* ---------- button: deep-blue → teal pill ---------- */
+.cu-btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: .7rem; padding: 1.05rem 2rem; border: 0; border-radius: 999px; cursor: pointer;
+  font: 700 .86rem 'Outfit', sans-serif; letter-spacing: .07em; text-transform: uppercase; color: #fff !important; background: linear-gradient(120deg, #0b3f66, #0d8d97);
+  box-shadow: 0 14px 28px rgba(11, 63, 102, .3); transition: transform .3s cubic-bezier(.2, .8, .2, 1), box-shadow .3s }
+.cu-formcard .cu-btn { width: 100%; animation: cu-pulse 2.8s 1.5s infinite }
+.cu-btn::before { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, .4), transparent 70%); transform: translateX(-120%) }
+.cu-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 36px rgba(11, 63, 102, .36) }
+.cu-btn:hover::before { transform: translateX(120%); transition: transform .8s }
+.cu-btn:active { transform: scale(.98) }
+.cu-btn svg { width: 18px; height: 18px; transition: transform .3s }
+.cu-btn:hover svg { transform: translateX(6px) }
+.cu-btn:disabled { cursor: progress; animation: none }
+.cu-btn.ghost { background: linear-gradient(160deg, #fffdf9, #f1e5d1); color: #0b3f66 !important; border: 1.5px solid #c9a273; box-shadow: 0 8px 20px rgba(120, 90, 50, .14) }
+.cu-btn.ghost::before { display: none }
+.cu-btn.sm { padding: .7rem 1.3rem; font-size: .76rem }
+.cu-spin { width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid rgba(255, 255, 255, .4); border-top-color: #fff; animation: cu-rot .7s linear infinite }
+
+/* ---------- success ---------- */
+.cu-done { position: relative; display: grid; justify-items: center; gap: .5rem; padding: 1.5rem 0 .5rem; text-align: center }
+.cu-done svg { width: 84px; height: 84px; fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round }
+.cu-done circle { stroke: #c9a273; stroke-dasharray: 166; stroke-dashoffset: 166; animation: cu-draw .7s .1s forwards }
+.cu-done path { stroke: #0b3f66; stroke-dasharray: 48; stroke-dashoffset: 48; animation: cu-draw .5s .65s forwards }
+.cu-done h3 { margin: .6rem 0 0; font: 700 1.5rem 'Outfit', sans-serif; animation: cu-in .5s .6s backwards }
+.cu-done p { margin: 0 0 1rem; color: #5b4e40; animation: cu-in .5s .75s backwards }
+.cu-burst { position: absolute; left: 50%; top: 52px; pointer-events: none }
+.cu-burst i { position: absolute; width: 11px; height: 11px; margin: -5px; border-radius: 50%; border: 1px solid #c9a273; background: radial-gradient(circle at 35% 35%, #fff, rgba(201, 162, 115, .55)); animation: cu-burst 1s .5s ease-out both }
+
+/* ---------- office accordion ---------- */
+.cu-acc { margin-bottom: .8rem; border-radius: 22px; border: 1.5px solid #c9a273; background: rgba(255, 255, 255, .55); overflow: hidden; box-shadow: 0 8px 20px rgba(120, 90, 50, .12);
+  animation: cu-in .6s calc(.3s + var(--a, 0) * .1s) cubic-bezier(.2, .8, .2, 1) backwards; transition: box-shadow .35s, border-color .35s }
+.cu-acc:nth-of-type(2) { --a: 1 } .cu-acc:nth-of-type(3) { --a: 2 }
+.cu-acc:hover { box-shadow: 0 14px 28px rgba(120, 90, 50, .2) }
+.cu-acc.on { border-color: #0b3f66; box-shadow: 0 18px 36px rgba(11, 63, 102, .22) }
+.cu-acc-h { display: flex; align-items: center; gap: .9rem; width: 100%; padding: 1rem 1.2rem; border: 0; cursor: pointer; text-align: left; font: 700 .92rem 'Outfit', sans-serif; letter-spacing: .03em; text-transform: uppercase; color: #0b3f66;
+  background: linear-gradient(160deg, #fffdf9, #f1e5d1); transition: background .45s, color .45s }
+.cu-acc.on .cu-acc-h { color: #fff; background: linear-gradient(120deg, #0b3f66, #0d8d97) }
+.cu-ico { flex: none; display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; background: #fff; box-shadow: 0 4px 10px rgba(120, 90, 50, .2) }
+.cu-ico svg { width: 18px; height: 22px; fill: #0b3f66; transition: fill .3s }
+.cu-acc-h:hover .cu-ico svg { animation: cu-bob .6s }
+.cu-acc.on .cu-ico svg { fill: #c9a273; animation: cu-bob .6s }
+.cu-nm { flex: 1 }
+.cu-pm { position: relative; flex: none; width: 20px; height: 20px }
+.cu-pm::before, .cu-pm::after { content: ''; position: absolute; left: 2px; right: 2px; top: 9px; height: 2.5px; border-radius: 2px; background: currentColor; transition: transform .4s cubic-bezier(.2, .8, .2, 1) }
+.cu-pm::after { transform: rotate(90deg) }
+.cu-acc.on .cu-pm::after { transform: rotate(0) }
+.cu-acc.on .cu-pm { animation: cu-rot180 .45s }
+
+.cu-acc-b { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .55s cubic-bezier(.2, .8, .2, 1) }
+.cu-acc.on .cu-acc-b { grid-template-rows: 1fr }
+.cu-acc-in { min-height: 0; overflow: hidden; visibility: hidden; padding: 0 1.3rem; transition: visibility 0s .55s }
+.cu-acc.on .cu-acc-in { visibility: visible; padding-bottom: 1.3rem; transition-delay: 0s }
+.cu-acc-in > * { margin: 0; animation: none }
+.cu-acc.on .cu-acc-in > * { animation: cu-in .5s calc(var(--k, 0) * .09s + .18s) cubic-bezier(.2, .8, .2, 1) backwards }
+.cu-acc-in > :nth-child(1) { --k: 0; margin-top: 1.2rem } .cu-acc-in > :nth-child(2) { --k: 1; margin-top: .8rem } .cu-acc-in > :nth-child(3) { --k: 2; margin-top: 1rem } .cu-acc-in > :nth-child(4) { --k: 3; margin-top: 1rem }
+.cu-acc address { font-style: normal; line-height: 1.7; color: #4a3f33 }
+.cu-lines { display: grid; gap: .15rem }
+.cu-lines a { color: #0b3f66; font-weight: 600; text-decoration: underline; text-decoration-color: #c9a273; text-underline-offset: 4px }
+.cu-lines a:hover { text-decoration-color: #0b3f66 }
+
+/* map inside the accordion: cream frame + tan offset layer, shimmer while loading */
+.cu-frame { position: relative; height: 270px; border-radius: 24px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .95); box-shadow: 0 0 0 5px rgba(255, 255, 255, .55), 9px 11px 0 -3px #e3d2b8;
+  background: linear-gradient(100deg, #f3e9da 30%, #fbf7f0 50%, #f3e9da 70%) 0 0 / 220% 100%; animation: cu-shim 1.4s linear infinite }
+.cu-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; opacity: 0; transition: opacity .7s }
+.cu-frame iframe.ok { opacity: 1 }
+
+/* ---------- Tamil Nadu map ---------- */
+.cu-mapbox { position: relative; padding: 8px; border-radius: 30px; background: linear-gradient(160deg, #fffdf9, #f1e5d1); border: 1px solid rgba(255, 255, 255, .95); box-shadow: 0 0 0 5px rgba(255, 255, 255, .5), 11px 13px 0 -3px #e3d2b8 }
+.cu-leaf { height: 540px; border-radius: 24px; overflow: hidden; background: #eadfcc; z-index: 0 }
+.cu-leaf .leaflet-tile-pane { filter: sepia(.3) saturate(.85) contrast(.97) brightness(1.02) }
+.cu-leaf .leaflet-control-zoom { border: 0; box-shadow: 0 8px 20px rgba(120, 90, 50, .25) }
+.cu-leaf .leaflet-control-zoom a { color: #0b3f66; background: #fbf7f0; border-color: rgba(201, 162, 115, .6) }
+.cu-leaf .leaflet-control-zoom a:hover { background: #f1e5d1 }
+.cu-leaf .leaflet-control-attribution { background: rgba(251, 247, 240, .85); font-size: 10px; color: #5b4e40 }
+.cu-note { position: absolute; left: 22px; top: 22px; z-index: 500; display: grid; gap: .1rem; padding: .7rem 1rem; border-radius: 16px; background: rgba(251, 247, 240, .94); box-shadow: 0 10px 24px rgba(120, 90, 50, .25); pointer-events: none; animation: cu-in .7s .6s backwards }
+.cu-note b { color: #0d2540 } .cu-note span { color: #5b4e40; font-size: .8rem }
+
+/* pins: pulsing ring, bobbing, label pill; the chosen office turns teal and jumps */
+.cu-mk { background: none; border: 0 }
+.cu-mk-in { position: relative; display: block; width: 34px; height: 48px; cursor: pointer }
+.cu-mk-in svg { position: absolute; inset: 0; width: 34px; height: 48px; overflow: visible; filter: drop-shadow(0 6px 6px rgba(11, 63, 102, .35)); animation: cu-bob 2.4s var(--d) ease-in-out infinite }
+.cu-mk-in path { fill: #0b3f66; transition: fill .3s } .cu-mk-in circle { fill: #fbf7f0 }
+.cu-pulse { position: absolute; left: 50%; bottom: -3px; width: 18px; height: 18px; margin-left: -9px; border-radius: 50%; border: 2px solid #0d8d97; animation: cu-ring 2.2s var(--d) ease-out infinite }
+.cu-mk-in b { position: absolute; left: 38px; top: 6px; padding: .25rem .7rem; border-radius: 999px; white-space: nowrap; font: 700 .8rem 'Outfit', sans-serif; color: #0b3f66; background: #fbf7f0; border: 1px solid #c9a273; box-shadow: 0 6px 14px rgba(120, 90, 50, .25); transition: background .3s, color .3s }
+.cu-mk:hover .cu-mk-in path, .cu-mk.on .cu-mk-in path { fill: #0d8d97 }
+.cu-mk.on .cu-mk-in b { color: #fff; background: linear-gradient(120deg, #0b3f66, #0d8d97); border-color: transparent }
+.cu-mk.on .cu-mk-in svg { animation: cu-jump .9s ease-in-out infinite }
+.cu-mk.on { z-index: 1000 !important }
+
+.cu-chips { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.4rem }
+.cu-chips button { padding: .5rem 1.1rem; border-radius: 999px; cursor: pointer; font: 600 .85rem 'Outfit', sans-serif; color: #6b5434; background: rgba(241, 228, 207, .85); border: 1px solid #d9c19c; transition: transform .25s, background .3s, color .3s, box-shadow .3s }
+.cu-chips button:hover { transform: translateY(-3px) }
+.cu-chips button.on { color: #fff; background: linear-gradient(120deg, #0b3f66, #0d8d97); border-color: transparent; box-shadow: 0 10px 20px rgba(11, 63, 102, .3) }
+
+.cu-orb { position: absolute; z-index: 3; left: var(--x); top: var(--y); width: var(--s); height: var(--s); border-radius: 50%; pointer-events: none; border: 1.5px solid rgba(201, 162, 115, .75);
+  background: radial-gradient(circle at 35% 35%, #fff, rgba(201, 162, 115, .3) 60%, rgba(201, 162, 115, .08)); box-shadow: 0 0 18px rgba(201, 162, 115, .45); animation: cu-float var(--t) ease-in-out infinite alternate }
+
+@keyframes cu-rise { from { opacity: 0; transform: translateY(40px) scale(.97); filter: blur(6px) } to { opacity: 1; transform: none; filter: none } }
+@keyframes cu-in { from { opacity: 0; transform: translateY(22px) } to { opacity: 1; transform: none } }
+@keyframes cu-line { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+@keyframes cu-pop { from { opacity: 0; transform: scale(.6) } to { opacity: 1; transform: scale(1) } }
+@keyframes cu-shake { 0%, 100% { transform: none } 20% { transform: translateX(-9px) } 40% { transform: translateX(8px) } 60% { transform: translateX(-5px) } 80% { transform: translateX(3px) } }
+@keyframes cu-pulse { 0%, 100% { box-shadow: 0 14px 28px rgba(11, 63, 102, .3), 0 0 0 0 rgba(13, 141, 151, .45) } 70% { box-shadow: 0 14px 28px rgba(11, 63, 102, .3), 0 0 0 16px rgba(13, 141, 151, 0) } }
+@keyframes cu-rot { to { transform: rotate(360deg) } }
+@keyframes cu-rot180 { from { transform: rotate(-180deg) } to { transform: none } }
+@keyframes cu-draw { to { stroke-dashoffset: 0 } }
+@keyframes cu-burst { from { transform: rotate(var(--a)) translateX(0) scale(.4); opacity: 1 } to { transform: rotate(var(--a)) translateX(var(--d)) scale(1.3); opacity: 0 } }
+@keyframes cu-bob { 50% { transform: translateY(-5px) } }
+@keyframes cu-jump { 0%, 100% { transform: translateY(0) } 40% { transform: translateY(-16px) } 60% { transform: translateY(-16px) } }
+@keyframes cu-ring { from { transform: scale(.4); opacity: 1 } to { transform: scale(2.6); opacity: 0 } }
+@keyframes cu-shim { to { background-position: -220% 0 } }
+@keyframes cu-float { to { transform: translate(14px, -26px) } }
+
+@media (max-width: 900px) { .cu-grid { grid-template-columns: 1fr } .cu-mapcol { position: static } .cu-leaf { height: 400px } }
+@media (max-width: 560px) { .cu-two { grid-template-columns: 1fr } .cu-card { padding: 1.5rem 1.2rem 1.7rem; border-radius: 28px } .cu-acc-h { font-size: .8rem } .cu-frame { height: 230px } }
+@media (prefers-reduced-motion: reduce) { .cu-page *, .cu-page *::before, .cu-page *::after { animation: none !important; transition: none !important } }

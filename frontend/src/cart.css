@@ -1,0 +1,130 @@
+/* =====================================================================
+   CART PAGE – sandal cream card + deep-blue → teal button (same as Home "About us").
+   Import AFTER polish.css in main.jsx.  Palette:
+   sand #eadfcc · cream #fbf7f0 → #f3e9da → #e8d7bd · tan #c9a273 / #a77f4f · navy #0d2540 · button #0b3f66 → #0d8d97
+===================================================================== */
+.ct-page, .ct-page * { box-sizing: border-box }
+.ct-page { position: relative; width: min(1180px, 94%); margin: 0 auto; padding: 8.6rem 0 5rem; color: #0d2540; font-family: 'Outfit', 'DM Sans', sans-serif }
+.ct-page a { color: inherit; text-decoration: none }
+
+/* heading + tan→teal underline that draws itself */
+.ct-head { margin-bottom: 2rem }
+.ct-head h1 { margin: 0; font: 700 clamp(2.5rem, 5vw, 3.7rem)/1.05 'Outfit', sans-serif; letter-spacing: -.03em; color: #0d2540; animation: ct-in .7s cubic-bezier(.2, .8, .2, 1) backwards }
+.ct-head h1::after { content: ''; display: block; width: 74px; height: 5px; margin-top: .8rem; border-radius: 6px; background: linear-gradient(90deg, #c9a273, #0d8d97); transform-origin: left; animation: ct-line .9s .3s cubic-bezier(.2, .8, .2, 1) backwards }
+.ct-head p { margin: 1rem 0 0; color: #5b4e40; font-size: 1.05rem; animation: ct-in .7s .15s cubic-bezier(.2, .8, .2, 1) backwards }
+
+.ct-grid { display: grid; grid-template-columns: minmax(0, 1.75fr) minmax(300px, 1fr); gap: 1.6rem; align-items: start }
+
+/* the sandal-cream card (identical recipe to .about .about-g) */
+.ct-card { position: relative; overflow: hidden; border-radius: 36px; border: 1px solid rgba(255, 255, 255, .9);
+  background: radial-gradient(560px 340px at 4% 0%, rgba(255, 255, 255, .95), transparent 70%), radial-gradient(640px 400px at 100% 100%, rgba(201, 162, 115, .38), transparent 70%), linear-gradient(160deg, #fbf7f0, #f3e9da 60%, #e8d7bd);
+  box-shadow: 0 30px 70px rgba(120, 90, 50, .28), inset 0 1px 0 #fff; animation: ct-rise .85s cubic-bezier(.2, .8, .2, 1) backwards }
+.ct-sum { animation-delay: .15s; position: sticky; top: 6.5rem; padding: 2rem 1.8rem }
+
+/* item rows */
+.ct-list { padding: .6rem 0 0 }
+.ct-row { display: grid; grid-template-columns: 132px 1fr auto; gap: 1.4rem; align-items: center; max-height: 240px; padding: 1.3rem 1.7rem; border-bottom: 1px solid rgba(167, 127, 79, .28);
+  animation: ct-in .65s calc(var(--i) * .09s + .25s) cubic-bezier(.2, .8, .2, 1) backwards;
+  transition: opacity .35s, transform .38s, max-height .38s .05s, padding .38s .05s, border-width .38s }
+.ct-row.out { opacity: 0; transform: translateX(70px) scale(.95); max-height: 0; padding-block: 0; border-width: 0; overflow: hidden }
+
+/* product image: cream frame + tan offset layer (like the shop photo in the About card) */
+.ct-img { display: grid; place-items: center; aspect-ratio: 1; border-radius: 28px; background: linear-gradient(160deg, #fffdf9, #f1e5d1); border: 1px solid rgba(255, 255, 255, .95);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, .55), 11px 13px 0 -3px #e3d2b8; transition: transform .45s cubic-bezier(.2, .8, .2, 1) }
+.ct-img img { width: 84%; height: 84%; object-fit: contain; transition: transform .5s cubic-bezier(.2, .8, .2, 1) }
+.ct-row:hover .ct-img { transform: rotate(-2.5deg) translateY(-4px) }
+.ct-row:hover .ct-img img { transform: scale(1.09) }
+
+.ct-info { min-width: 0; display: grid; gap: .35rem; justify-items: start }
+.ct-info h3 { margin: 0; font: 600 1.15rem/1.3 'Outfit', sans-serif; color: #0d2540; letter-spacing: -.01em }
+.ct-info h3 a:hover { color: #0b3f66; text-decoration: underline; text-decoration-color: #c9a273; text-underline-offset: 4px }
+.ct-info small { color: #a77f4f; font-weight: 600 }
+.ct-each { color: #5b4e40; font-weight: 600 }
+.ct-each s { margin-left: .5rem; color: #a77f4f; font-weight: 400; font-size: .9em }
+
+/* quantity pill */
+.ct-qty { display: inline-flex; align-items: center; gap: .15rem; margin-top: .3rem; padding: .22rem; border-radius: 999px; background: rgba(255, 255, 255, .65); border: 1.5px solid #c9a273 }
+.ct-qty button { width: 32px; height: 32px; border: 0; border-radius: 50%; cursor: pointer; background: linear-gradient(160deg, #fffdf9, #f1e5d1); color: #0b3f66; font: 700 1.15rem 'Outfit', sans-serif; transition: transform .2s, background .25s, color .25s }
+.ct-qty button:hover { background: linear-gradient(120deg, #0b3f66, #0d8d97); color: #fff; transform: scale(1.12) }
+.ct-qty button:active { transform: scale(.88) }
+.ct-qty b { min-width: 34px; text-align: center; font: 700 1rem 'Outfit', sans-serif; animation: ct-pop .38s cubic-bezier(.3, 1.6, .5, 1) }
+
+.ct-side { display: grid; gap: .6rem; justify-items: end; text-align: right }
+.ct-line { font: 700 1.3rem 'Outfit', sans-serif; color: #0b3f66; animation: ct-pop .38s cubic-bezier(.3, 1.6, .5, 1) }
+.ct-rm, .ct-clear { border: 0; background: none; cursor: pointer; font: 600 .85rem 'Outfit', sans-serif; color: #a77f4f; padding: .2rem 0; background-image: linear-gradient(#c9a273, #c9a273); background-repeat: no-repeat; background-position: 0 100%; background-size: 0 1.5px; transition: color .25s, background-size .3s }
+.ct-rm:hover, .ct-clear:hover { color: #0b3f66; background-size: 100% 1.5px }
+.ct-clear { display: block; margin: 1rem 1.7rem 1.3rem }
+
+/* summary */
+.ct-sum h2 { margin: 0 0 1.2rem; font: 700 1.6rem 'Outfit', sans-serif; color: #0d2540; letter-spacing: -.02em }
+.ct-sum h2::after { content: ''; display: block; width: 54px; height: 4px; margin-top: .55rem; border-radius: 4px; background: linear-gradient(90deg, #c9a273, #0d8d97) }
+.ct-sum dl { margin: 0 }
+.ct-sum dl div { display: flex; justify-content: space-between; padding: .55rem 0; color: #5b4e40 }
+.ct-sum dt, .ct-sum dd { margin: 0 }
+.ct-sum dd { font-weight: 700; color: #0d2540 }
+.ct-sum dd.ok { color: #0d8d97 }
+.ct-total { display: flex; justify-content: space-between; align-items: baseline; margin-top: .6rem; padding-top: 1rem; border-top: 1.5px dashed rgba(167, 127, 79, .55) }
+.ct-total span { font-weight: 600; color: #0d2540 }
+.ct-total b { font: 700 1.9rem 'Outfit', sans-serif; color: #0b3f66; font-variant-numeric: tabular-nums }
+.ct-tax { display: block; margin: .2rem 0 1.4rem; color: #a77f4f }
+
+/* buttons: deep-blue → teal pill, uppercase, arrow nudge, shimmer, soft pulse */
+.ct-btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: .7rem; width: 100%; padding: 1.05rem 1.6rem; border: 0; border-radius: 999px; cursor: pointer;
+  font: 700 .86rem 'Outfit', sans-serif; letter-spacing: .07em; text-transform: uppercase; color: #fff !important;
+  background: linear-gradient(120deg, #0b3f66, #0d8d97); box-shadow: 0 14px 28px rgba(11, 63, 102, .3);
+  transition: transform .3s cubic-bezier(.2, .8, .2, 1), box-shadow .3s }
+.ct-btn::before { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 30%, rgba(255, 255, 255, .4), transparent 70%); transform: translateX(-120%) }
+.ct-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 36px rgba(11, 63, 102, .36) }
+.ct-btn:hover::before { transform: translateX(120%); transition: transform .8s }
+.ct-btn:active { transform: translateY(0) scale(.98) }
+.ct-btn svg { width: 18px; height: 18px; transition: transform .3s }
+.ct-btn:hover svg { transform: translateX(6px) }
+.ct-btn.pulse { animation: ct-pulse 2.6s infinite }
+.ct-btn.ghost { margin-top: .8rem; background: linear-gradient(160deg, #fffdf9, #f1e5d1); color: #0b3f66 !important; border: 1.5px solid #c9a273; box-shadow: 0 8px 20px rgba(120, 90, 50, .14) }
+.ct-btn.ghost::before { display: none }
+.ct-btn.ghost:hover { border-color: #0b3f66; box-shadow: 0 14px 26px rgba(120, 90, 50, .22) }
+
+.ct-cta { position: relative }
+.ct-burst { position: absolute; left: 50%; top: 50%; pointer-events: none }
+.ct-burst i { position: absolute; width: 11px; height: 11px; margin: -5px; border-radius: 50%; border: 1px solid #c9a273; background: radial-gradient(circle at 35% 35%, #fff, rgba(201, 162, 115, .55)); animation: ct-burst .95s ease-out forwards }
+
+.ct-trust { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.3rem 0 0; padding: 0; list-style: none }
+.ct-trust li { padding: .35rem .8rem; border-radius: 999px; background: rgba(241, 228, 207, .85); border: 1px solid #d9c19c; color: #6b5434; font-size: .78rem; font-weight: 600; animation: ct-pop .5s calc(.6s + var(--n, 0) * .1s) cubic-bezier(.3, 1.6, .5, 1) backwards }
+.ct-trust li:nth-child(2) { --n: 1 } .ct-trust li:nth-child(3) { --n: 2 }
+
+/* empty state */
+.ct-empty { padding: 4.5rem 1.5rem 5rem; text-align: center }
+.ct-empty h2 { margin: 0; font: 700 1.9rem 'Outfit', sans-serif; color: #0d2540 }
+.ct-empty p { margin: .6rem auto 1.8rem; color: #5b4e40 }
+.ct-empty .ct-btn { width: auto; padding-inline: 2.2rem }
+.ct-drop { position: relative; width: 120px; height: 120px; margin: 0 auto 1.4rem; display: grid; place-items: center }
+.ct-drop svg { width: 66px; height: 66px; animation: ct-bob 3s ease-in-out infinite; filter: drop-shadow(0 12px 14px rgba(11, 63, 102, .25)) }
+.ct-drop i { position: absolute; inset: 0; border-radius: 50%; border: 2px solid rgba(201, 162, 115, .85); animation: ct-ring 3s ease-out infinite; animation-delay: calc(var(--k) * 1.5s) }
+
+/* floating bubbles overlapping the card edges */
+.ct-orb { position: absolute; z-index: 3; left: var(--x); top: var(--y); width: var(--s); height: var(--s); border-radius: 50%; pointer-events: none;
+  border: 1.5px solid rgba(201, 162, 115, .75); background: radial-gradient(circle at 35% 35%, #fff, rgba(201, 162, 115, .3) 60%, rgba(201, 162, 115, .08)); box-shadow: 0 0 18px rgba(201, 162, 115, .45);
+  animation: ct-float var(--t) ease-in-out infinite alternate }
+
+/* header cart badge pops whenever the count changes (works with key={cart} in Header) */
+.cartp-n { display: inline-block; animation: ct-pop .45s cubic-bezier(.3, 1.6, .5, 1) }
+
+@keyframes ct-rise { from { opacity: 0; transform: translateY(40px) scale(.97); filter: blur(6px) } to { opacity: 1; transform: none; filter: none } }
+@keyframes ct-in { from { opacity: 0; transform: translateY(24px) } to { opacity: 1; transform: none } }
+@keyframes ct-line { from { transform: scaleX(0) } to { transform: scaleX(1) } }
+@keyframes ct-pop { 0% { transform: scale(.6); opacity: .4 } 100% { transform: scale(1); opacity: 1 } }
+@keyframes ct-pulse { 0%, 100% { box-shadow: 0 14px 28px rgba(11, 63, 102, .3), 0 0 0 0 rgba(13, 141, 151, .45) } 70% { box-shadow: 0 14px 28px rgba(11, 63, 102, .3), 0 0 0 16px rgba(13, 141, 151, 0) } }
+@keyframes ct-burst { from { transform: rotate(var(--a)) translateX(0) scale(.4); opacity: 1 } to { transform: rotate(var(--a)) translateX(var(--d)) scale(1.3); opacity: 0 } }
+@keyframes ct-float { to { transform: translate(14px, -26px) } }
+@keyframes ct-bob { 50% { transform: translateY(-10px) } }
+@keyframes ct-ring { from { transform: scale(.55); opacity: 1 } to { transform: scale(1.3); opacity: 0 } }
+
+@media (max-width: 900px) { .ct-grid { grid-template-columns: 1fr } .ct-sum { position: static } }
+@media (max-width: 600px) {
+  .ct-row { grid-template-columns: 92px 1fr; padding: 1.1rem 1.1rem }
+  .ct-side { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center }
+  .ct-clear { margin-inline: 1.1rem }
+}
+@media (prefers-reduced-motion: reduce) { .ct-page *, .ct-page *::before, .cartp-n { animation: none !important; transition: none !important } }
+/* the floating decorative drops must never create a sideways scrollbar on phones */
+.ct-page { overflow-x: clip }

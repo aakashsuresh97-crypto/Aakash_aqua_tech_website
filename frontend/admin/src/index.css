@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== page background: the website's sand + cream ===== */
+@layer base {
+  html { background: #eadfcc; }
+  body {
+    font-family: 'Outfit', 'DM Sans', ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
+    background:
+      radial-gradient(900px 520px at 0% 0%, rgba(255, 255, 255, .8), transparent 60%),
+      radial-gradient(900px 620px at 100% 100%, rgba(201, 162, 115, .3), transparent 60%),
+      linear-gradient(160deg, #f6eee1, #eadfcc);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2
+      disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  /* deep-blue -> teal pill (same as the website's buttons) */
+  .btn-primary {
+    @apply btn text-white;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #0b3f66, #0d8d97);
+    box-shadow: 0 8px 18px rgba(11, 63, 102, .28);
+    transition: transform .25s cubic-bezier(.2, .8, .2, 1), box-shadow .25s, filter .25s;
+  }
+  .btn-primary:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 14px 26px rgba(11, 63, 102, .34); filter: brightness(1.06); }
+  .btn-primary:active:not(:disabled) { transform: scale(.97); }
+  /* cream pill with a tan border */
+  .btn-secondary {
+    @apply btn;
+    border-radius: 999px;
+    color: #0b3f66;
+    border: 1.5px solid #c9a273;
+    background: linear-gradient(160deg, #fffdf9, #f1e5d1);
+    transition: transform .25s cubic-bezier(.2, .8, .2, 1), border-color .25s, box-shadow .25s;
+  }
+  .btn-secondary:hover:not(:disabled) { transform: translateY(-2px); border-color: #0b3f66; box-shadow: 0 10px 20px rgba(120, 90, 50, .18); }
+  .btn-secondary:active:not(:disabled) { transform: scale(.97); }
+  .btn-danger { @apply btn bg-red-600 text-white shadow-sm hover:bg-red-700; border-radius: 999px; }
+  .input {
+    @apply block w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm
+      placeholder:text-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/30;
+  }
+  .input-error { @apply border-red-400 focus:border-red-500 focus:ring-red-500/30; }
+}
+
+/* =====================================================================
+   SIDEBAR – the Spares page option list (sps-*), renamed ad-*.
+   Cream card, every row sways like a wave, hover fills with water, letters ripple, drop icon + shine on the open page, click ripple.
+===================================================================== */
+.ad-side {
+  isolation: isolate; overflow-x: hidden; overflow-y: auto;
+  background: linear-gradient(160deg, #fffdf9, #f7efe2 62%, #eedfc6);
+  border-right: 1px solid #e2d3b9;
+  box-shadow: 0 14px 34px rgba(120, 90, 50, .14), inset 0 1px 0 #fff;
+  animation: adGlow 5s ease-in-out infinite;
+}
+@keyframes adGlow {
+  0%, 100% { box-shadow: 0 14px 34px rgba(120, 90, 50, .14), inset 0 1px 0 #fff; }
+  50% { box-shadow: 0 22px 46px rgba(167, 127, 79, .32), inset 0 1px 0 #fff; }
+}
+
+.ad-brand { margin: 0 0 1.2rem; padding: 0 1rem; font: 700 1.3rem/1.1 'Outfit', sans-serif; letter-spacing: -.02em; color: #0d2540; }
+.ad-brand::after { content: ''; display: block; width: 46px; height: 4px; margin-top: .5rem; border-radius: 4px; background: linear-gradient(90deg, #c9a273, #0d8d97); transform-origin: left; animation: adLine .9s .2s cubic-bezier(.2, .8, .2, 1) backwards; }
+@keyframes adLine { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+.ad-group { margin: 0 0 .2rem; padding: .35rem 1rem; font: 600 .72rem 'Outfit', sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #a77f4f; }
+
+.ad-tab {
+  --amp: 9px; position: relative; overflow: hidden; display: flex; align-items: center; gap: .6rem; text-align: left; cursor: pointer;
+  /* rows are 28px wider than the sidebar so the sway never shows a gap at the edges (the sidebar clips them) */
+  width: calc(100% + 28px); margin: 0 -14px; padding: .8rem 1rem .8rem calc(1rem + 14px);
+  border: 0; background: transparent; font: 500 .92rem/1.25 'Outfit', sans-serif; letter-spacing: .01em; color: #0d2540; text-decoration: none;
+  border-bottom: 1px solid rgba(201, 162, 115, .35);
+  opacity: 0;
+  animation: adTabIn .75s cubic-bezier(.2, .9, .25, 1.15) forwards, adWave 4.2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 70ms), calc(var(--i) * -.3s);
+  transition: scale .2s, color .3s;
+}
+.ad-tab:active { scale: .97; }
+.ad-tab:focus-visible { outline: 2px solid #0d8d97; outline-offset: -3px; }
+@keyframes adTabIn { from { opacity: 0; transform: translateX(-40px) skewX(8deg); } to { opacity: 1; transform: none; } }
+@keyframes adWave { 0%, 100% { translate: calc(var(--amp) * -1) 0; } 50% { translate: var(--amp) 0; } }
+
+/* hover: the row fills up like water, with a rippling surface */
+.ad-tab::before {
+  content: ''; position: absolute; left: 0; right: 0; top: -7px; height: calc(100% + 7px); z-index: 0;
+  transform: translateY(108%); transition: transform .6s cubic-bezier(.2, .8, .2, 1);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 8' preserveAspectRatio='none'%3E%3Cpath fill='%23dcbf93' fill-opacity='.8' d='M0 5Q14 0 28 5T56 5V8H0Z'/%3E%3C/svg%3E") 0 0 / 56px 8px repeat-x,
+    linear-gradient(rgba(220, 191, 147, .8), rgba(232, 215, 189, .35)) 0 7px / 100% calc(100% - 7px) no-repeat;
+  animation: adLiquid 1.2s linear infinite; animation-play-state: paused;
+}
+.ad-tab:hover::before, .ad-tab:focus-visible::before { transform: none; animation-play-state: running; }
+@keyframes adLiquid { from { background-position: 0 0, 0 7px; } to { background-position: 56px 0, 0 7px; } }
+
+/* side bar grows */
+.ad-tab::after { content: ''; position: absolute; left: 14px; top: 0; width: 4px; height: 100%; z-index: 2; background: #a77f4f; transform: scaleY(0); transform-origin: top; transition: transform .4s cubic-bezier(.2, .8, .2, 1); }
+.ad-tab:hover::after, .ad-tab:focus-visible::after, .ad-tab.on::after { transform: scaleY(1); }
+
+/* label slides on hover, letters ripple like a wave */
+.ad-lbl { position: relative; z-index: 1; transition: transform .4s cubic-bezier(.2, .8, .2, 1); }
+.ad-tab:hover .ad-lbl, .ad-tab:focus-visible .ad-lbl { transform: translateX(7px); }
+.ad-tab.on .ad-lbl { animation: adPop .55s cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes adPop { 0% { transform: scale(.9); } 60% { transform: scale(1.07); } 100% { transform: scale(1); } }
+.ad-w { display: inline-block; white-space: nowrap; }
+.ad-ch { display: inline-block; }
+.ad-tab:hover .ad-ch, .ad-tab:focus-visible .ad-ch { animation: adLetter 1s ease-in-out infinite; animation-delay: calc(var(--c) * 45ms); }
+.ad-tab.on .ad-ch { animation: adLetter 2.4s ease-in-out infinite; animation-delay: calc(var(--c) * 70ms); }
+@keyframes adLetter { 0%, 55%, 100% { transform: translateY(0); } 22% { transform: translateY(-4px); } 38% { transform: translateY(1.5px); } }
+
+/* water-drop icon */
+.ad-dot { position: relative; z-index: 1; flex: none; width: 10px; height: 10px; border-radius: 50% 0 50% 50%; transform: rotate(-45deg) scale(.2); opacity: 0; background: linear-gradient(135deg, #e8d7bd, #a77f4f); transition: transform .45s cubic-bezier(.3, 1.6, .5, 1), opacity .3s; }
+.ad-tab:hover .ad-dot, .ad-tab:focus-visible .ad-dot { transform: rotate(-45deg) scale(1); opacity: 1; }
+.ad-tab.on .ad-dot { opacity: 1; transform: rotate(-45deg) scale(1.15); animation: adDrop 1.8s ease-in-out infinite, adRing 1.8s ease-out infinite; }
+@keyframes adDrop { 0%, 100% { transform: rotate(-45deg) scale(1.15) translate(0, 0); } 50% { transform: rotate(-45deg) scale(1.15) translate(-2px, -2px); } }
+@keyframes adRing { 0% { box-shadow: 0 0 0 0 rgba(167, 127, 79, .55); } 100% { box-shadow: 0 0 0 9px rgba(167, 127, 79, 0); } }
+
+/* the open page */
+.ad-tab.on { background: linear-gradient(120deg, #dcbf93, #c9a273); font-weight: 700; }
+.ad-tab.on::before { transform: translateY(108%); }
+.ad-shine { position: absolute; top: 0; bottom: 0; left: -50%; width: 40%; z-index: 1; pointer-events: none; opacity: 0; transform: skewX(-20deg); background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .6), transparent); }
+.ad-tab.on .ad-shine { opacity: 1; animation: adShine 3s ease-in-out infinite; }
+@keyframes adShine { 0%, 35% { left: -50%; } 100% { left: 130%; } }
+
+/* click ripple */
+.ad-rip { position: absolute; z-index: 0; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; pointer-events: none; background: rgba(167, 127, 79, .45); animation: adRip .8s ease-out forwards; }
+@keyframes adRip { from { transform: scale(1); opacity: .8; } to { transform: scale(44); opacity: 0; } }
+
+/* top bar: cream glass with a tan line */
+.ad-top { border-bottom: 1px solid #e2d3b9; box-shadow: 0 6px 20px rgba(120, 90, 50, .08); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ad-side, .ad-shine, .ad-dot, .ad-lbl, .ad-ch, .ad-tab::before, .ad-brand::after { animation: none !important; }
+  .ad-tab { animation: none; opacity: 1; translate: none; }
+}

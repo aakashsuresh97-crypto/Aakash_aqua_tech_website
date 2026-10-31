@@ -1,0 +1,108 @@
+/* Checkout, order, account, login and service-request styles (prefix st-). Page frame/buttons come from cart.css (ct-*). */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap }
+.st-box { padding: 1.8rem 1.8rem 2rem }
+.st-box h2 { margin: 0 0 1.2rem; font: 700 1.5rem 'Outfit', sans-serif; color: #0d2540 }
+.st-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(300px, 1fr); gap: 1.6rem; align-items: start }
+.st-order { position: sticky; top: 6.5rem }
+.st-two { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem }
+.st-f { display: grid; gap: .3rem; margin-bottom: .9rem }
+.st-f label, .st-lbl { font: 600 .9rem 'Outfit', sans-serif; color: #0d2540 }
+.st-f input, .st-f select, .st-f textarea, .st-login input { width: 100%; padding: .8rem .95rem; border: 1.5px solid #c9a273; border-radius: 14px; background: rgba(255, 255, 255, .8); font: 500 1rem 'Outfit', sans-serif; color: #0d2540 }
+.st-f input:focus-visible, .st-f select:focus-visible, .st-f textarea:focus-visible, .st-login input:focus-visible { outline: 3px solid rgba(13, 141, 151, .45); outline-offset: 1px }
+.st-f.bad input, .st-f.bad select { border-color: #b3261e }
+.st-f small, .st-bad { color: #b3261e; font-weight: 600 }
+.st-chk { display: flex; gap: .55rem; align-items: center; margin: .2rem 0 1rem; font-weight: 500 }
+.st-hint { color: #5b4e40; margin: .2rem 0 .8rem }
+.st-note { color: #5b4e40; font-size: .92rem }
+.st-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0 }
+.st-link { background: none; border: 0; padding: 0; color: #0b3f66; font: 600 .95rem 'Outfit', sans-serif; text-decoration: underline; cursor: pointer }
+.st-link:disabled { color: #8a7d6d; cursor: default; text-decoration: none }
+.st-login .btn { width: 100%; margin: .6rem 0 }
+.st-need { text-align: center; padding: 3rem 1.5rem }
+
+/* saved addresses */
+.st-saved { border: 0; padding: 0; margin: 0 0 1.2rem; display: grid; gap: .6rem }
+.st-addr { display: flex; gap: .7rem; align-items: flex-start; padding: .85rem 1rem; border: 1.5px solid rgba(167, 127, 79, .4); border-radius: 16px; cursor: pointer; background: rgba(255, 255, 255, .5) }
+.st-addr.on { border-color: #0b3f66; background: rgba(255, 255, 255, .9); box-shadow: 0 0 0 3px rgba(11, 63, 102, .12) }
+
+/* order table (matches the Razorpay-style "Your order" box) */
+.st-tbl { width: 100%; border-collapse: collapse; margin-bottom: 1rem }
+.st-tbl th, .st-tbl td { padding: .75rem .2rem; border-bottom: 1px solid rgba(167, 127, 79, .3); text-align: left; vertical-align: top }
+.st-tbl th:last-child, .st-tbl td:last-child { text-align: right; white-space: nowrap }
+.st-tbl thead th { font: 700 .85rem 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: .05em; color: #5b4e40 }
+.st-tbl tfoot th { font-weight: 600 }
+
+/* payment methods */
+.st-pay { border: 0; padding: 0; margin: 0 0 1rem; background: rgba(255, 255, 255, .55); border-radius: 18px; overflow: hidden }
+.st-pm { display: flex; gap: .7rem; align-items: center; padding: .95rem 1.1rem; font-weight: 600; cursor: pointer; border-bottom: 1px solid rgba(167, 127, 79, .25) }
+.st-pm.on { background: rgba(255, 255, 255, .9) }
+.st-pmnote { margin: 0; padding: .85rem 1.1rem; background: #ece6dc; color: #4a4036; font-size: .93rem; line-height: 1.5 }
+.st-priv { font-size: .88rem; color: #5b4e40; line-height: 1.55 }
+.st-priv a { color: #0b3f66; text-decoration: underline }
+.st-place { width: 100%; padding: 1.05rem 1.4rem; border: 0; border-radius: 12px; background: linear-gradient(95deg, #0b3f66, #0d8d97); color: #fff; font: 700 1.1rem 'Outfit', sans-serif; cursor: pointer; transition: background .2s, transform .2s }
+.st-place:hover:not(:disabled) { background: #0b3f66; transform: translateY(-2px) }
+.st-place:disabled { opacity: .6; cursor: wait }
+.st-place:focus-visible { outline: 3px solid #0d8d97; outline-offset: 3px }
+
+/* order status */
+.st-banner { padding: 1rem 1.2rem; border-radius: 16px; background: #e6f4ea; border: 1px solid #9ccfa8; color: #14532d; margin-bottom: 1.2rem; font-weight: 600 }
+.st-steps { display: flex; gap: .4rem; list-style: none; padding: 0; margin: 0 0 1.4rem; counter-reset: s }
+.st-steps li { flex: 1; text-align: center; padding: .55rem .2rem; border-radius: 999px; background: rgba(255, 255, 255, .6); color: #8a7d6d; font-weight: 600; text-transform: capitalize; font-size: .9rem }
+.st-steps li.on { background: linear-gradient(120deg, #0b3f66, #0d8d97); color: #fff }
+.st-actions { display: grid; gap: .7rem; margin-top: 1.2rem }
+.ct-btn.ghost { background: transparent; color: #0b3f66; border: 1.5px solid #0b3f66 }
+
+/* account */
+.st-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.2rem }
+.st-tabs button { padding: .6rem 1.1rem; border-radius: 999px; border: 1.5px solid #c9a273; background: rgba(255, 255, 255, .6); font: 600 .95rem 'Outfit', sans-serif; color: #0d2540; cursor: pointer }
+.st-tabs button.on { background: #0b3f66; color: #fff; border-color: #0b3f66 }
+.st-tabs .st-out { margin-left: auto }
+.st-list { list-style: none; padding: 0; margin: 0 0 1.2rem; display: grid; gap: .7rem }
+.st-list li { padding: .9rem 1rem; border-radius: 16px; background: rgba(255, 255, 255, .6); display: flex; justify-content: space-between; gap: 1rem; align-items: center }
+.st-list li > a { display: grid; grid-template-columns: auto 1fr auto auto; gap: .9rem; align-items: center; width: 100% }
+.st-list li > a span:nth-child(2) { color: #5b4e40; font-size: .9rem; min-width: 0; overflow: hidden; text-overflow: ellipsis }
+.st-chip { padding: .2rem .7rem; border-radius: 999px; font: 700 .78rem 'Outfit', sans-serif; text-transform: capitalize; background: #e3d2b8; color: #4a4036 }
+.st-chip.delivered, .st-chip.completed, .st-chip.confirmed { background: #d3efdb; color: #14532d }
+.st-chip.cancelled { background: #f8d7d4; color: #7a1a14 }
+.st-chip.shipped { background: #d3eef0; color: #0b3f66 }
+.st-row { display: flex; gap: .8rem; flex-wrap: wrap; align-items: center }
+.st-row .ct-btn { width: auto }
+
+/* service request */
+.st-sr { margin-top: 2rem; padding: 1.6rem; border-radius: 28px; background: rgba(255, 255, 255, .7); border: 1px solid #e3d2b8; max-width: 760px }
+.st-sr h3 { margin-top: 0 }
+
+/* home banners */
+.st-banners { width: 100%; margin: 1.2rem 0 0; position: relative; border-radius: 0; overflow: hidden; aspect-ratio: 16 / 5; background: #e8d7bd } /* full width, edge to edge */
+.st-banners a, .st-banners div.slide { position: absolute; inset: 0; opacity: 0; transition: opacity .6s; display: block }
+/* must be as specific as the rule above: a plain ".st-banners .on" lost to "div.slide", so banners without a link stayed invisible */
+.st-banners a.on, .st-banners div.slide.on { opacity: 1; z-index: 1 }
+.st-banners img { width: 100%; height: 100%; object-fit: cover }
+.st-banners figcaption { position: absolute; left: 1.4rem; bottom: 1.2rem; padding: .6rem 1rem; border-radius: 12px; background: rgba(13, 37, 64, .75); color: #fff; font-weight: 600 }
+.st-dots { position: absolute; bottom: .6rem; right: 1rem; z-index: 2; display: flex; gap: .4rem }
+.st-dots button { width: 12px; height: 12px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .6); cursor: pointer; padding: 0 }
+.st-dots button.on { background: #fff; box-shadow: 0 0 0 2px #0b3f66 }
+.cartp-acct { margin-right: .4rem }
+
+@media (max-width: 860px) {
+  .st-grid { grid-template-columns: 1fr }
+  .st-order { position: static }
+  .st-two { grid-template-columns: 1fr }
+  .st-list li > a { grid-template-columns: 1fr auto }
+  .st-banners { aspect-ratio: 16 / 8 }
+}
+@media (prefers-reduced-motion: reduce) { .st-banners a, .st-place { transition: none } }
+
+/* radios / checkboxes: the site-wide input rules would stretch them to full width */
+.st-pm, .st-chk, .st-addr { text-align: left; width: 100% }
+.st-pm input, .st-chk input, .st-addr input { width: auto; flex: none; margin: 0; accent-color: #0b3f66 }
+.st-pm span, .st-chk span, .st-addr span { flex: 1; text-align: left; line-height: 1.45 }
+.st-chk { justify-content: flex-start }
+
+/* login / sign-up window (email + password) */
+.st-login .st-pwrow{display:flex;align-items:center;gap:.5rem}
+.st-login .st-pwrow input{flex:1;min-width:0}
+.st-login .st-rules{list-style:none;margin:.5rem 0 .25rem;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.15rem .75rem;font-size:.78rem;color:#64748b}
+.st-login .st-rules li.ok{color:#15803d}
+.st-login .st-switch{margin:.9rem 0 0;font-size:.9rem;text-align:center}
+@media (max-width:420px){.st-login .st-rules{grid-template-columns:1fr}}

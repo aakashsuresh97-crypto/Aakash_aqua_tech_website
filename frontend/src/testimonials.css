@@ -1,0 +1,166 @@
+/* =====================================================================
+   TESTIMONIALS PAGE (zt-*)   sandal · cream · navy · gold stars
+   import in main.jsx BEFORE theme.css:  import './testimonials.css'
+   needs the script font in index.html <head> (Dancing Script) – see HOW-TO
+===================================================================== */
+.zt {
+  --navy: #0d2540; --teal: #0d8d97; --teal-d: #0b3f66; --mute: #5b4c3a;
+  --cream-1: #fdfaf4; --cream-2: #f6eddd; --sand-1: #efdcbc; --sand-2: #dcc197; --tan: #c9a273; --tan-d: #a77f4f; --gold: #f2b01e;
+  position: relative; overflow: hidden; min-height: 100svh; padding: 9.6rem 0 5rem;
+  font-family: 'Outfit', 'DM Sans', sans-serif; color: var(--navy);
+  background: linear-gradient(180deg, var(--cream-1), var(--cream-2) 60%, var(--cream-1));
+}
+.zt h1, .zt h2, .zt h3, .zt p { margin: 0 }
+.zt p { max-width: none }
+
+/* ---------------- animated background ---------------- */
+.zt-bg { position: absolute; inset: 0; pointer-events: none; z-index: 0 }
+.zt-arc { position: absolute; fill: none; stroke: rgba(201, 162, 115, .22); stroke-width: 10 }
+.zt-arc.a1 { width: 620px; left: -220px; top: 4%; animation: ztSpin 70s linear infinite }
+.zt-arc.a2 { width: 760px; right: -300px; top: 42%; animation: ztSpin 90s linear infinite reverse }
+@keyframes ztSpin { to { transform: rotate(360deg) } }
+.zt-dots { position: absolute; width: 74px; height: 54px; background: radial-gradient(circle, var(--tan-d) 1.7px, transparent 2.2px) 0 0 / 12px 12px; opacity: .55; animation: ztBlink 3.4s ease-in-out infinite }
+.zt-dots.d1 { left: 8%; top: 9rem }
+.zt-dots.d2 { right: 9%; top: 7.5rem; animation-delay: .8s }
+.zt-dots.d3 { left: 7%; bottom: 12rem; animation-delay: 1.6s }
+.zt-dots.d4 { right: 7%; bottom: 9rem; animation-delay: 2.4s }
+@keyframes ztBlink { 50% { opacity: .15; transform: scale(.94) } }
+.zt-bub { position: absolute; bottom: -40px; border-radius: 50%; opacity: 0;
+  background: radial-gradient(circle at 32% 30%, #fff, rgba(108, 208, 224, .3) 60%, rgba(108, 208, 224, .08));
+  border: 1.5px solid rgba(108, 208, 224, .55); animation: ztRise linear infinite }
+@keyframes ztRise { 0% { opacity: 0; transform: translate(0, 0) } 12% { opacity: .85 } 50% { transform: translate(18px, -50vh) } 100% { opacity: 0; transform: translate(-14px, -105vh) } }
+
+/* ---------------- heading ---------------- */
+.zt-head { position: relative; z-index: 1; text-align: center; padding: 0 1rem 3rem }
+.zt-script { font-family: 'Dancing Script', 'Brush Script MT', cursive; font-weight: 700; font-size: clamp(1.9rem, 4.4vw, 3rem); line-height: 1; color: var(--tan-d);
+  display: inline-block; clip-path: inset(0 100% 0 0); animation: ztWipe 1.5s cubic-bezier(.6, 0, .2, 1) .2s forwards;
+  background: linear-gradient(100deg, #b98a3e, #f2b01e, #b98a3e); background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; color: transparent }
+.zt-script { animation: ztWipe 1.5s cubic-bezier(.6, 0, .2, 1) .2s forwards, ztShine 5s linear 1.7s infinite }
+@keyframes ztWipe { to { clip-path: inset(0 0 -20% 0) } }
+@keyframes ztShine { to { background-position: 250% 0 } }
+.zt-head h1 { font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.05; font-weight: 800; letter-spacing: -.02em; margin-top: .2rem }
+.zt-word { display: inline-block; margin: 0 .14em }
+.zt-word span { display: inline-block; opacity: 0; transform: translateY(60px) rotate(8deg);
+  animation: ztLetter .8s cubic-bezier(.2, 1.3, .4, 1) calc(.5s + var(--c) * .06s) forwards, ztWave 3.2s ease-in-out calc(2.2s + var(--c) * .1s) infinite }
+@keyframes ztLetter { to { opacity: 1; transform: none } }
+@keyframes ztWave { 50% { transform: translateY(-6px) } }
+.zt-uline { display: block; width: 130px; height: 5px; margin: 1.2rem auto 0; border-radius: 9px; background: linear-gradient(90deg, var(--tan), var(--gold), var(--tan)); background-size: 200% 100%;
+  transform: scaleX(0); animation: ztGrow .8s ease 1.4s forwards, ztShine 3s linear 2.2s infinite }
+@keyframes ztGrow { to { transform: scaleX(1) } }
+.zt-sp { position: absolute; width: 26px; height: 26px; fill: var(--gold); opacity: 0; animation: ztTwinkle 2.6s ease-in-out infinite }
+.zt-sp.s1 { left: calc(50% - 300px); top: -.4rem }
+.zt-sp.s2 { left: calc(50% + 270px); top: 1.4rem; width: 18px; height: 18px; animation-delay: .9s }
+.zt-sp.s3 { left: calc(50% + 120px); top: 5.2rem; width: 14px; height: 14px; animation-delay: 1.7s; fill: var(--tan) }
+@keyframes ztTwinkle { 0%, 100% { opacity: 0; transform: scale(.2) rotate(0) } 50% { opacity: 1; transform: scale(1) rotate(90deg) } }
+
+/* ---------------- cards ---------------- */
+.zt-list { position: relative; z-index: 1; width: min(780px, 92%); margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 1.6rem }
+.zt-item { opacity: 0; will-change: transform; animation: ztFloat 6.5s ease-in-out infinite; animation-delay: calc(var(--n) * -3s) }
+.zt-item.in { opacity: 1; animation: ztIn 1s cubic-bezier(.2, .9, .25, 1.15) both, ztFloat 6.5s ease-in-out 1s infinite; animation-delay: 0s, calc(1s + var(--n) * -3s) }
+@keyframes ztIn { from { opacity: 0; transform: translateX(var(--fx)) rotate(calc(var(--rot) * 4)) scale(.82) } to { opacity: 1; transform: none } }
+@keyframes ztFloat { 50% { translate: 0 -9px } }
+
+.zt-card { position: relative; overflow: hidden; padding: 1.5rem 1.7rem 1.6rem; border-radius: 26px; transform: rotate(var(--rot)); transition: transform .45s cubic-bezier(.2, .9, .3, 1.3), box-shadow .45s;
+  box-shadow: 0 18px 36px rgba(120, 90, 50, .22), 0 2px 0 rgba(255, 255, 255, .8) inset }
+.sand .zt-card { background: linear-gradient(135deg, #f2e2c4, var(--sand-2)) }
+.cream .zt-card { background: linear-gradient(135deg, #fffefb, #fbf5ea) }
+.zt-card:hover { transform: rotate(0deg) scale(1.035); box-shadow: 0 28px 50px rgba(120, 90, 50, .32), 0 2px 0 rgba(255, 255, 255, .8) inset }
+.zt-card::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(110deg, transparent 38%, rgba(255, 255, 255, .55) 50%, transparent 62%); transform: translateX(-130%); animation: ztSweep 7s ease-in-out infinite }
+.cream .zt-card::after { animation-delay: 3.4s; background: linear-gradient(110deg, transparent 38%, rgba(201, 162, 115, .22) 50%, transparent 62%) }
+@keyframes ztSweep { 0% { transform: translateX(-130%) } 35%, 100% { transform: translateX(130%) } }
+.zt-card:hover::after { animation-duration: 1.3s }
+.zt-q { position: absolute; right: 1.2rem; bottom: .7rem; width: 74px; height: 74px; fill: none; stroke: rgba(167, 127, 79, .2); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; transition: transform .6s }
+.zt-card:hover .zt-q { transform: rotate(-12deg) scale(1.15) }
+
+.zt-top { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: .9rem }
+.zt-who { display: flex; align-items: center; gap: .9rem }
+.zt-av { position: relative; display: grid; place-items: center; width: 62px; height: 62px; flex: none }
+.zt-av b { font: 700 3.1rem/1 'Playfair Display', Georgia, 'Times New Roman', serif; color: #14110d; transition: transform .5s cubic-bezier(.2, 1.4, .4, 1) }
+.zt-card:hover .zt-av b { transform: scale(1.18) rotate(-6deg) }
+.zt-leaf { position: absolute; left: 20px; bottom: 2px; width: 28px; height: 28px; fill: none; stroke: var(--teal-d); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transform-origin: 20% 100%; animation: ztSway 3.2s ease-in-out infinite }
+@keyframes ztSway { 50% { transform: rotate(14deg) } }
+.zt-who h3 { font-size: 1.2rem; font-weight: 800; line-height: 1.2 }
+.zt-who small { display: block; margin-top: .15rem; font-size: .92rem; font-weight: 500; color: var(--mute) }
+
+.zt-stars { position: relative; overflow: hidden; display: inline-flex; gap: .22rem; padding: .5rem .9rem; border-radius: 999px; background: #fff; box-shadow: 0 6px 16px rgba(120, 90, 50, .2) }
+.zt-stars::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 40%, rgba(242, 176, 30, .38) 50%, transparent 60%); transform: translateX(-130%); animation: ztSweep 4.2s ease-in-out 1.5s infinite }
+.zt-star { width: 22px; height: 22px; fill: var(--gold); opacity: 0; transform: scale(0) rotate(-90deg) }
+.in .zt-star { animation: ztPop .55s cubic-bezier(.3, 1.8, .5, 1) calc(.7s + var(--s) * .12s) forwards }
+@keyframes ztPop { to { opacity: 1; transform: none } }
+.zt-card:hover .zt-star { animation: ztTwirl .7s ease calc(var(--s) * .08s) both }
+@keyframes ztTwirl { 0% { opacity: 1; transform: none } 50% { transform: scale(1.45) rotate(180deg) } 100% { opacity: 1; transform: rotate(360deg) } }
+
+.zt-card > p { position: relative; font-size: 1.06rem; line-height: 1.65; color: #2a2118; opacity: 0; transform: translateY(14px) }
+.in .zt-card > p { animation: ztText .8s ease .5s forwards }
+@keyframes ztText { to { opacity: 1; transform: none } }
+
+/* wider screens: two columns, right column dropped down a little (still tilted + alternating) */
+@media (min-width: 1100px) {
+  .zt-list { width: min(1160px, 92%); grid-template-columns: 1fr 1fr; column-gap: 2.6rem; row-gap: 1.8rem }
+  .zt-item:nth-child(even) { margin-top: 3.2rem }
+  /* checkerboard: row 2 swaps the colours */
+  .zt-item:nth-child(4n+3) .zt-card { background: linear-gradient(135deg, #fffefb, #fbf5ea) }
+  .zt-item:nth-child(4n+4) .zt-card { background: linear-gradient(135deg, #f2e2c4, var(--sand-2)) }
+}
+
+/* ---------------- closing block ---------------- */
+.zt-end { position: relative; z-index: 1; text-align: center; margin: 4.5rem auto 0; width: min(680px, 90%) }
+.zt-rv { opacity: 0; transform: translateY(30px); transition: opacity .8s, transform .8s cubic-bezier(.2, .8, .2, 1) }
+.zt-rv.in { opacity: 1; transform: none }
+.zt-end h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); font-weight: 800 }
+.zt-end p { margin-top: .6rem; color: var(--mute); font-size: 1.05rem; line-height: 1.6 }
+.zt-btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: .55rem; margin-top: 1.6rem; padding: .95rem 1.8rem; border: 0; border-radius: 999px; cursor: pointer;
+  font: 700 1.02rem 'Outfit', sans-serif; color: #fff; background: linear-gradient(120deg, var(--teal-d), #0d7a8a); box-shadow: 0 14px 30px rgba(11, 63, 102, .35); animation: ztBtn 2.6s ease-in-out infinite; transition: transform .25s }
+.zt-btn::after { content: ''; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 38%, rgba(255, 255, 255, .45) 50%, transparent 62%); transform: translateX(-130%); animation: ztSweep 3.6s ease-in-out infinite }
+.zt-btn:hover { transform: translateY(-3px) scale(1.05) }
+.zt-btn svg { width: 1.15em; height: 1.15em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s }
+.zt-btn:hover svg { transform: translateX(5px) }
+@keyframes ztBtn { 50% { box-shadow: 0 14px 30px rgba(11, 63, 102, .35), 0 0 0 10px rgba(13, 141, 151, .12) } }
+.zt-url { display: block; margin-top: 1.6rem; color: var(--navy); font-weight: 500; letter-spacing: .02em; text-decoration: none; border-bottom: 1px dashed var(--tan-d); width: max-content; margin-inline: auto }
+
+
+/* ---------------- intro line + counter ---------------- */
+.zt-intro { max-width: 60ch !important; margin: 1.3rem auto 0 !important; font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.65; color: var(--mute); opacity: 0; animation: ztText .9s ease 1.7s forwards }
+.zt-count { display: inline-flex; align-items: baseline; gap: .45rem; margin-top: 1.2rem; padding: .5rem 1.3rem; border-radius: 999px; background: rgba(201, 162, 115, .26); border: 1px solid rgba(201, 162, 115, .6);
+  opacity: 0; animation: ztText .9s ease 2s forwards }
+.zt-count b { font-size: 1.7rem; font-weight: 800; color: var(--teal-d); font-variant-numeric: tabular-nums }
+.zt-count span { font-weight: 600; color: var(--mute) }
+
+/* ---------------- city chips ---------------- */
+.zt-chips { position: relative; z-index: 1; display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; width: min(900px, 92%); margin: 0 auto 2.4rem }
+.zt-chip { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem 1rem; border-radius: 999px; cursor: pointer; font: 600 .95rem 'Outfit', sans-serif; color: var(--navy);
+  background: rgba(255, 253, 249, .9); border: 1px solid rgba(201, 162, 115, .65); box-shadow: 0 6px 14px rgba(120, 90, 50, .12); transition: transform .25s, background .25s, color .25s, box-shadow .25s }
+.zt-chip em { font-style: normal; font-size: .78rem; font-weight: 700; padding: .05rem .45rem; border-radius: 999px; background: rgba(201, 162, 115, .3); color: var(--tan-d) }
+.zt-chip:hover { transform: translateY(-3px) scale(1.05); box-shadow: 0 12px 22px rgba(120, 90, 50, .22) }
+.zt-chip.on { color: #fff; background: linear-gradient(120deg, var(--teal-d), #0d7a8a); border-color: transparent; box-shadow: 0 10px 22px rgba(11, 63, 102, .32) }
+.zt-chip.on em { background: rgba(255, 255, 255, .25); color: #fff }
+.zt-chips.in .zt-chip { animation: ztChip .5s cubic-bezier(.3, 1.6, .5, 1) calc(var(--i) * .05s) backwards }
+@keyframes ztChip { from { opacity: 0; transform: translateY(14px) scale(.6) } }
+.zt-pin { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; vertical-align: -.12em }
+.zt-who small .zt-pin { color: var(--teal-d); animation: ztPinB 2s ease-in-out infinite }
+@keyframes ztPinB { 50% { transform: translateY(-2px) } }
+
+/* ---------------- load more ---------------- */
+.zt-more { position: relative; z-index: 1; text-align: center; margin-top: 3.6rem }
+.zt-more > small { display: block; color: var(--mute); font-weight: 500 }
+.zt-more-b { display: flex; flex-wrap: wrap; justify-content: center; gap: .8rem }
+.zt-btn.alt { margin-top: 1.1rem }
+.zt-btn.ghost { margin-top: 1.1rem; color: var(--teal-d); background: rgba(255, 253, 249, .9); border: 1.5px solid var(--tan); box-shadow: 0 8px 18px rgba(120, 90, 50, .16); animation: none }
+.zt-btn.ghost::after { display: none }
+
+/* ---------------- phones ---------------- */
+@media (max-width: 640px) {
+  .zt { padding-top: 8rem }
+  .zt-card { padding: 1.2rem 1.1rem 1.3rem; transform: rotate(calc(var(--rot) * .7)) }
+  .zt-item { --fx: 0px !important }
+  .zt-sp.s1 { left: 6% } .zt-sp.s2 { left: 88% } .zt-sp.s3 { left: 72% }
+  .zt-star { width: 19px; height: 19px }
+  .zt-arc { opacity: .6 }
+}
+@media (prefers-reduced-motion: reduce) {
+  .zt *, .zt *::before, .zt *::after { animation: none !important; transition-duration: .01s !important }
+  .zt-item, .zt-rv, .zt-card > p, .zt-star, .zt-word span, .zt-intro, .zt-count { opacity: 1 !important; transform: none }
+  .zt-script { clip-path: none }
+  .zt-uline { transform: none }
+  .zt-card { transform: rotate(var(--rot)) }
+}

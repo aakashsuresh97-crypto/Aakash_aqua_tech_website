@@ -1,0 +1,36 @@
+/* ===== SANDY CREAM everywhere (Home + About us) – no cyan in any background. Import LAST in main.jsx ===== */
+:root { --sand: #eadfcc; --sand-tan: #c9a273 }          /* change --sand to re-colour both pages */
+
+/* page background */
+body, .bg { background: var(--sand); color: #0d2540 }
+.blob, .glow { display: none }
+.bubble { border-color: rgba(201, 162, 115, .55); background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .9), rgba(201, 162, 115, .12)) }
+.prog { background: linear-gradient(90deg, #0b3f66, #0d8d97); box-shadow: none }
+.glass { box-shadow: 0 12px 40px rgba(120, 90, 50, .2), inset 0 1px 0 rgba(255, 255, 255, .9) }
+.modal { background: rgba(13, 37, 64, .45) }
+/* About hero = full-width shop photo, faded to sand on the left so the text stays readable */
+.ap-hero { border-radius: 0;
+  background:
+    linear-gradient(90deg, rgba(234, 223, 204, .95) 0%, rgba(234, 223, 204, .82) 35%, rgba(234, 223, 204, .2) 65%, rgba(234, 223, 204, 0) 100%),
+    var(--ap-bg) center / cover no-repeat, var(--sand) }
+@media (max-width: 1000px) { .ap-hero { background: linear-gradient(rgba(234, 223, 204, .9), rgba(234, 223, 204, .78)), var(--ap-bg) center / cover no-repeat, var(--sand) } }         /* About hero = plain sand (Home hero keeps its cream image) */
+
+/* floating orbs: cyan -> tan */
+.hx-bub, .ap-bub, .about .about-g::before, .about .about-g::after {
+  border-color: rgba(201, 162, 115, .7); box-shadow: 0 0 18px rgba(201, 162, 115, .45);
+  background: radial-gradient(circle at 35% 35%, #fff, rgba(201, 162, 115, .3) 60%, rgba(201, 162, 115, .08)) }
+.hx-bub::after, .ap-bub::after { background: var(--sand-tan) }
+
+/* light-cyan pills -> light tan */
+.hx-badge, .ap-badge { background: rgba(241, 228, 207, .85); border-color: #d9c19c; color: #8a6a3d }
+.hx-badge svg { stroke: #a77f4f }
+.ap-cert { background: rgba(241, 228, 207, .8); border-color: #d9c19c; color: #6b5434 }
+.ap-cert svg { stroke: #a77f4f }
+
+/* home About card: remove the cyan glow */
+.about .about-g { box-shadow: 0 30px 70px rgba(120, 90, 50, .28), inset 0 1px 0 #fff;
+  background: radial-gradient(560px 340px at 4% 0%, rgba(255, 255, 255, .95), transparent 70%), radial-gradient(640px 400px at 100% 100%, rgba(201, 162, 115, .38), transparent 70%), linear-gradient(160deg, #fbf7f0, #f3e9da 60%, #e8d7bd) }
+
+/* About page teal blocks -> deep blue */
+.ap-year { background: radial-gradient(260px 160px at 20% 0%, rgba(255, 255, 255, .22), transparent 70%), linear-gradient(135deg, #0b3f66, #0d8d97); box-shadow: 0 22px 44px rgba(11, 63, 102, .3) }
+.ap-end { background: radial-gradient(520px 300px at 12% 0%, rgba(255, 255, 255, .2), transparent 70%), linear-gradient(120deg, #0b3f66, #0d8d97); box-shadow: 0 30px 70px rgba(11, 63, 102, .35) }

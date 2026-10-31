@@ -1,0 +1,17 @@
+/* =====================================================================
+   SHIPPING & CANCELLATION PAGE (sc)  – only the banner title; everything else comes from privacy.css + terms.css
+   In main.jsx (after terms.css):  import './shipping.css'
+===================================================================== */
+.sc .pp-banner { position: relative; container-type: inline-size }
+.sc .pp-banner img { max-height: 760px }
+
+/* live title on the dark band of the banner */
+.sc .pp-banner-title {
+  position: absolute; left: 0; right: 0; top: 44.4%; transform: translateY(-50%); z-index: 2; pointer-events: none;
+  text-align: center; white-space: nowrap; color: #fff;
+  font: 700 4.2cqw/1 'Outfit', sans-serif; letter-spacing: -.005em; text-shadow: 0 2px 16px rgba(0, 20, 50, .35);
+  animation: scTitle 1s .35s cubic-bezier(.2, .8, .2, 1) backwards;
+}
+@keyframes scTitle { from { opacity: 0; letter-spacing: .08em; filter: blur(6px) } }
+@media (max-width: 720px) { .sc .pp-banner-title { font-size: 6cqw } }
+@media (prefers-reduced-motion: reduce) { .sc .pp-banner-title { animation: none } }

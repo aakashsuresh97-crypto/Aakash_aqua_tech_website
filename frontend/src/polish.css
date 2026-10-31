@@ -1,0 +1,141 @@
+/* =====================================================================
+   POLISH – spacing scale, alignment, accessibility, mobile and CRO components. Imported last.
+===================================================================== */
+:root { --space-1: .5rem; --space-2: 1rem; --space-3: 1.5rem; --space-4: 2.5rem; --section: clamp(3.5rem, 7vw, 5.5rem) }
+html { scroll-padding-top: 96px; -webkit-text-size-adjust: 100% }
+img, svg, video { max-width: 100%; height: auto }
+img[width][height] { height: auto }
+main:focus { outline: 0 }
+h1, h2, h3 { text-wrap: balance }
+p { text-wrap: pretty }
+
+/* skip link + loading */
+.skip { position: fixed; left: 1rem; top: -4rem; z-index: 300; padding: .7rem 1.2rem; border-radius: 999px; background: #0b3f66; color: #fff; font-weight: 700; transition: top .2s }
+.skip:focus { top: 1rem }
+.route-loading { min-height: 60vh; display: grid; place-items: center; color: #4a3f33; font-weight: 600 }
+
+/* consistent vertical rhythm between home sections */
+main > section.wrap, main > .pz { margin-bottom: var(--section) }
+.wrap h2 { margin-bottom: var(--space-2) }
+.sub { margin: 0 auto var(--space-4); text-align: center }
+.faq h2, .faq .sub { text-align: center; margin-left: auto; margin-right: auto }
+.faq .fq { max-width: 860px; margin-left: auto; margin-right: auto }
+address { font-style: normal }
+.sp-empty address { max-width: 60ch; color: #5b4e40 }
+
+/* focus + touch comfort */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid #0b3f66; outline-offset: 3px; border-radius: 8px }
+button, .btn, .sp-btn, summary { touch-action: manipulation; -webkit-tap-highlight-color: transparent }
+input, select, textarea { font-size: 16px } /* stops iOS zooming into forms */
+.form-err { margin: .2rem 0 .8rem; color: #9b2c2c; font-weight: 600; font-size: .92rem }
+
+/* category page content */
+.sp-intro { max-width: 78ch; margin: 0 0 1.4rem !important; line-height: 1.75 }
+.sp-tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 22px }
+.sp-tablewrap .sp-spec { min-width: 420px }
+nav.sp-tiles, nav.sp-tabs { margin-top: 0 }
+
+/* CRO: trust strip under the payment row */
+.sp-trust { list-style: none; margin: .6rem 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem .9rem }
+.sp-trust li { display: flex; align-items: center; gap: .35rem; font-size: .8rem; font-weight: 600; color: #4a3f33 }
+.sp-trust span { color: #0b3f66 }
+
+/* CRO: related products */
+.sp-related { margin-top: 4rem }
+.sp-related h2 { text-align: center; font-size: 1.7rem; font-weight: 800; margin: 0 0 1.6rem }
+.sp-related h2::after { content: ''; display: block; width: 52px; height: 4px; margin: .5rem auto 0; border-radius: 4px; background: linear-gradient(90deg, #c9a273, #0d8d97) }
+.sp-rel-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem }
+.sp-rel { display: flex; flex-direction: column; gap: .3rem; padding: 1rem; border-radius: 24px; background: linear-gradient(160deg, #fffdf9, #f7efe2 62%, #eedfc6); border: 1px solid #fff; box-shadow: 0 14px 34px rgba(120, 90, 50, .16); transition: transform .3s, box-shadow .3s }
+.sp-rel:hover { transform: translateY(-4px); box-shadow: 0 22px 44px rgba(120, 90, 50, .24) }
+.sp-rel img { width: 100%; aspect-ratio: 1; object-fit: contain; border-radius: 16px; background: #fff; padding: .5rem }
+.sp-rel b { font-size: 1rem; line-height: 1.3; color: #0d2540 }
+.sp-rel span { font-weight: 600; color: #0b3f66 }
+.sp-rel small { color: #a77f4f }
+
+/* CRO: sticky action bar (phones only) */
+.cro-bar { display: none }
+@media (max-width: 860px) {
+  body { padding-bottom: calc(68px + env(safe-area-inset-bottom)) }
+  .cro-bar { position: fixed; z-index: 70; left: 0; right: 0; bottom: 0; display: grid; grid-template-columns: 1fr 1fr 1.5fr; gap: .5rem; padding: .6rem .8rem calc(.6rem + env(safe-area-inset-bottom)); background: rgba(251, 247, 240, .96); border-top: 1px solid #e2d3b9; box-shadow: 0 -10px 30px rgba(120, 90, 50, .2); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px) }
+  .cro-bar a, .cro-bar button { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 48px; border: 0; border-radius: 14px; font: 700 .78rem 'Outfit', sans-serif; text-transform: uppercase; letter-spacing: .05em; cursor: pointer }
+  .cro-bar svg { width: 20px; height: 20px; fill: currentColor }
+  .cro-call { background: #fff; color: #0b3f66; border: 1.5px solid #c9a273 !important }
+  .cro-wa { background: #fff; color: #0b3f66; border: 1.5px solid #c9a273 !important }
+  .cro-main { background: linear-gradient(120deg, #0b3f66, #0d7a8a); color: #fff; font-size: .9rem }
+  .cro-main small { font-size: .72rem; opacity: .9; letter-spacing: 0; text-transform: none }
+  .wa.btn { display: none }
+  .totop { bottom: calc(82px + env(safe-area-inset-bottom)) }
+}
+
+/* mobile: bigger tap targets, calmer spacing */
+@media (max-width: 1359px) {
+  .ni > a, .menu a { min-height: 44px; display: flex; align-items: center }
+  nav .btn.sm, .cartp { min-height: 44px; justify-content: center }
+}
+@media (max-width: 860px) {
+  .sp-rel-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+  .ftr { padding-top: 3rem }
+  .ftr .ft-col h3, .ftr .ft-col h4 { margin-bottom: 1rem }
+  .sp-tabs { gap: .2rem 1.2rem }
+  .sp-tabs a { min-height: 44px; display: inline-flex; align-items: center }
+  .sp-head h1 { font-size: clamp(2rem, 9vw, 2.6rem) }
+  .modal .box { max-height: 92svh; overflow: auto }
+}
+@media (max-width: 420px) { .sp-rel-grid { gap: .8rem } .sp-rel { padding: .7rem } .sp-pinfo h1 { font-size: 1.9rem } }
+@media (prefers-reduced-motion: reduce) { .skip { transition: none } }
+
+/* layout safety on small screens (footer columns + product grid must be allowed to shrink) */
+.sp-pdl > *, .sp-lay > *, .ftr .ft > * { min-width: 0 }
+@media (max-width: 980px) { .ftr .ft { grid-template-columns: 1fr 1fr } .sp-pdl, .sp-lay { grid-template-columns: minmax(0, 1fr) } }
+@media (max-width: 560px) { .ftr .ft { grid-template-columns: minmax(0, 1fr) } }
+.sp-chk input { min-width: 0 } .sp-chk span { max-width: 100% }
+
+/* ===== MOBILE / TABLET MENU: sub-categories must be clickable directly =====
+   Cause of the bug: index.css has ".dd:hover .menu { display:none }" for phones. The moment the finger / mouse touched a
+   sub-category, its menu was hidden (the :hover rule wins) and the click was lost; only after the parent (e.g. "Domestic RO")
+   was clicked first (class .o) did the ".dd.o:hover" rule keep it visible.
+   Fix: below 1360px the sub-menus are always shown and hover never hides them. */
+@media (max-width: 1359px) {
+  .dd .menu.imgmenu,
+  .dd:hover .menu.imgmenu,
+  .dd.o:hover .menu.imgmenu {
+    display: grid;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+}
+
+/* ===== SHARE BUTTON (product pages) ===== */
+.shr-row { display: flex; align-items: flex-start; justify-content: space-between; gap: .8rem }
+.shr-row h1 { margin: 0 }
+.shr { position: relative; flex: none }
+.shr-btn { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; cursor: pointer; color: #0b3f66;
+  background: rgba(201, 162, 115, .26); border: 1px solid rgba(201, 162, 115, .6); transition: transform .25s, background .25s, color .25s }
+.shr-btn:hover { transform: translateY(-2px); color: #fff; background: linear-gradient(120deg, #0b3f66, #0d8d97); border-color: transparent }
+.shr-pop { position: absolute; right: 0; top: calc(100% + 8px); z-index: 50; min-width: 170px; padding: .4rem; border-radius: 16px;
+  background: linear-gradient(160deg, #fffdf9, #f3e9da); box-shadow: 0 18px 40px rgba(120, 90, 50, .3), inset 0 1px 0 #fff; display: grid }
+.shr-pop a, .shr-pop button { display: block; width: 100%; text-align: left; padding: .6rem .8rem; border: 0; border-radius: 10px; background: none;
+  font: 600 .9rem 'Outfit', sans-serif; color: #0d2540; cursor: pointer }
+.shr-pop a:hover, .shr-pop button:hover { background: rgba(84, 154, 162, .22) }
+
+/* =====================================================================
+   NO SCROLL-REVEAL: everything is visible as soon as the page opens.
+   (Overrides the "hidden until scrolled into view" start state of every reveal class. Remove this block to bring the animation back.)
+   Mouse-tilt effects still work because only the not-yet-revealed (:not(.in)) transform is cleared.
+===================================================================== */
+.rv, .bp-rv, .pp-rv, .sv-rv, .zn-rv, .zt-rv,
+.bl-item, .sv-caps li, .zt-card > p, .zt-star, .zt-word span, .zt-intro, .zt-count, .bp-list li, .bp-list li svg,
+.about.rv .about-g > img, .about.rv .about-g > div {
+  opacity: 1 !important;
+  filter: none !important;
+}
+.rv:not(.in), .bp-rv:not(.in), .pp-rv:not(.in), .sv-rv:not(.in), .zn-rv:not(.in), .zt-rv:not(.in),
+.bl-item, .sv-caps li, .zt-card > p, .zt-star, .zt-word span, .bp-list li, .bp-list li svg,
+.about.rv .about-g > img, .about.rv .about-g > div {
+  transform: none !important;
+}
+.zt-item { opacity: 1 !important }
+.zt-script { clip-path: none !important }
+.sv-bar u { width: var(--w) !important }
+.bp-list li svg path { stroke-dashoffset: 0 !important }

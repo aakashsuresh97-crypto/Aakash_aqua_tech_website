@@ -1,0 +1,190 @@
+/* =====================================================================
+   SHOP / PRODUCT / CONTACT pages  (sp-*)  – sandy cream theme, same look as Home "About us" card
+   Palette: sand #eadfcc · cream #fbf7f0/#f3e9da/#e8d7bd · tan #c9a273 · navy #0d2540 · deep-blue #0b3f66
+===================================================================== */
+.sp-page, .sp-page * { box-sizing: border-box }
+.sp-page {
+  --sand: #eadfcc; --cream-1: #fbf7f0; --cream-2: #f3e9da; --cream-3: #e8d7bd;
+  --tan: #c9a273; --tan-d: #a77f4f; --navy: #0d2540; --deep: #0b3f66; --blue: #0d8d97; --teal: #0d8d97; --body: #5b4e40; --line: #e2d3b9;
+  --card: linear-gradient(160deg, #fffdf9, #f7efe2 62%, #eedfc6);
+  --shadow: 0 18px 44px rgba(120, 90, 50, .18), inset 0 1px 0 #fff;
+  width: min(1320px, 94%); margin: 0 auto; padding: 8.6rem 0 5rem;
+  font-family: 'Outfit', 'DM Sans', sans-serif; color: var(--navy);
+}
+.sp-page a { color: inherit }
+.sp-page h1, .sp-page h2, .sp-page h3, .sp-page h4 { font-family: 'Outfit', sans-serif; color: var(--navy); letter-spacing: -.02em }
+.sp-page p { color: var(--body); max-width: none }
+
+/* page heading + breadcrumb */
+.sp-head { margin-bottom: 1.4rem }
+.sp-head h1 { font-size: clamp(2.2rem, 4.6vw, 3.6rem); font-weight: 800; letter-spacing: -.04em; margin: 0 0 .3rem }
+.sp-head h1::after, .sp-ul { content: ''; display: block; width: 74px; height: 5px; margin: .7rem 0 0; border-radius: 6px; background: linear-gradient(90deg, var(--tan), var(--teal)) }
+.sp-crumb { font-size: .9rem; color: var(--body); margin-bottom: 1.2rem }
+.sp-crumb a { color: var(--deep); font-weight: 600 }
+.sp-crumb a:hover { color: var(--teal) }
+.sp-crumb span { color: var(--tan-d); font-weight: 600 }
+
+/* buttons: same deep-blue pill as "Learn more about us" */
+.sp-btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; gap: .5rem; cursor: pointer; border: 0; text-align: center;
+  padding: .95rem 1.8rem; border-radius: 999px; font: 700 .85rem 'Outfit', sans-serif; letter-spacing: .07em; text-transform: uppercase; color: #fff !important;
+  background: linear-gradient(120deg, #0b3f66, #0d7a8a); box-shadow: 0 14px 28px rgba(11, 63, 102, .28); transition: transform .3s, box-shadow .3s }
+.sp-btn:hover { transform: translateY(-3px); box-shadow: 0 20px 36px rgba(11, 63, 102, .36) }
+.sp-btn.ghost { background: linear-gradient(160deg, #fffdf9, #f1e5d1); color: var(--deep) !important; border: 1.5px solid var(--tan); box-shadow: 0 8px 20px rgba(120, 90, 50, .14) }
+.sp-btn.ghost:hover { border-color: var(--deep); box-shadow: 0 14px 26px rgba(120, 90, 50, .22) }
+.sp-btn.full { display: flex; width: 100%; margin-top: .7rem }
+.sp-btn .ripple { background: rgba(201, 162, 115, .5) }
+
+/* category tiles (scroll bar) */
+.sp-tiles { display: flex; gap: .9rem; overflow-x: auto; padding: .3rem .2rem 1rem; scrollbar-width: thin }
+.sp-tile { flex: 0 0 218px; display: flex; align-items: center; gap: .7rem; padding: .7rem 1rem; border-radius: 20px; font-size: .92rem; font-weight: 700;
+  background: var(--card); border: 1px solid #fff; box-shadow: 0 8px 22px rgba(120, 90, 50, .14); transition: .25s }
+.sp-tile img { width: 54px; height: 54px; object-fit: contain }
+.sp-tile:hover, .sp-tile.on { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(120, 90, 50, .24); border-color: var(--tan) }
+.sp-tile.on b { color: var(--deep) }
+.sp-ph { display: flex; align-items: center; justify-content: center; width: 54px; height: 54px; font-size: 1.9rem }
+
+/* brand tabs */
+.sp-brands { text-align: center; margin: 1.4rem 0 .6rem }
+.sp-brands h3 { font-size: 1.6rem; font-weight: 800; margin: 0 }
+.sp-brands .sp-ul { margin: .6rem auto 1.2rem }
+.sp-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem 2.2rem }
+.sp-tabs a { padding: .45rem .15rem; font-size: 1.05rem; font-weight: 500; color: var(--body); border-bottom: 2.5px solid transparent; transition: .2s }
+.sp-tabs a:hover { color: var(--deep) }
+.sp-tabs a.on { color: var(--navy); font-weight: 700; border-bottom-color: var(--tan-d) }
+.sp-hint { text-align: center; margin: 1.4rem auto 0 }
+.sp-count { color: var(--body); font-size: .92rem; margin: 1rem 0 1rem }
+
+/* filters + grid */
+.sp-lay { display: grid; grid-template-columns: 290px minmax(0, 1fr); gap: 1.6rem; align-items: start }
+.sp-filters { position: sticky; top: 108px; padding: .4rem 1.4rem; border-radius: 26px; background: var(--card); border: 1px solid #fff; box-shadow: var(--shadow) }
+.sp-fb { padding: 1.1rem 0; border-bottom: 1px solid var(--line) }
+.sp-fb:last-child { border: 0 }
+.sp-fb h4 { display: flex; align-items: center; gap: .4rem; margin: 0 0 .8rem; font-size: 1.05rem; font-weight: 700; cursor: pointer }
+.sp-fb h4 button { margin-left: auto; background: none; border: 0; color: var(--tan-d); font: 600 .85rem 'Outfit', sans-serif; cursor: pointer }
+.sp-fb label { display: flex; align-items: center; gap: .65rem; margin: .7rem 0; font-size: .92rem; color: var(--body); cursor: pointer }
+.sp-fb input[type=radio] { display: none }
+.sp-fb label i { flex: none; width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid var(--tan); background: #fff }
+.sp-fb input:checked + i { border: 5px solid var(--deep); background: #fff }
+.sp-dual { position: relative; height: 26px; margin: .4rem 0 .9rem }
+.sp-trk { position: absolute; top: 11px; left: 0; right: 0; height: 4px; border-radius: 4px; background: var(--line) }
+.sp-trk div { position: absolute; top: 0; bottom: 0; border-radius: 4px; background: linear-gradient(90deg, var(--tan), var(--deep)) }
+.sp-dual input { position: absolute; inset: 0; width: 100%; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; pointer-events: none; -webkit-appearance: none; appearance: none }
+.sp-dual input::-webkit-slider-thumb { pointer-events: auto; -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--deep); border: 3px solid #fff; box-shadow: 0 2px 8px rgba(11, 63, 102, .4) }
+.sp-dual input::-moz-range-thumb { pointer-events: auto; width: 18px; height: 18px; border-radius: 50%; background: var(--deep); border: 3px solid #fff }
+.sp-pin { display: flex; align-items: center; gap: .5rem; color: var(--tan-d) }
+.sp-pin label { margin: 0; flex: 1; padding: .5rem .6rem; border-radius: 12px; background: #fff; border: 1px solid var(--line) }
+.sp-pin input { width: 100%; padding: 0; border: 0; background: none; font: inherit; color: var(--navy); outline: 0; box-shadow: none; border-radius: 0 }
+
+.sp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.4rem }
+.sp-card { position: relative; display: flex; flex-direction: column; padding: 1.2rem; border-radius: 28px; background: var(--card); border: 1px solid #fff; box-shadow: var(--shadow); transition: transform .3s, box-shadow .3s }
+.sp-card:hover { transform: translateY(-5px); box-shadow: 0 26px 54px rgba(120, 90, 50, .26), inset 0 1px 0 #fff }
+.sp-pic { display: block; border-radius: 20px; background: radial-gradient(circle at 30% 20%, #fff, #f6ecdb); padding: .8rem }
+.sp-pic img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain }
+.sp-badge { position: absolute; top: 1.1rem; right: 1.1rem; z-index: 1; padding: .3rem .7rem; border-radius: 999px; background: var(--deep); color: #fff; font-size: .75rem; font-weight: 700; letter-spacing: .04em }
+.sp-card h3 { margin: 1rem 0 .4rem; font-size: 1.2rem; font-weight: 700; line-height: 1.25 }
+.sp-card h3 a:hover { color: var(--teal) }
+.sp-sm { margin: 0 0 .9rem !important; font-size: .9rem; line-height: 1.55; color: var(--body); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden }
+.sp-pr { margin-top: auto }
+.sp-pr b { display: block; margin-bottom: .2rem; color: var(--navy) }
+.sp-pr span { color: var(--body); font-size: .9rem } .sp-pr s { color: var(--tan-d) }
+.sp-pr small { color: var(--tan-d); font-size: .72rem }
+.sp-act { display: flex; gap: .6rem; margin-top: 1rem }
+.sp-act .sp-btn { flex: 1 1 0; min-width: 0; height: 46px; padding: 0 .5rem; font-size: .74rem; white-space: nowrap }
+.sp-empty { text-align: center; padding: 10.5rem 1rem 6rem; display: flex; flex-direction: column; align-items: center; gap: .6rem }
+.sp-empty h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); margin: 0 }
+.sp-empty p { margin: 0 0 .6rem }
+.sp-empty a:not(.sp-btn) { color: var(--deep); font-weight: 600 }
+.sp-none { grid-column: 1 / -1; text-align: center }
+
+/* product detail */
+.sp-pdl { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 3rem; align-items: start }
+.sp-pimg { position: sticky; top: 108px; padding: 2rem; border-radius: 36px; background: var(--card); border: 1px solid #fff; box-shadow: 0 30px 70px rgba(120, 90, 50, .26), inset 0 1px 0 #fff }
+.sp-pimg img { display: block; width: 100%; aspect-ratio: 1; object-fit: contain }
+.sp-pinfo h1 { font-size: clamp(2rem, 3.6vw, 3rem); font-weight: 800; letter-spacing: -.035em; margin: 0 0 .9rem }
+.sp-desc { line-height: 1.75; padding-bottom: 1.4rem; border-bottom: 1px solid var(--line); margin: 0 !important }
+.sp-pinfo h2 { font-size: 1.5rem; font-weight: 800; margin: 2rem 0 1rem }
+.sp-pinfo h2::after { content: ''; display: block; width: 52px; height: 4px; margin-top: .5rem; border-radius: 4px; background: linear-gradient(90deg, var(--tan), var(--teal)) }
+.sp-bf { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.6rem }
+.sp-bf li { display: flex; gap: .7rem; line-height: 1.5; font-size: .95rem; color: var(--body) }
+.sp-bf span { flex: none; color: var(--tan-d) }
+.sp-buybox { margin-top: 2rem; padding: 1.7rem; border-radius: 30px; background: var(--card); border: 1px solid #fff; box-shadow: var(--shadow) }
+.sp-buybox h3 { margin: 0; font-size: 1.4rem; color: var(--deep) }
+.sp-bp { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; margin: .8rem 0 .2rem }
+.sp-bp b { font-size: 1.9rem; color: var(--navy) } .sp-bp s { color: var(--tan-d) }
+.sp-bp em { font-style: normal; font-weight: 700; font-size: .8rem; padding: .3rem .8rem; border-radius: 999px; background: var(--deep); color: #fff }
+.sp-buybox small { color: var(--tan-d) }
+.sp-emi { display: flex; flex-direction: column; gap: .2rem; margin: 1.1rem 0; padding: .9rem 1.1rem; border-radius: 18px; border: 1px solid var(--line); background: linear-gradient(90deg, #fbf3e4, #f1e2c8) }
+.sp-emi span { font-size: .85rem; color: var(--body) }
+.sp-chk { display: block; font-weight: 700; margin: 1.1rem 0 }
+.sp-chk span { display: flex; gap: .6rem; margin-top: .5rem }
+.sp-chk input { flex: 1; width: auto; padding: .75rem 1.1rem; border: 1.5px solid var(--tan); border-radius: 999px; background: #fff; color: var(--navy); font: inherit; outline: 0 }
+.sp-chk input:focus { border-color: var(--deep); box-shadow: 0 0 0 4px rgba(11, 63, 102, .12) }
+.sp-chk button { padding: 0 1.4rem; border: 0; border-radius: 999px; background: var(--deep); color: #fff; font: 700 .85rem 'Outfit', sans-serif; cursor: pointer }
+.sp-msg { font-size: .88rem; color: var(--deep) !important; margin: 0 0 .6rem !important; font-weight: 500 }
+.sp-buybox details { padding: .9rem 0; border-top: 1px solid var(--line) }
+.sp-buybox summary { cursor: pointer; font-weight: 700 }
+.sp-buybox details ul { margin: .6rem 0 0 1.1rem; line-height: 1.7; font-size: .92rem; color: var(--body) }
+.sp-buybox details p { margin: .5rem 0 0; font-size: .92rem }
+.sp-qty { display: flex; align-items: center; gap: 1rem; margin: .8rem 0 }
+.sp-qty span { font-size: .85rem; color: var(--body) }
+.sp-qty div { display: flex; align-items: center; border: 1.5px solid var(--tan); border-radius: 14px; background: #fff }
+.sp-qty button { padding: .45rem .9rem; border: 0; background: none; font-size: 1.2rem; color: var(--deep); cursor: pointer }
+.sp-qty b { padding: 0 .8rem }
+.sp-call { margin: 1rem 0 !important; font-weight: 500 }
+.sp-call b { color: var(--deep) }
+.sp-abt p { line-height: 1.8; margin: 0 0 .9rem }
+.sp-spec { width: 100%; border-collapse: collapse; overflow: hidden; border-radius: 22px; background: var(--card); box-shadow: var(--shadow) }
+.sp-spec th, .sp-spec td { padding: .8rem 1.1rem; border-bottom: 1px solid var(--line); text-align: left; font-size: .92rem; color: var(--body) }
+.sp-spec th { width: 38%; background: rgba(201, 162, 115, .2); color: var(--navy); font-weight: 700 }
+.sp-spec tr:last-child th, .sp-spec tr:last-child td { border-bottom: 0 }
+.sp-specnote { margin-top: .8rem !important; font-size: .9rem }
+.sp-stages { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem }
+.sp-stages div { padding: .9rem 1.1rem; border-radius: 18px; background: var(--card); border: 1px solid #fff; border-left: 4px solid var(--tan); box-shadow: 0 6px 16px rgba(120, 90, 50, .12) }
+.sp-stages b { display: block; margin-bottom: .2rem; color: var(--deep) }
+.sp-stages span { font-size: .9rem; line-height: 1.55; color: var(--body) }
+.sp-faq { margin-bottom: .7rem; padding: .9rem 1.2rem; border-radius: 18px; background: var(--card); border: 1px solid #fff; box-shadow: 0 6px 16px rgba(120, 90, 50, .1) }
+.sp-faq summary { cursor: pointer; font-weight: 700 }
+.sp-faq p { margin: .6rem 0 0 }
+
+@media (max-width: 980px) {
+  .sp-lay, .sp-pdl { grid-template-columns: 1fr }
+  .sp-filters, .sp-pimg { position: static }
+  .sp-bf, .sp-stages { grid-template-columns: 1fr }
+  .sp-page { padding-top: 7.4rem }
+}
+@media (max-width: 560px) { .sp-grid { grid-template-columns: 1fr } .sp-act { flex-wrap: wrap } .sp-act .sp-btn { flex: 1 1 100% } }
+
+/* ===== product page: every sub-heading centred (with its accent bar) ===== */
+.sp-pinfo h2, .sp-abt h2 { text-align: center }
+.sp-pinfo h2::after, .sp-abt h2::after { margin-left: auto; margin-right: auto }
+
+/* ===== payment methods row (after "Buy it now") ===== */
+.sp-pay { margin: 1rem 0 .4rem; padding: .8rem 1rem 1rem; text-align: center; border-radius: 0 0 22px 22px; border: 1px solid var(--line); border-top: 0; background: #fff }
+.sp-pay span { display: block; margin-bottom: .5rem; font: 600 .78rem 'Outfit', sans-serif; letter-spacing: .1em; text-transform: uppercase; color: var(--tan-d) }
+.sp-pay img { display: block; margin: 0 auto; width: 100%; max-width: 535px; height: auto }
+.sp-pay { margin: .8rem 0 .6rem; border-radius: 22px; border-top: 1px solid var(--line) }
+
+/* ===== product image + option dropdown stay fixed on the left; only the right column scrolls ===== */
+.sp-left { position: sticky; top: 104px; align-self: start; display: flex; flex-direction: column; gap: 1rem }
+.sp-left .sp-pimg { position: static; padding: 1.4rem }
+.sp-left.has-opt .sp-pimg img { width: 100%; max-height: calc(100vh - 430px); min-height: 220px; aspect-ratio: auto; object-fit: contain }
+.sp-opt { padding: 1.1rem 1.3rem 1.2rem; border-radius: 26px; background: var(--card); border: 1px solid #fff; box-shadow: var(--shadow) }
+.sp-opt label { display: block; margin-bottom: .5rem; font: 800 1.05rem 'Outfit', sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--deep) }
+.sp-selwrap { position: relative }
+.sp-selwrap::after { content: ''; position: absolute; right: 1.1rem; top: 50%; width: 9px; height: 9px; margin-top: -7px; border-right: 2px solid var(--deep); border-bottom: 2px solid var(--deep); transform: rotate(45deg); pointer-events: none }
+.sp-selwrap select { width: 100%; padding: .85rem 2.6rem .85rem 1.1rem; border: 1.5px solid var(--tan); border-radius: 16px; background: #fff; color: var(--navy); font: 500 1rem 'Outfit', sans-serif; -webkit-appearance: none; appearance: none; cursor: pointer }
+.sp-selwrap select:focus { border-color: var(--deep); box-shadow: 0 0 0 4px rgba(11, 63, 102, .12); outline: 0 }
+.sp-opt-now { margin: .7rem 0 0 !important; font-size: .9rem; color: var(--body) } .sp-opt-now b { color: var(--navy) }
+.sp-opt-code { margin: .1rem 0 0 !important; font-size: .85rem; color: var(--tan-d); font-weight: 600 }
+.sp-opt-line { margin: .3rem 0 0 !important; font-size: .95rem } .sp-opt-line b { color: var(--deep) }
+@media (max-width: 980px) { .sp-left { position: static } .sp-left.has-opt .sp-pimg img { max-height: none; aspect-ratio: 1 } }
+
+/* product page: several option dropdowns (Commercial RO: Membrane / Panel / Pump) stay fixed on the left while the right side scrolls */
+.sp-left { max-height: calc(100vh - 124px) }
+.sp-left.has-opt .sp-pimg img { max-height: calc(100vh - 250px - var(--n, 1) * 88px); min-height: 150px }
+.sp-opt { display: flex; flex-direction: column; gap: .75rem; padding: .9rem 1.1rem 1rem }
+.sp-opt label { margin-bottom: .3rem; font-size: .9rem }
+.sp-selwrap select { padding: .65rem 2.4rem .65rem .95rem; font-size: .93rem; text-overflow: ellipsis }
+.sp-selwrap::after { margin-top: -6px }
+.sp-opt-code { margin: .3rem 0 0 !important }
+@media (max-width: 980px) { .sp-left { max-height: none } }

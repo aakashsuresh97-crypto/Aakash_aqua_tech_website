@@ -1,0 +1,246 @@
+/* =====================================================================
+   SERVICE PAGE (sv-*)   sandal-cream · tan · navy      — v2
+   import in main.jsx BEFORE theme.css / polish.css:  import './service.css'
+===================================================================== */
+.sv {
+  --navy: #0d2540; --blue: #0d8d97; --teal: #0d8d97; --deep: #0b3f66; --mute: #5b4c3a;
+  --cream-1: #fbf7f0; --cream-2: #f3e9da; --cream-3: #e8d7bd; --tan: #c9a273; --tan-d: #a77f4f;
+  position: relative; overflow: hidden; overflow: clip; padding-bottom: 4rem;
+  font-family: 'Outfit', 'DM Sans', sans-serif; color: var(--navy);
+  background:
+    radial-gradient(60rem 28rem at 10% 12%, rgba(201, 162, 115, .24), transparent 60%),
+    radial-gradient(52rem 26rem at 92% 60%, rgba(13, 141, 151, .09), transparent 60%),
+    linear-gradient(180deg, var(--cream-1), var(--cream-2) 50%, var(--cream-1));
+}
+.sv-wrap { width: min(1180px, 92%); margin-inline: auto }
+.sv-ic { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none }
+
+/* reveal */
+.sv-rv { opacity: 0; transform: translateY(30px) scale(.98); transition: opacity .8s cubic-bezier(.2, .7, .2, 1), transform .8s cubic-bezier(.2, .7, .2, 1); transition-delay: calc(var(--i, 0) * 90ms) }
+.sv-rv.in { opacity: 1; transform: none }
+
+/* ---------- hero ---------- */
+.sv-hero { --px: 0; --py: 0; position: relative; padding: 8rem 0 7.5rem; color: #fff;
+  background: radial-gradient(40rem 20rem at 80% 10%, rgba(201, 162, 115, .35), transparent 60%), linear-gradient(135deg, #0b3f66, var(--deep) 55%, #0d8d97);
+  background-size: 140% 140%; animation: svBg 14s ease-in-out infinite alternate }
+@keyframes svBg { to { background-position: 100% 60% } }
+.sv-hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr .85fr; gap: 2.5rem; align-items: center }
+.sv-hero-in { max-width: 700px }
+.sv-eyebrow { display: inline-flex; align-items: center; gap: .5rem; padding: .45rem 1rem; border-radius: 999px; font-weight: 600; font-size: .88rem; letter-spacing: .04em; color: var(--cream-1);
+  background: rgba(251, 247, 240, .12); border: 1px solid rgba(232, 215, 189, .5); backdrop-filter: blur(8px) }
+.sv-eyebrow .sv-ic { color: var(--tan); animation: svBob 2.4s ease-in-out infinite }
+.sv-hero h1 { margin: 1rem 0 .2rem; font-size: clamp(3.4rem, 9vw, 6.4rem); font-weight: 800; line-height: 1; letter-spacing: -.02em }
+.sv-hero h1 span { background: linear-gradient(100deg, #fff, var(--cream-3), #fff, var(--tan), #fff); background-size: 300% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: svShine 6s linear infinite }
+@keyframes svShine { to { background-position: 300% 0 } }
+.sv-sub { margin: .2rem 0 1.1rem; font-size: clamp(1.1rem, 2.4vw, 1.6rem); font-weight: 600; color: var(--cream-2) }
+.sv-sub em { font-style: normal; color: var(--tan) }
+.sv-hero p { margin: .7rem 0; font-size: 1.04rem; line-height: 1.75; color: rgba(251, 247, 240, .88) }
+.sv-hero strong { color: #fff }
+.sv-cta { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 1.6rem }
+.sv-btn { position: relative; overflow: hidden; display: inline-flex; align-items: center; gap: .55rem; padding: .85rem 1.6rem; border: 0; border-radius: 999px; cursor: pointer; text-decoration: none;
+  font: 700 .98rem 'Outfit', sans-serif; color: var(--navy); background: linear-gradient(120deg, var(--cream-3), var(--tan)); box-shadow: 0 12px 28px rgba(0, 0, 0, .25); transition: transform .3s, box-shadow .3s }
+.sv-btn::before { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .6), transparent); transform: translateX(-120%); transition: transform .7s }
+.sv-btn:hover { transform: translateY(-3px); box-shadow: 0 18px 34px rgba(0, 0, 0, .3) }
+.sv-btn:hover::before { transform: translateX(120%) }
+.sv-btn .sv-ic { transition: transform .3s }
+.sv-btn:hover .sv-ic { transform: translateX(4px) }
+.sv-btn.ghost { color: #fff; background: rgba(255, 255, 255, .1); border: 1.5px solid rgba(232, 215, 189, .7); box-shadow: none; backdrop-filter: blur(6px) }
+.sv-stats { list-style: none; margin: 2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .8rem }
+.sv-stats li { padding: .8rem 1.2rem; min-width: 8.5rem; border-radius: 18px; background: rgba(251, 247, 240, .1); border: 1px solid rgba(232, 215, 189, .35); backdrop-filter: blur(8px); transition: transform .3s, background .3s }
+.sv-stats li:hover { transform: translateY(-5px); background: rgba(251, 247, 240, .18) }
+.sv-stats b { display: block; font-size: 1.7rem; font-weight: 800; color: var(--tan) }
+.sv-stats span { font-size: .82rem; color: rgba(251, 247, 240, .85) }
+
+/* bubbles */
+.sv-bubs { position: absolute; inset: 0; overflow: hidden; pointer-events: none; transform: translate(calc(var(--px, 0) * -14px), calc(var(--py, 0) * -10px)); transition: transform .3s ease-out }
+.sv-bubs b { position: absolute; bottom: -40px; border-radius: 50%; border: 1.5px solid rgba(232, 215, 189, .55); background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .5), rgba(255, 255, 255, .05)); animation: svRise linear infinite }
+@keyframes svRise { 0% { opacity: 0; transform: translate(0, 0) } 12% { opacity: .9 } 50% { transform: translate(16px, -50%) } 100% { opacity: 0; transform: translate(-12px, -620px) } }
+@keyframes svBob { 50% { transform: translateY(-4px) } }
+
+/* hero droplet + orbit */
+.sv-orb { --orb: clamp(260px, 34vw, 400px); position: relative; width: var(--orb); height: var(--orb); margin-inline: auto; transform: translate(calc(var(--px, 0) * 14px), calc(var(--py, 0) * 12px)) }
+.sv-orb.sv-rv { transform: translateY(30px) scale(.98) }
+.sv-orb.sv-rv.in { transform: translate(calc(var(--px, 0) * 14px), calc(var(--py, 0) * 12px)) }
+.sv-hero .sv-orb { transition: opacity .8s, transform .35s ease-out }
+.sv-drop { position: absolute; left: 50%; top: 50%; width: 46%; transform: translate(-50%, -50%); filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .35)); animation: svFloat 5s ease-in-out infinite }
+@keyframes svFloat { 50% { transform: translate(-50%, -56%) } }
+.sv-ring { position: absolute; left: 50%; top: 50%; border-radius: 50%; border: 1.5px solid rgba(232, 215, 189, .55); transform: translate(-50%, -50%) scale(.3); opacity: 0; animation: svRipple 5.4s ease-out infinite }
+.sv-ring.r1 { width: 60%; height: 60% }
+.sv-ring.r2 { width: 78%; height: 78%; animation-delay: 1.8s }
+.sv-ring.r3 { width: 96%; height: 96%; animation-delay: 3.6s }
+@keyframes svRipple { 0% { opacity: .9; transform: translate(-50%, -50%) scale(.3) } 100% { opacity: 0; transform: translate(-50%, -50%) scale(1.1) } }
+.sv-orbit { position: absolute; inset: 0; animation: svSpin 26s linear infinite }
+.sv-orbit span { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform: rotate(var(--a)) translateY(calc(var(--orb) * -.46)) rotate(calc(var(--a) * -1)) }
+.sv-orbit em { position: absolute; left: 0; top: 0; display: grid; place-items: center; width: 4.3rem; height: 4.3rem; margin: -2.15rem 0 0 -2.15rem; border-radius: 50%; font-style: normal; line-height: 1.05;
+  color: var(--navy); background: linear-gradient(135deg, var(--cream-1), var(--cream-3)); box-shadow: 0 10px 24px rgba(0, 0, 0, .3); animation: svSpin 26s linear infinite reverse }
+.sv-orbit b { font-size: .95rem; font-weight: 800 }
+.sv-orbit small { font-size: .62rem; font-weight: 700; color: var(--tan-d); letter-spacing: .08em }
+@keyframes svSpin { to { transform: rotate(360deg) } }
+
+.sv-wave { position: absolute; left: 0; right: 0; bottom: -1px; height: 90px; z-index: 1; overflow: hidden; pointer-events: none }
+.sv-wave .sv-wave-in { position: absolute; left: 0; bottom: 0; width: 200%; max-width: none; height: 100%; display: block; will-change: transform }
+.sv-wave .a { animation: svWaveMove 16s linear infinite }
+.sv-wave .b { animation: svWaveMove 10s linear infinite reverse }
+.sv-wave .a path { fill: rgba(251, 247, 240, .55) }
+.sv-wave .b path { fill: var(--cream-1) }
+@keyframes svWaveMove { to { transform: translateX(-50%) } }
+
+/* ---------- capacity marquee ---------- */
+.sv-marq { overflow: hidden; padding: .9rem 0; background: var(--cream-1); border-bottom: 1px solid rgba(201, 162, 115, .4); -webkit-mask: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent) }
+.sv-marq-t { display: flex; gap: 2.2rem; width: max-content; animation: svMarq 38s linear infinite }
+.sv-marq:hover .sv-marq-t { animation-play-state: paused }
+.sv-marq-t span { display: inline-flex; align-items: center; gap: .5rem; white-space: nowrap; font-weight: 700; color: var(--deep) }
+.sv-marq-t .sv-ic { color: var(--blue) }
+@keyframes svMarq { to { transform: translateX(-50%) } }
+
+/* ---------- section heading ---------- */
+.sv-sec { padding-top: 3.6rem }
+.sv-sec-h { display: flex; align-items: center; gap: .9rem; margin-bottom: 1.9rem }
+.sv-sec-h h2 { flex: 0 1 auto; font-size: clamp(1.45rem, 3vw, 2.2rem); font-weight: 800; line-height: 1.2 }
+.sv-sec-ic { width: 2.1rem; height: 2.1rem; padding: .45rem; border-radius: 50%; color: #fff; background: linear-gradient(135deg, var(--deep), var(--blue)); box-sizing: content-box; animation: svBob 2.6s ease-in-out infinite }
+.sv-sec-h::after { content: ''; flex: 1 1 30px; min-width: 30px; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--tan), transparent) }
+
+/* shared spotlight on tilt cards */
+.sv-cat, .sv-plant, .sv-xcard { --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%; transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .25s ease-out, box-shadow .3s }
+
+/* keep tilt working on revealed cards that are also reveal elements */
+.sv-plant { transition: transform .25s ease-out, box-shadow .3s, opacity .8s }
+.sv-plant.sv-rv.in { transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) }
+
+/* ---------- categories ---------- */
+.sv-cats { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem }
+.sv-cat { position: relative; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; padding: 1.4rem 1.2rem 1.2rem; text-align: left; cursor: pointer; overflow: hidden;
+  font: inherit; color: var(--navy); background: linear-gradient(160deg, rgba(255, 253, 249, .95), rgba(243, 233, 218, .9)); border: 1px solid #fff; border-radius: 20px; box-shadow: 0 14px 34px rgba(120, 90, 50, .16), inset 0 1px 0 #fff }
+.sv-cat::before { content: ''; position: absolute; inset: 0; background: radial-gradient(220px circle at var(--mx) var(--my), rgba(13, 141, 151, .16), transparent 70%); opacity: 0; transition: opacity .3s }
+.sv-cat:hover::before { opacity: 1 }
+.sv-cat:hover { box-shadow: 0 22px 44px rgba(11, 63, 102, .22) }
+.sv-cat::after { content: ''; position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: linear-gradient(90deg, var(--tan), var(--blue)); transition: width .5s }
+.sv-cat:hover::after { width: 100% }
+.sv-cat b { position: relative; font-size: 1.05rem; line-height: 1.3 }
+.sv-num { position: absolute; top: .5rem; right: .9rem; font-size: 2.6rem; font-weight: 800; color: rgba(201, 162, 115, .32) }
+.sv-cat-ic { position: relative; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 14px; font-size: 1.4rem; color: #fff; background: linear-gradient(135deg, var(--deep), var(--blue)); transition: transform .4s }
+.sv-cat:hover .sv-cat-ic { transform: rotate(-8deg) scale(1.1) }
+.sv-go { position: relative; color: var(--tan-d); transition: transform .3s }
+.sv-cat:hover .sv-go { transform: translateX(6px) }
+
+/* ---------- how we design ---------- */
+.sv-steps { list-style: none; margin: 0; padding: 0; position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; counter-reset: s }
+.sv-steps::before { content: ''; position: absolute; left: 16%; right: 16%; top: 3.1rem; border-top: 2px dashed rgba(167, 127, 79, .6) }
+.sv-steps li { position: relative; text-align: center; padding: 1.4rem 1.2rem 1.5rem; border-radius: 22px; background: rgba(255, 255, 255, .7); border: 1px solid #fff; box-shadow: 0 12px 30px rgba(120, 90, 50, .12); transition: transform .35s, box-shadow .35s }
+.sv-steps li:hover { transform: translateY(-8px); box-shadow: 0 22px 40px rgba(11, 63, 102, .18) }
+.sv-step-n { position: absolute; top: .7rem; left: 1rem; font-weight: 800; font-size: 1.1rem; color: var(--tan-d) }
+.sv-step-ic { position: relative; z-index: 1; display: grid; place-items: center; width: 3.4rem; height: 3.4rem; margin: 0 auto .8rem; border-radius: 50%; font-size: 1.5rem; color: #fff; background: linear-gradient(135deg, var(--navy), var(--blue)); animation: svRing 2.8s infinite }
+.sv-steps h3 { margin: 0 0 .4rem; font-size: 1.15rem; font-weight: 800 }
+.sv-steps p { margin: 0; color: var(--mute); line-height: 1.65; font-size: .97rem }
+
+/* ---------- plant types ---------- */
+.sv-plants { display: grid; gap: 1.6rem; padding-top: 3.4rem }
+.sv-plant { scroll-margin-top: 6.5rem; display: grid; grid-template-columns: 1fr 1.1fr; gap: 2rem; align-items: center; padding: 2rem; border-radius: 26px; overflow: hidden; position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .72), rgba(243, 233, 218, .78)); border: 1px solid #fff; box-shadow: 0 18px 44px rgba(120, 90, 50, .16) }
+.sv-plant:hover { box-shadow: 0 26px 54px rgba(11, 63, 102, .22) }
+.sv-plant > * { position: relative; z-index: 1 }
+.sv-plant::before { content: ''; position: absolute; inset: 0; background: radial-gradient(320px circle at var(--mx) var(--my), rgba(201, 162, 115, .22), transparent 70%); opacity: 0; transition: opacity .3s }
+.sv-plant:hover::before { opacity: 1 }
+.sv-ghost { position: absolute !important; z-index: 0 !important; right: 1.4rem; top: -.4rem; font-size: clamp(5rem, 12vw, 9rem); font-weight: 800; line-height: 1; color: rgba(201, 162, 115, .2); pointer-events: none; animation: svBob 6s ease-in-out infinite }
+.sv-plant.flip .sv-plant-txt { order: 2 }
+.sv-plant.flip .sv-ghost { right: auto; left: 1.4rem }
+.sv-plant-ic { display: inline-grid; place-items: center; width: 3.4rem; height: 3.4rem; margin-bottom: .8rem; border-radius: 50%; font-size: 1.5rem; color: #fff; background: linear-gradient(135deg, var(--navy), var(--blue)); box-shadow: 0 0 0 0 rgba(13, 141, 151, .45); animation: svRing 2.8s infinite }
+@keyframes svRing { 70% { box-shadow: 0 0 0 16px rgba(13, 141, 151, 0) } 100% { box-shadow: 0 0 0 0 rgba(13, 141, 151, 0) } }
+.sv-plant h3 { margin: 0 0 .6rem; font-size: clamp(1.3rem, 2.4vw, 1.75rem); font-weight: 800 }
+.sv-plant p { margin: 0; line-height: 1.75; color: var(--mute) }
+.sv-caps { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem }
+.sv-caps li { padding: .75rem 1rem; border-radius: 14px; background: rgba(255, 255, 255, .88); border: 1px solid rgba(201, 162, 115, .45); opacity: 0; transform: translateX(26px); transition: opacity .6s, transform .6s, box-shadow .3s; transition-delay: calc(var(--i) * 110ms + 250ms) }
+.sv-plant.in .sv-caps li { opacity: 1; transform: none }
+.sv-plant.in .sv-caps li:hover { box-shadow: 0 10px 24px rgba(11, 63, 102, .16); transform: translateX(-5px); transition-delay: 0s }
+.sv-cap-l { display: flex; align-items: center; gap: .55rem; font-weight: 700; color: var(--deep) }
+.sv-cap-l .sv-ic { padding: .15rem; border-radius: 50%; color: #fff; background: var(--teal); width: 1.15rem; height: 1.15rem }
+.sv-bar { display: block; height: 7px; margin-top: .55rem; border-radius: 7px; background: rgba(201, 162, 115, .25); overflow: hidden }
+.sv-bar u { position: relative; display: block; height: 100%; width: 0; border-radius: 7px; background: linear-gradient(90deg, var(--tan), var(--blue)); transition: width 1.4s cubic-bezier(.2, .8, .2, 1); transition-delay: calc(var(--i) * 110ms + 600ms) }
+.sv-bar u::after { content: ''; position: absolute; inset: 0; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .7), transparent); transform: translateX(-100%); animation: svSweep 2.8s ease-in-out infinite }
+@keyframes svSweep { 60%, 100% { transform: translateX(100%) } }
+.sv-plant.in .sv-bar u { width: var(--w) }
+
+/* ---------- additional solutions ---------- */
+.sv-extra { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem }
+.sv-xcard { position: relative; overflow: hidden; display: flex; align-items: center; gap: 1rem; padding: 1.5rem; border-radius: 20px; color: #fff; background: linear-gradient(135deg, #0b3f66, var(--deep) 60%, var(--blue)); box-shadow: 0 16px 36px rgba(11, 63, 102, .3) }
+.sv-xcard::before { content: ''; position: absolute; inset: 0; background: radial-gradient(200px circle at var(--mx) var(--my), rgba(232, 215, 189, .3), transparent 70%) }
+.sv-xcard::after { content: ''; position: absolute; top: 0; bottom: 0; width: 40%; left: -60%; background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .18), transparent); transform: skewX(-20deg); transition: left .8s }
+.sv-xcard:hover::after { left: 130% }
+.sv-xcard b { position: relative; font-size: 1.08rem }
+.sv-xic { position: relative; display: grid; place-items: center; width: 3.1rem; height: 3.1rem; border-radius: 14px; font-size: 1.4rem; color: var(--navy); background: linear-gradient(135deg, var(--cream-3), var(--tan)) }
+.sv-xic .sv-ic { animation: svSpin 9s linear infinite }
+.sv-xcard:hover .sv-xic .sv-ic { animation-duration: 2s }
+
+/* ---------- laboratory (tabs) ---------- */
+.sv-lab { margin-top: 3.8rem; padding: 3.4rem 0; background: linear-gradient(180deg, rgba(232, 215, 189, .55), rgba(243, 233, 218, .35)); border-block: 1px solid rgba(201, 162, 115, .4) }
+.sv-tabs { position: relative; display: grid; grid-template-columns: repeat(var(--n), 1fr); width: min(100%, 460px); padding: .35rem; margin-bottom: 1.4rem; border-radius: 999px; background: rgba(255, 255, 255, .8); border: 1px solid rgba(201, 162, 115, .55); box-shadow: 0 8px 22px rgba(120, 90, 50, .12) }
+.sv-tabs-pill { position: absolute; top: .35rem; bottom: .35rem; left: .35rem; width: calc((100% - .7rem) / var(--n)); border-radius: 999px; background: linear-gradient(120deg, var(--navy), var(--blue)); box-shadow: 0 8px 18px rgba(11, 63, 102, .32); transform: translateX(calc(var(--k) * 100%)); transition: transform .55s cubic-bezier(.3, 1.35, .5, 1) }
+.sv-tabs button { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: .45rem; padding: .7rem .6rem; border: 0; border-radius: 999px; cursor: pointer; font: 700 .97rem 'Outfit', sans-serif; color: var(--deep); background: transparent; transition: color .3s }
+.sv-tabs button.on { color: #fff }
+.sv-tabs button:not(.on):hover { color: var(--blue) }
+.sv-tabs small { display: grid; place-items: center; min-width: 1.4rem; height: 1.4rem; padding: 0 .3rem; border-radius: 999px; font-size: .72rem; font-weight: 800; background: rgba(201, 162, 115, .35); transition: background .3s }
+.sv-tabs button.on small { background: rgba(255, 255, 255, .25) }
+
+.sv-labbox { display: grid; grid-template-columns: 230px 1fr; gap: 2rem; align-items: center; padding: 1.8rem; border-radius: 26px; background: rgba(255, 255, 255, .82); border: 1px solid #fff; box-shadow: 0 18px 44px rgba(120, 90, 50, .15) }
+.sv-lab-vis { position: relative; display: grid; justify-items: center; gap: .4rem }
+.sv-beaker { width: 170px; height: auto; filter: drop-shadow(0 14px 18px rgba(11, 63, 102, .2)); animation: svFloat2 5s ease-in-out infinite }
+@keyframes svFloat2 { 50% { transform: translateY(-6px) } }
+.sv-beaker.t0 { --c1: #0d8d97; --c2: #0b3f66 }
+.sv-beaker.t1 { --c1: #27c1b8; --c2: #0d8d97 }
+.sv-beaker.t2 { --c1: #d9ad6e; --c2: #a77f4f }
+.sv-liq { transition: transform 1.1s cubic-bezier(.3, 1.2, .4, 1) }
+.sv-beaker .wv { animation: svSlide 4.5s linear infinite }
+.sv-beaker .wv.a { animation-duration: 6.5s; animation-direction: reverse }
+@keyframes svSlide { to { transform: translateX(140px) } }
+.sv-beaker .bub { fill: rgba(255, 255, 255, .8); animation: svBub 3.6s ease-in infinite }
+@keyframes svBub { 0% { transform: translateY(0); opacity: 0 } 15% { opacity: .9 } 100% { transform: translateY(-120px); opacity: 0 } }
+.sv-lab-count { display: flex; align-items: baseline; gap: .4rem }
+.sv-lab-count b { font-size: 2.6rem; font-weight: 800; line-height: 1; color: var(--deep) }
+.sv-lab-count span { font-weight: 700; color: var(--tan-d); text-transform: uppercase; letter-spacing: .08em; font-size: .8rem }
+.sv-lab-body { animation: svPop .55s cubic-bezier(.2, .8, .2, 1) backwards }
+@keyframes svPop { from { opacity: 0; transform: translateY(16px) scale(.98) } }
+.sv-lab-body h3 { margin: 0 0 1.1rem; font-size: clamp(1.15rem, 2.2vw, 1.55rem); font-weight: 800 }
+.sv-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem }
+.sv-chips li { display: inline-flex; align-items: center; gap: .4rem; padding: .5rem 1rem .5rem .75rem; border-radius: 999px; font-weight: 600; font-size: .95rem; color: var(--deep); cursor: default;
+  background: linear-gradient(135deg, var(--cream-1), var(--cream-3)); border: 1px solid rgba(201, 162, 115, .6);
+  animation: svChip .55s cubic-bezier(.2, .9, .3, 1.3) backwards; animation-delay: calc(var(--i) * 55ms + 120ms); transition: transform .25s, background .25s, color .25s }
+.sv-chips li .sv-ic { width: .95em; height: .95em; padding: .12rem; border-radius: 50%; color: #fff; background: var(--teal); box-sizing: content-box }
+@keyframes svChip { from { opacity: 0; transform: translateY(14px) scale(.7) } }
+.sv-chips li:hover { transform: translateY(-4px) scale(1.06); color: #fff; background: linear-gradient(120deg, var(--navy), var(--blue)) }
+
+/* ---------- final call to action ---------- */
+.sv-end { padding-top: 3.6rem }
+.sv-end-in { position: relative; overflow: hidden; padding: 3.2rem 1.6rem; text-align: center; color: #fff; border-radius: 28px; background: linear-gradient(135deg, #0b3f66, var(--deep) 55%, #0d8d97); box-shadow: 0 24px 50px rgba(11, 63, 102, .35) }
+.sv-end-in::before { content: ''; position: absolute; inset: -40%; background: conic-gradient(from 0deg, transparent, rgba(201, 162, 115, .28), transparent 30%); animation: svSpin 12s linear infinite }
+.sv-end-in > * { position: relative }
+.sv-end-in > .sv-bubs { position: absolute }
+.sv-end .sv-cta { justify-content: center }
+.sv-end h2 { margin: 0 0 .5rem; font-size: clamp(1.5rem, 3.2vw, 2.3rem); font-weight: 800 }
+.sv-end p { margin: 0; color: rgba(251, 247, 240, .85) }
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px) {
+  .sv-hero-grid { grid-template-columns: 1fr }
+  .sv-orb { --orb: min(78vw, 340px); order: -1; margin-bottom: 1rem }
+  .sv-cats { grid-template-columns: repeat(2, 1fr) }
+  .sv-steps { grid-template-columns: 1fr }
+  .sv-steps::before { display: none }
+  .sv-plant { grid-template-columns: 1fr }
+  .sv-plant.flip .sv-plant-txt { order: 0 }
+  .sv-extra { grid-template-columns: 1fr }
+  .sv-labbox { grid-template-columns: 1fr; justify-items: center; text-align: center }
+  .sv-chips { justify-content: center }
+}
+@media (max-width: 560px) {
+  .sv-hero { padding: 6.4rem 0 5.5rem }
+  .sv-cats { grid-template-columns: 1fr }
+  .sv-plant { padding: 1.3rem }
+  .sv-sec-h::after { display: none }
+  .sv-orbit em { width: 3.4rem; height: 3.4rem; margin: -1.7rem 0 0 -1.7rem }
+  .sv-stats li { flex: 1 1 40%; min-width: 0 }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sv *, .sv *::before, .sv *::after { animation: none !important; transition: none !important }
+  .sv-rv, .sv-caps li { opacity: 1; transform: none }
+  .sv-bar u { width: var(--w) }
+}

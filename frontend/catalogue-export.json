@@ -1,0 +1,4770 @@
+{
+ "generated_at": "2026-10-27T06:11:35.424Z",
+ "categories": [
+  {
+   "slug": "domestic",
+   "name": "Domestic RO",
+   "subs": [
+    {
+     "slug": "ro",
+     "name": "RO Water Purifiers",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/03/Untitled-design-1-1.png",
+     "sort_order": 10
+    },
+    {
+     "slug": "uv",
+     "name": "UV Water Purifier",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/04/ProPlanet-3-_X-Angle01.webp",
+     "sort_order": 20
+    },
+    {
+     "slug": "alkaline",
+     "name": "Alkaline",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/03/ZeroB-Hydrolife.png",
+     "sort_order": 30
+    },
+    {
+     "slug": "gravity",
+     "name": "Gravity Water Purifier",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/03/Untitled-design-38-e1776358874556.png",
+     "sort_order": 40
+    },
+    {
+     "slug": "undersink",
+     "name": "Under Sink",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/03/cyclone-under-sink-water-purifiers-e1781104064938.jpg",
+     "sort_order": 50
+    }
+   ],
+   "sort_order": 10
+  },
+  {
+   "slug": "dispenser",
+   "name": "SS Water Dispenser",
+   "subs": [
+    {
+     "slug": "dispenser",
+     "name": "SS Water Dispenser",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/06/14010NH-300x300.jpeg",
+     "sort_order": 10
+    }
+   ],
+   "sort_order": 20
+  },
+  {
+   "slug": "industrial",
+   "name": "Commercial RO System",
+   "subs": [
+    {
+     "slug": "industrial",
+     "name": "Commercial RO System",
+     "image": null,
+     "sort_order": 10
+    }
+   ],
+   "sort_order": 30
+  },
+  {
+   "slug": "spares",
+   "name": "Spares",
+   "subs": [
+    {
+     "slug": "spares-inline",
+     "name": "INLINE FILTER CARTRIDGE",
+     "sort_order": 10
+    },
+    {
+     "slug": "spares-alkaline",
+     "name": "ALKALINE FILTER",
+     "sort_order": 20
+    },
+    {
+     "slug": "spares-membrane",
+     "name": "MEMBRANE ELEMENT",
+     "sort_order": 30
+    },
+    {
+     "slug": "spares-prefilter",
+     "name": "PRE FILTER HOUSING",
+     "sort_order": 40
+    },
+    {
+     "slug": "spares-memhousing",
+     "name": "MEMBRANE HOUSING",
+     "sort_order": 50
+    },
+    {
+     "slug": "spares-float",
+     "name": "FLOAT VALVE",
+     "sort_order": 60
+    },
+    {
+     "slug": "spares-smps",
+     "name": "SMPS",
+     "sort_order": 70
+    },
+    {
+     "slug": "spares-booster",
+     "name": "BOOSTER PUMP",
+     "sort_order": 80
+    },
+    {
+     "slug": "spares-teflon",
+     "name": "TEFLON TAPE",
+     "sort_order": 90
+    },
+    {
+     "slug": "spares-uvled",
+     "name": "UV LED OLIVAR",
+     "sort_order": 100
+    },
+    {
+     "slug": "spares-solenoid",
+     "name": "SOLENOID VALVE",
+     "sort_order": 110
+    },
+    {
+     "slug": "spares-pp",
+     "name": "PP SPUN FILTER",
+     "sort_order": 120
+    },
+    {
+     "slug": "spares-kit",
+     "name": "REPLACABLE FILTER CARTRIDGE KIT",
+     "sort_order": 130
+    },
+    {
+     "slug": "spares-uvchamber",
+     "name": "UV CHAMBER",
+     "sort_order": 140
+    },
+    {
+     "slug": "spares-mineral",
+     "name": "MINERAL CARTRIDGE",
+     "sort_order": 150
+    },
+    {
+     "slug": "spares-uf",
+     "name": "UF MEMBRANE",
+     "sort_order": 160
+    }
+   ],
+   "sort_order": 40
+  },
+  {
+   "slug": "wtp",
+   "name": "Water Treatment Plant",
+   "subs": [
+    {
+     "slug": "softner",
+     "name": "Softner",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/05/as3-filter2.png",
+     "sort_order": 10
+    },
+    {
+     "slug": "iron",
+     "name": "Iron Remover Filter",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/05/kent-automatic-water-softener-40l-1.png",
+     "sort_order": 20
+    },
+    {
+     "slug": "sand",
+     "name": "Sand Filter",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/05/kent-sand-filter-1.png",
+     "sort_order": 30
+    },
+    {
+     "slug": "vessel",
+     "name": "Vessel",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/03/Vessel.jpg",
+     "sort_order": 40
+    },
+    {
+     "slug": "sstank",
+     "name": "SS Tank",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/05/C320A38C-55B2-4DC4-8432-CD042858A031.png",
+     "sort_order": 50
+    },
+    {
+     "slug": "dm",
+     "name": "DM Plant",
+     "image": "https://aakashaquatech.in/wp-content/uploads/2026/03/dmplant.jpeg",
+     "sort_order": 60
+    }
+   ],
+   "sort_order": 50
+  },
+  {
+   "slug": "heatpump",
+   "name": "Heat Pump",
+   "subs": [
+    {
+     "slug": "heatpump",
+     "name": "Heat Pump",
+     "image": null,
+     "sort_order": 10
+    }
+   ],
+   "sort_order": 60
+  }
+ ],
+ "brands": [
+  {
+   "slug": "aakash",
+   "name": "Aakash",
+   "logo_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/LOGO-1024x624.png",
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro-aakash/",
+   "display_order": 10
+  },
+  {
+   "slug": "kent",
+   "name": "KENT Mineral RO",
+   "logo_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/water-purifier-firm-kent-r-o-files-draft-papers-for-ipo-1024x1022.avif",
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro/kent/ro-water-purifier-kent/",
+   "display_order": 20
+  },
+  {
+   "slug": "aosmith",
+   "name": "A.O. Smith",
+   "logo_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/Smith-2-1.png",
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro/ao-smith/ro-water-purifier/",
+   "display_order": 30
+  },
+  {
+   "slug": "zerob",
+   "name": "ZeroB",
+   "logo_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/images-1.png",
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro/zerob/ro-water-purifier-zerob/",
+   "display_order": 40
+  },
+  {
+   "slug": "wave",
+   "name": "Sarwan's Wave",
+   "logo_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/wave-ro-1024x512.png",
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro/wave/",
+   "display_order": 50
+  },
+  {
+   "slug": "conway",
+   "name": "Conway",
+   "logo_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/15870376876671331-2-scaled.png",
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro/conway-domestic-ro/",
+   "display_order": 60
+  },
+  {
+   "slug": "enviro",
+   "name": "Enviro",
+   "logo_url": null,
+   "website_url": null,
+   "display_order": 70
+  },
+  {
+   "slug": "purella",
+   "name": "Purella",
+   "logo_url": null,
+   "website_url": null,
+   "display_order": 80
+  },
+  {
+   "slug": "aquaguard",
+   "name": "Aquaguard",
+   "logo_url": null,
+   "website_url": null,
+   "display_order": 90
+  },
+  {
+   "slug": "senco",
+   "name": "Senco",
+   "logo_url": null,
+   "website_url": "https://aakashaquatech.in/product-category/domestic-ro/gravity/",
+   "display_order": 100
+  }
+ ],
+ "products": [
+  {
+   "slug": "kent-crown-plus-ro-water-purifier",
+   "name": "KENT Crown Plus RO Water Purifier",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 20000,
+   "mrp": 26500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crown-plus--300x300.webp",
+   "summary": "KENT Crown Plus RO Water Purifier uses multiple purification process of RO + UV + UF + Copper + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Copper + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crown-plus--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Copper + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-crystal-plus",
+   "name": "KENT Crystal Alkaline -WHITE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 20000,
+   "mrp": 26500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/kent-crystal-alkaline-white--300x300.webp",
+   "summary": "KENT Crystal Alkaline uses multiple purification process of RO + UV + UF + Alkaline + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/03/kent-crystal-alkaline-white--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-crystal-plus-black",
+   "name": "KENT Crystal Alkaline-BLACK",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 20000,
+   "mrp": 26500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crystal-alkline--300x300.webp",
+   "summary": "KENT Crystal Alkaline uses multiple purification process of RO + UV + UF + Alkaline + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crystal-alkline--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-elegant-black",
+   "name": "KENT Elegant (BLACK)",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 16500,
+   "mrp": 23500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-elegant-black--300x300.webp",
+   "summary": "KENT Elegant uses multiple purification process of RO + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-elegant-black--600x600.webp",
+    "features": [
+     "Purification: RO + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-elegant",
+   "name": "KENT Elegant-(WHITE)",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 16500,
+   "mrp": 23500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/FF044E7E-ACEA-4CCD-940C-E8C00CC87086-300x300.png",
+   "summary": "KENT Elegant uses multiple purification process of RO + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/FF044E7E-ACEA-4CCD-940C-E8C00CC87086-600x600.png",
+    "features": [
+     "Purification: RO + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-grand-iot",
+   "name": "KENT Grand IoT",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 21999,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/Info_Web_Grand_iOT-1_17853df5-dded-4091-b548-bc68ce9c83e7.png-300x300.webp",
+   "summary": "KENT Grand IoT uses multiple purification process of RO + UV + UF + Alkaline + Copper + TDS Control + IoT to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/04/Info_Web_Grand_iOT-1_17853df5-dded-4091-b548-bc68ce9c83e7.png-600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-grand-plus-black",
+   "name": "KENT Grand Plus-BLACK",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 19999,
+   "mrp": 25500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-black--300x300.webp",
+   "summary": "KENT Grand Plus uses multiple purification process of RO + UV + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-black--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-grand-plus-2",
+   "name": "KENT Grand Plus-WHITE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 19999,
+   "mrp": 25500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-white--300x300.webp",
+   "summary": "KENT Grand Plus uses multiple purification process of RO + UV + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-white--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-pearl-star-iot",
+   "name": "KENT Pearl Star IoT",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 22199,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-pearl-star-IOT--300x300.webp",
+   "summary": "KENT Pearl Star IoT uses multiple purification process of RO + UV + UF + Alkaline + Copper + TDS Control + IoT to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-pearl-star-IOT--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sapphire-black",
+   "name": "KENT Sapphire -BLACK",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 20500,
+   "mrp": 25000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire--300x300.webp",
+   "summary": "KENT Sapphire uses multiple purification process of RO + UF + Inline UV + Alkaline + Copper + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire--600x600.webp",
+    "features": [
+     "Purification: RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sapphire-iot",
+   "name": "KENT Sapphire IoT",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 21999,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire-IOT--300x300.webp",
+   "summary": "KENT Sapphire IoT is the most advanced RO water purifier that uses multiple purification processes of RO+UF+UV+Alkaline+Copper +TDS Control with advanced IoT intelligence that offers real-time display of water quality and filter life, along with timely notifications, automatic service call registration in case of any fault, and easy access to service and parts replacement history.",
+   "extra": {
+    "p": "RO + UF + UV + Alkaline + Copper + TDS Control + IoT",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire-IOT--600x600.webp",
+    "features": [
+     "Most Advanced RO Water Purifier with RO + UF + UV + Alkaline + Copper + TDS Control",
+     "IoT-Powered Smart Monitoring through Mobile App",
+     "Makes drinking water 100% pure",
+     "Retains essential natural minerals in purified water",
+     "Purified water enriched with the goodness of Active Copper",
+     "Provides alkaline water with pH 8.0–9.5",
+     "Digital display for real-time purity and performance monitoring",
+     "UV LED Light in the storage tank keeps purified water fresh and bacteria-free",
+     "High purification capacity of 20 L/hr",
+     "8L storage capacity",
+     "1 Year Warranty + 3 Years Free Service",
+     "Trusted by about 1 crore satisfied consumers across India"
+    ],
+    "about": [
+     "Intelligent RO + UF + UV + Alkaline + Copper + TDS Control purification delivers 100% pure, safe and healthy drinking water. It removes bacteria, viruses, chemicals, heavy metals and dissolved impurities such as arsenic, rust, pesticides and fluorides while meeting IS:10500 drinking water standards.",
+     "IoT-powered smart monitoring provides real-time information on water quality, filter life and purifier performance on your mobile, with automatic service call registration and complete service and parts replacement history.",
+     "Active Copper technology enriches the water with copper, and Alkaline technology delivers mineral-rich water with pH between 8.0 and 9.5. The UV LED light inside the storage tank prevents bacterial growth. Certified by BIS and NSF."
+    ],
+    "tech": [
+     [
+      "Model",
+      "KENT Sapphire IoT"
+     ],
+     [
+      "Application",
+      "Brackish / Tap / Municipal Corporation Water"
+     ],
+     [
+      "Product Code",
+      "111177B"
+     ],
+     [
+      "Mounting",
+      "Wall Mounting / Table Top"
+     ],
+     [
+      "Body Material",
+      "ABS Food Grade Plastic"
+     ],
+     [
+      "Purification Capacity",
+      "20 L/hr"
+     ],
+     [
+      "Storage Capacity",
+      "8L"
+     ],
+     [
+      "Net Weight",
+      "8.30 Kg"
+     ],
+     [
+      "Dimensions",
+      "360 (L) × 320 (W) × 500 (H) mm"
+     ],
+     [
+      "Input Power Supply",
+      "Single Phase 250V AC, 50Hz"
+     ],
+     [
+      "Total Power Consumption",
+      "60W"
+     ]
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sapphire-2",
+   "name": "KENT Sapphire-WHITE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 19999,
+   "mrp": 25000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/kent-sapphire-white--300x300.webp",
+   "summary": "KENT Sapphire uses multiple purification process of RO + UF + Inline UV + Alkaline + Copper + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/04/kent-sapphire-white--600x600.webp",
+    "features": [
+     "Purification: RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sterling-star-iot-black",
+   "name": "KENT Sterling Star IoT-BLACK",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 28000,
+   "mrp": 32500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-sterling-IOT--300x300.webp",
+   "summary": "KENT Sterling Star IoT uses multiple purification process of Premium under-the-counter purification to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "Premium under-the-counter purification",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-sterling-IOT--600x600.webp",
+    "features": [
+     "Purification: Premium under-the-counter purification",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sterling-star-iot",
+   "name": "KENT Sterling Star IoT-WHITE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "KENT Mineral RO",
+   "price": 20949,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/kent-sterling-IOT-white--300x300.webp",
+   "summary": "KENT Sterling Star IoT uses multiple purification process of Premium under-the-counter purification to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "Premium under-the-counter purification",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/kent-sterling-IOT-white--600x600.webp",
+    "features": [
+     "Purification: Premium under-the-counter purification",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "countertop-alkaline-water-machine",
+   "name": "COUNTERTOP ALKALINE WATER MACHINE",
+   "category": "domestic",
+   "subcategory": "alkaline",
+   "brand": "ZeroB",
+   "price": 309000,
+   "mrp": 360000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/1-1-1-300x300.webp",
+   "summary": "The ZeroB Alkaline RO Water Purifier features a 10 LPH purification capacity, 8-litre storage tank, and an advanced RO + alkaline purification system.",
+   "extra": {
+    "max": 0,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/03/1-1-1.webp",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "under-sink-water-ionizer-zerob-hydrolife",
+   "name": "UNDER SINK WATER IONIZER - ZEROB HYDROLIFE",
+   "category": "domestic",
+   "subcategory": "alkaline",
+   "brand": "ZeroB",
+   "price": 339000,
+   "mrp": 390000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/5--300x300.webp",
+   "summary": "This Under Sink Alkaline RO Water Purifier is a high-performance water purification system designed for homes and commercial kitchens.",
+   "extra": {
+    "max": 0,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/03/5-.webp",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "wall-mount-11-plate-zerob-hydrolife",
+   "name": "WALL MOUNT- 11 PLATE - ZEROB HYDROLIFE",
+   "category": "domestic",
+   "subcategory": "alkaline",
+   "brand": "ZeroB",
+   "price": 339000,
+   "mrp": 390000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/1-10-300x300.webp",
+   "summary": "The ZeroB Alkaline RO Water Purifier is a high-performance water purification system designed to deliver safe, healthy, and alkaline drinking water.",
+   "extra": {
+    "max": 0,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/03/1-10.webp",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "conway-d14010nh",
+   "name": "Conway D14010NH",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 56600,
+   "mrp": 65500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/14010NH-300x300.jpeg",
+   "summary": "Conway D14010NH stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 136900,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/14010NH.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "tech": [
+     [
+      "Net Weight in Kg (Approx.)",
+      "75"
+     ],
+     [
+      "Number of Power Cord",
+      "15 Amps 1 number."
+     ],
+     [
+      "Power Supply (AC 50 Hz)",
+      "180 to 260 Volts"
+     ],
+     [
+      "Heater Power in Watts",
+      "2000 watts"
+     ],
+     [
+      "MOC – Housing SS 304",
+      "Stainless Steel – 0.8 mm Sheet"
+     ],
+     [
+      "MOC – Normal Water Tank",
+      "LLDPE"
+     ],
+     [
+      "MOC – Hot Water Tank SS 304",
+      "Stainless Steel – 0.8 mm Sheet"
+     ]
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d140nn",
+   "name": "Conway D140NN",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 49600,
+   "mrp": 57500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/140N-300x300.jpeg",
+   "summary": "Conway D140NN stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 129800,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/140N.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d1414nc",
+   "name": "Conway D1414NC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 55500,
+   "mrp": 64000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NC-305080-300x300.jpeg",
+   "summary": "Conway D1414NC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 81400,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NC-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d14314nhc",
+   "name": "Conway D14314NHC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 60200,
+   "mrp": 69500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NHC-305080-300x300.jpeg",
+   "summary": "Conway D14314NHC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 86100,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NHC-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d2-n",
+   "name": "Conway D2 N",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 67300,
+   "mrp": 77500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/IMG_6159-300x300.jpeg",
+   "summary": "Conway D2 N stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 79100,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/03/IMG_6159.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d2020nc",
+   "name": "Conway D2020NC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 61400,
+   "mrp": 71000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NC-305080-300x300.jpeg",
+   "summary": "Conway D2020NC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 103800,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NC-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d20420nhc",
+   "name": "Conway D20420NHC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 67300,
+   "mrp": 77500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NHC-305080-300x300.jpeg",
+   "summary": "Conway D20420NHC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 109700,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NHC-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d222nh",
+   "name": "Conway D222NH",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 28300,
+   "mrp": 33000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080-300x300.jpeg",
+   "summary": "Conway D222NH stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 40100,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d222nh-2",
+   "name": "Conway D222NH",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 67300,
+   "mrp": 77500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_6160-300x300.jpeg",
+   "summary": "Conway D222NH stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 79100,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_6160.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d303nh",
+   "name": "Conway D303NH",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 34200,
+   "mrp": 39500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080-300x300.jpeg",
+   "summary": "Conway D303NH stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 60200,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d3040nc",
+   "name": "Conway D3040NC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 69600,
+   "mrp": 80500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NC-305080-300x300.jpeg",
+   "summary": "Conway D3040NC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 132200,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NC-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d30540nhc",
+   "name": "Conway D30540NHC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 76700,
+   "mrp": 88500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NHC-305080-300x300.jpeg",
+   "summary": "Conway D30540NHC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 139200,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NHC-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d30n-2",
+   "name": "Conway D30N",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 29500,
+   "mrp": 34000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NN-3050-80-300x300.jpeg",
+   "summary": "Conway D30N stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 55500,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NN-3050-80.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d504nh",
+   "name": "Conway D504NH",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 40100,
+   "mrp": 46500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080-300x300.jpeg",
+   "summary": "Conway D504NH stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 82600,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d50n",
+   "name": "Conway D50N",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 35400,
+   "mrp": 41000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NN-3050-80-300x300.jpeg",
+   "summary": "Conway D50N stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 77900,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NN-3050-80.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d701070nhc",
+   "name": "Conway D701070NHC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 107400,
+   "mrp": 125000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/701070NHC-300x300.jpeg",
+   "summary": "Conway D701070NHC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 187600,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/701070NHC.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d7070nc",
+   "name": "Conway D7070NC",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 100300,
+   "mrp": 120000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/7070NC-300x300.jpeg",
+   "summary": "Conway D7070NC stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 180500,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/7070NC.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d805nh",
+   "name": "Conway D805NH",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 48400,
+   "mrp": 56000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080-300x300.jpeg",
+   "summary": "Conway D805NH stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 110900,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NH-305080.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "conway-d80n",
+   "name": "Conway D80N",
+   "category": "dispenser",
+   "subcategory": "dispenser",
+   "brand": "Conway",
+   "price": 41300,
+   "mrp": 47500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/NN-3050-80-300x300.jpeg",
+   "summary": "Conway D80N stainless steel water dispenser. Multiple variants and options are available — contact us to choose the right model.",
+   "extra": {
+    "max": 103800,
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/NN-3050-80.jpeg",
+    "features": [
+     "Genuine Conway product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "variants": {
+     "label": "Model",
+     "options": [
+      {
+       "name": "ONLINE"
+      },
+      {
+       "name": "UV+OZONE"
+      },
+      {
+       "name": "ONLINE + UV"
+      },
+      {
+       "name": "+ RO 80 LPH"
+      },
+      {
+       "name": "+ RO 80 LPH + UV"
+      },
+      {
+       "name": "+ RO 120 LPH"
+      },
+      {
+       "name": "+ RO 120 LPH + UV"
+      }
+     ]
+    },
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "aakash-alive",
+   "name": "ALIVE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 16500,
+   "mrp": 19000,
+   "image_url": "/img/aakash/alive.png",
+   "summary": "The Alive RO Water Purifier is designed to deliver safe, healthy, and great-tasting drinking water for homes using brackish water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "tech": [
+     [
+      "Model",
+      "ALIVE"
+     ],
+     [
+      "Application",
+      "Suitable for Brackish Water"
+     ],
+     [
+      "Filter Life",
+      "Approx. 3000 Litres / 6 Months"
+     ],
+     [
+      "Filters",
+      "Sediment, Pre Carbon, Post Carbon"
+     ],
+     [
+      "Float",
+      "Membrella"
+     ],
+     [
+      "FR",
+      "Membrella / KFL"
+     ],
+     [
+      "Inline Set",
+      "Membrella"
+     ],
+     [
+      "Input Voltage",
+      "100–300V AC (50Hz)"
+     ],
+     [
+      "Installation",
+      "Counter Top"
+     ],
+     [
+      "Maximum Operating TDS",
+      "Up to 3000 PPM"
+     ],
+     [
+      "Membrane Type",
+      "Thin Film Composite (TFC)"
+     ],
+     [
+      "Minimum Inlet Pressure / Temperature",
+      "0.3 kg/cm², 10°C"
+     ],
+     [
+      "Operating Voltage",
+      "24V DC"
+     ],
+     [
+      "Product Dimensions",
+      "495 (H) × 250 (W) × 350 (L) mm"
+     ],
+     [
+      "Packing Dimensions",
+      "540 (H) × 295 (W) × 385 (L) mm"
+     ],
+     [
+      "Purification Capacity",
+      "12 Litres Per Hour"
+     ],
+     [
+      "Recovery Rate",
+      "More than 40% at 27°C ± 2°C"
+     ],
+     [
+      "SMPS",
+      "Membrella"
+     ],
+     [
+      "Solenoid Valve",
+      "Membrella / SLX"
+     ],
+     [
+      "Storage Capacity",
+      "9 Litres"
+     ],
+     [
+      "Technology",
+      "Reverse Osmosis (RO) System"
+     ],
+     [
+      "Total Power Consumption",
+      "50 W"
+     ],
+     [
+      "Tubing",
+      "5 Metres"
+     ],
+     [
+      "System Weight",
+      "7.3 kg (Approx.)"
+     ],
+     [
+      "Country of Origin",
+      "India"
+     ]
+    ],
+    "np": false,
+    "big": "/img/aakash/alive.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-2090",
+   "name": "AQUA 2090",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 11499,
+   "mrp": 13500,
+   "image_url": "/img/aakash/aqua-2090.png",
+   "summary": "AQUA 2090 is a domestic RO water purifier with selectable model options for clean everyday drinking-water use. It uses RO purification.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-2090.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-9090",
+   "name": "AQUA 9090",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 18500,
+   "mrp": 21500,
+   "image_url": "/img/aakash/aqua-9090.png",
+   "summary": "The Aqua 9090 Aqua Green RO Water Purifier combines advanced Reverse Osmosis (RO) technology with a stylish Aqua Green finish.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-9090.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-crizel",
+   "name": "Aqua Crizel",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 0,
+   "mrp": 0,
+   "image_url": "/img/aakash/aqua-crizel.png",
+   "summary": "The Aqua Crizel RO Water Purifier combines advanced Reverse Osmosis (RO) technology with a stylish Aqua Green finish to deliver clean, safe drinking water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": true,
+    "big": "/img/aakash/aqua-crizel.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "aakash-aqua-digi",
+   "name": "AQUA DIGI",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 0,
+   "mrp": 0,
+   "image_url": "/img/aakash/aqua-digi.png",
+   "summary": "The Aqua Digi RO Water Purifier is designed to provide clean, safe, and great-tasting drinking water for homes using brackish water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": true,
+    "big": "/img/aakash/aqua-digi.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "aakash-aqua-flip",
+   "name": "AQUA FLIP",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 16500,
+   "mrp": 19000,
+   "image_url": "/img/aakash/aqua-flip.png",
+   "summary": "The Aqua Flip RO Water Purifier is engineered to provide pure, safe, and refreshing drinking water for households using brackish water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-flip.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-fresh-ro-uv-black",
+   "name": "AQUA FRESH – RO+UV (BLACK)",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 11999,
+   "mrp": 14000,
+   "image_url": "/img/aakash/aqua-fresh-ro-uv-black.png",
+   "summary": "The Aqua Fresh RO + UV Water Purifier combines advanced RO and UV purification technologies to deliver clean, safe, and healthy drinking water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "p": "RO + UV",
+    "np": false,
+    "big": "/img/aakash/aqua-fresh-ro-uv-black.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-innovica",
+   "name": "Aqua Innovica",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 16500,
+   "mrp": 21500,
+   "image_url": "/img/aakash/aqua-innovica.png",
+   "summary": "AQUA INNOVICA is a premium domestic RO water purifier designed for brackish water with TDS up to 3000 PPM.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-innovica.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-jade",
+   "name": "AQUA JADE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 11000,
+   "mrp": 13500,
+   "image_url": "/img/aakash/aqua-jade.png",
+   "summary": "The Aqua Jade RO Water Purifier is designed to provide pure, safe, and refreshing drinking water for households using brackish water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-jade.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-mars",
+   "name": "AQUA MARS",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 9999,
+   "mrp": 13000,
+   "image_url": "/img/aakash/aqua-mars.png",
+   "summary": "The Aqua Mars RO Water Purifier is designed to provide safe, healthy, and great-tasting drinking water for homes using brackish water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-mars.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-neeo",
+   "name": "Aqua NEEO",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 16500,
+   "mrp": 19000,
+   "image_url": "/img/aakash/aqua-neeo.png",
+   "summary": "The Aqua Neeo RO + UV + Alkaline Water Purifier is designed to deliver pure, safe, and mineral-rich drinking water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "p": "RO + UV + Alkaline",
+    "np": false,
+    "big": "/img/aakash/aqua-neeo.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aakash-aqua-nine",
+   "name": "AQUA NINE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aakash",
+   "price": 13000,
+   "mrp": 16500,
+   "image_url": "/img/aakash/aqua-nine.png",
+   "summary": "The Aqua Nine Black RO Water Purifier is designed to provide clean, safe, and great-tasting drinking water for homes using brackish water.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": false,
+    "big": "/img/aakash/aqua-nine.png",
+    "features": [
+     "Genuine Aakash product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-crown-plus-ro-water-purifier-uv",
+   "name": "KENT Crown Plus RO Water Purifier",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 20000,
+   "mrp": 26500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crown-plus--600x600.webp",
+   "summary": "KENT Crown Plus RO Water Purifier uses multiple purification process of RO + UV + UF + Copper + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Copper + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crown-plus--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Copper + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-crystal-plus-uv",
+   "name": "KENT Crystal Alkaline -WHITE",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 20000,
+   "mrp": 26500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/03/kent-crystal-alkaline-white--600x600.webp",
+   "summary": "KENT Crystal Alkaline uses multiple purification process of RO + UV + UF + Alkaline + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/03/kent-crystal-alkaline-white--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-crystal-plus-black-uv",
+   "name": "KENT Crystal Alkaline-BLACK",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 20000,
+   "mrp": 26500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crystal-alkline--600x600.webp",
+   "summary": "KENT Crystal Alkaline uses multiple purification process of RO + UV + UF + Alkaline + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-crystal-alkline--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-elegant-black-uv",
+   "name": "KENT Elegant (BLACK)",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 16500,
+   "mrp": 23500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-elegant-black--600x600.webp",
+   "summary": "KENT Elegant uses multiple purification process of RO + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-elegant-black--600x600.webp",
+    "features": [
+     "Purification: RO + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-elegant-uv",
+   "name": "KENT Elegant-(WHITE)",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 16500,
+   "mrp": 23500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/FF044E7E-ACEA-4CCD-940C-E8C00CC87086-600x600.png",
+   "summary": "KENT Elegant uses multiple purification process of RO + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/FF044E7E-ACEA-4CCD-940C-E8C00CC87086-600x600.png",
+    "features": [
+     "Purification: RO + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-grand-iot-uv",
+   "name": "KENT Grand IoT",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 21999,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/Info_Web_Grand_iOT-1_17853df5-dded-4091-b548-bc68ce9c83e7.png-600x600.webp",
+   "summary": "KENT Grand IoT uses multiple purification process of RO + UV + UF + Alkaline + Copper + TDS Control + IoT to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/04/Info_Web_Grand_iOT-1_17853df5-dded-4091-b548-bc68ce9c83e7.png-600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-grand-plus-black-uv",
+   "name": "KENT Grand Plus-BLACK",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 19999,
+   "mrp": 25500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-black--600x600.webp",
+   "summary": "KENT Grand Plus uses multiple purification process of RO + UV + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-black--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-grand-plus-2-uv",
+   "name": "KENT Grand Plus-WHITE",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 19999,
+   "mrp": 25500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-white--600x600.webp",
+   "summary": "KENT Grand Plus uses multiple purification process of RO + UV + UF + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-grand-plus-white--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-pearl-star-iot-uv",
+   "name": "KENT Pearl Star IoT",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 22199,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-pearl-star-IOT--600x600.webp",
+   "summary": "KENT Pearl Star IoT uses multiple purification process of RO + UV + UF + Alkaline + Copper + TDS Control + IoT to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-pearl-star-IOT--600x600.webp",
+    "features": [
+     "Purification: RO + UV + UF + Alkaline + Copper + TDS Control + IoT",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sapphire-black-uv",
+   "name": "KENT Sapphire -BLACK",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 20500,
+   "mrp": 25000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire--600x600.webp",
+   "summary": "KENT Sapphire uses multiple purification process of RO + UF + Inline UV + Alkaline + Copper + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire--600x600.webp",
+    "features": [
+     "Purification: RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sapphire-iot-uv",
+   "name": "KENT Sapphire IoT",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 21999,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire-IOT--600x600.webp",
+   "summary": "KENT Sapphire IoT is the most advanced RO water purifier that uses multiple purification processes of RO+UF+UV+Alkaline+Copper +TDS Control with advanced IoT intelligence that offers real-time display of water quality and filter life, along with timely notifications, automatic service call registration in case of any fault, and easy access to service and parts replacement history.",
+   "extra": {
+    "p": "RO + UF + UV + Alkaline + Copper + TDS Control + IoT",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-shappire-IOT--600x600.webp",
+    "features": [
+     "Most Advanced RO Water Purifier with RO + UF + UV + Alkaline + Copper + TDS Control",
+     "IoT-Powered Smart Monitoring through Mobile App",
+     "Makes drinking water 100% pure",
+     "Retains essential natural minerals in purified water",
+     "Purified water enriched with the goodness of Active Copper",
+     "Provides alkaline water with pH 8.0–9.5",
+     "Digital display for real-time purity and performance monitoring",
+     "UV LED Light in the storage tank keeps purified water fresh and bacteria-free",
+     "High purification capacity of 20 L/hr",
+     "8L storage capacity",
+     "1 Year Warranty + 3 Years Free Service",
+     "Trusted by about 1 crore satisfied consumers across India"
+    ],
+    "about": [
+     "Intelligent RO + UF + UV + Alkaline + Copper + TDS Control purification delivers 100% pure, safe and healthy drinking water. It removes bacteria, viruses, chemicals, heavy metals and dissolved impurities such as arsenic, rust, pesticides and fluorides while meeting IS:10500 drinking water standards.",
+     "IoT-powered smart monitoring provides real-time information on water quality, filter life and purifier performance on your mobile, with automatic service call registration and complete service and parts replacement history.",
+     "Active Copper technology enriches the water with copper, and Alkaline technology delivers mineral-rich water with pH between 8.0 and 9.5. The UV LED light inside the storage tank prevents bacterial growth. Certified by BIS and NSF."
+    ],
+    "tech": [
+     [
+      "Model",
+      "KENT Sapphire IoT"
+     ],
+     [
+      "Application",
+      "Brackish / Tap / Municipal Corporation Water"
+     ],
+     [
+      "Product Code",
+      "111177B"
+     ],
+     [
+      "Mounting",
+      "Wall Mounting / Table Top"
+     ],
+     [
+      "Body Material",
+      "ABS Food Grade Plastic"
+     ],
+     [
+      "Purification Capacity",
+      "20 L/hr"
+     ],
+     [
+      "Storage Capacity",
+      "8L"
+     ],
+     [
+      "Net Weight",
+      "8.30 Kg"
+     ],
+     [
+      "Dimensions",
+      "360 (L) × 320 (W) × 500 (H) mm"
+     ],
+     [
+      "Input Power Supply",
+      "Single Phase 250V AC, 50Hz"
+     ],
+     [
+      "Total Power Consumption",
+      "60W"
+     ]
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sapphire-2-uv",
+   "name": "KENT Sapphire-WHITE",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 19999,
+   "mrp": 25000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/04/kent-sapphire-white--600x600.webp",
+   "summary": "KENT Sapphire uses multiple purification process of RO + UF + Inline UV + Alkaline + Copper + TDS Control to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/04/kent-sapphire-white--600x600.webp",
+    "features": [
+     "Purification: RO + UF + Inline UV + Alkaline + Copper + TDS Control",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sterling-star-iot-black-uv",
+   "name": "KENT Sterling Star IoT-BLACK",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 28000,
+   "mrp": 32500,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-sterling-IOT--600x600.webp",
+   "summary": "KENT Sterling Star IoT uses multiple purification process of Premium under-the-counter purification to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "Premium under-the-counter purification",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/07/kent-sterling-IOT--600x600.webp",
+    "features": [
+     "Purification: Premium under-the-counter purification",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "kent-sterling-star-iot-uv",
+   "name": "KENT Sterling Star IoT-WHITE",
+   "category": "domestic",
+   "subcategory": "uv",
+   "brand": "KENT Mineral RO",
+   "price": 20949,
+   "mrp": 28000,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/kent-sterling-IOT-white--600x600.webp",
+   "summary": "KENT Sterling Star IoT uses multiple purification process of Premium under-the-counter purification to remove all dissolved impurities, bacteria and viruses while retaining essential natural minerals.",
+   "extra": {
+    "p": "Premium under-the-counter purification",
+    "big": "https://aakashaquatech.in/wp-content/uploads/2026/06/kent-sterling-IOT-white--600x600.webp",
+    "features": [
+     "Purification: Premium under-the-counter purification",
+     "Retains essential natural minerals in purified water",
+     "Trusted by about 1 crore satisfied consumers across India",
+     "Free installation and 24 hours service from Aakash Pure Aqua Tech"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "gravity-kent-gold",
+   "name": "KENT Gold",
+   "category": "domestic",
+   "subcategory": "gravity",
+   "brand": "KENT Mineral RO",
+   "price": 3300,
+   "mrp": 5999,
+   "image_url": "/img/gravity/kent-gold.png",
+   "summary": "KENT Gold UF Water Purifier is a non-electric, gravity-based water purifier featuring a 0.1-micron Ultra Filtration membrane that removes bacteria and cysts.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/gravity/kent-gold.png",
+    "features": [
+     "Genuine KENT Mineral RO product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "gravity-kent-gold-plus",
+   "name": "KENT Gold+",
+   "category": "domestic",
+   "subcategory": "gravity",
+   "brand": "KENT Mineral RO",
+   "price": 1099,
+   "mrp": 1300,
+   "image_url": "/img/gravity/kent-gold-plus.png",
+   "summary": "KENT Gold Plus Gravity Water Purifier is a non-electric UF water purifier designed for tap and municipal low TDS water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/gravity/kent-gold-plus.png",
+    "features": [
+     "Genuine KENT Mineral RO product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "gravity-purella-gravity",
+   "name": "Purella GRAVITY",
+   "category": "domestic",
+   "subcategory": "gravity",
+   "brand": "Purella",
+   "price": 4000,
+   "mrp": 4500,
+   "image_url": "/img/gravity/purella-gravity.png",
+   "summary": "Purella Gravity UF Water Purifier is a non-electric, gravity-based water purifier featuring a 20-litre storage capacity and advanced 3-stage UF filtration.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/gravity/purella-gravity.png",
+    "features": [
+     "Genuine Purella product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "gravity-senco-uf-gravity",
+   "name": "SENCO UF GRAVITY WATER PURIFIER",
+   "category": "domestic",
+   "subcategory": "gravity",
+   "brand": "Senco",
+   "price": 4000,
+   "mrp": 4500,
+   "image_url": "/img/gravity/senco-uf-gravity.png",
+   "summary": "The Gravity Water Purifier – 25 Litre is a non-electric, gravity-based water purifier designed to provide safe and healthy drinking water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/gravity/senco-uf-gravity.png",
+    "features": [
+     "Genuine Senco product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "gravity-zerob-suraksha-plus-pro",
+   "name": "ZeroB Suraksha Plus Pro",
+   "category": "domestic",
+   "subcategory": "gravity",
+   "brand": "ZeroB",
+   "price": 2700,
+   "mrp": 3600,
+   "image_url": "/img/gravity/zerob-suraksha-plus-pro.png",
+   "summary": "Safeguard your family against water-borne diseases. Suraksha Plus Pro is an easy-to-install water purifier without electricity with 4 stages.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/gravity/zerob-suraksha-plus-pro.png",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "commercial-100-lph-compact-system",
+   "name": "100 LPH COMPACT SYSTEM",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 89400,
+   "mrp": 103000,
+   "image_url": "/img/commercial/100-lph-compact-system.png",
+   "summary": "View 100 LPH COMPACT SYSTEM product details, available options and pricing.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "tech": [
+     [
+      "Model",
+      "COMFORTABLE (CLOSED) SYSTEM"
+     ],
+     [
+      "Category",
+      "MINI COMMERCIAL SYSTEM"
+     ],
+     [
+      "Technology",
+      "REVERSE OSMOSIS SYSTEM"
+     ],
+     [
+      "Filter Housing 20\"",
+      "2 NOS"
+     ],
+     [
+      "Filter",
+      "2"
+     ],
+     [
+      "High Pressure Pump",
+      "CRI CLaRO 100 (1 HP) / ALGO -1HP"
+     ]
+    ],
+    "np": false,
+    "big": "/img/commercial/100-lph-compact-system.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-100-lph-ss-eco-auto",
+   "name": "100 LPH SS ECO AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 77000,
+   "mrp": 89000,
+   "image_url": "/img/commercial/100-lph-ss-eco-auto.png",
+   "summary": "View 100 LPH SS ECO AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 81200,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/100-lph-ss-eco-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-1000-lph-ss-comfort-auto",
+   "name": "1000 LPH SS COMFORT AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 197700,
+   "mrp": 230000,
+   "image_url": "/img/commercial/1000-lph-ss-comfort-auto.png",
+   "summary": "View 1000 LPH SS COMFORT AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 283900,
+    "v": true,
+    "tech": [
+     [
+      "Model",
+      "1000 LPH SS COMFORT AUTO"
+     ],
+     [
+      "Input Voltage",
+      "230 VOLT AC (50Hz)"
+     ],
+     [
+      "Vessel",
+      "1354- 2 NOS (PURE STUDIO)"
+     ],
+     [
+      "Multiport Valve",
+      "25 NB- TMF- 2 NOS (UKL / INITIATIVE)"
+     ],
+     [
+      "Pebbles",
+      "2 BAG"
+     ]
+    ],
+    "np": false,
+    "big": "/img/commercial/1000-lph-ss-comfort-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "FILMTEC BW 30 PRO -365 - 8040 MEMBRANE"
+       }
+      ]
+     },
+     {
+      "label": "Panel",
+      "options": [
+       {
+        "name": "ASTERO"
+       },
+       {
+        "name": "INFINITY"
+       },
+       {
+        "name": "INITIATIVE",
+        "code": "3007YAF",
+        "spec": [
+         [
+          "Panel Model",
+          "RO PLUS (1-1)"
+         ]
+        ]
+       }
+      ]
+     },
+     {
+      "label": "Pump",
+      "options": [
+       {
+        "name": "CRI MTC- 2E/18SR (3.0 HP) - I PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "230 VOLT AC (50Hz)"
+         ]
+        ]
+       },
+       {
+        "name": "CRI MTC- 2E/18TR (3.0 HP) - III PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "415 VOLT AC (50Hz) – 3 PHASE"
+         ]
+        ]
+       },
+       {
+        "name": "CRI MTC- 2E/22TR (3.0 HP) - III PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "415 VOLT AC (50Hz) – 3 PHASE"
+         ]
+        ]
+       },
+       {
+        "name": "CRI MVC- 2/18SR (3.0 HP) - I PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "230 VOLT AC (50Hz)"
+         ]
+        ]
+       },
+       {
+        "name": "CRI MVC- 2/18TR (3.0 HP) - III PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "415 VOLT AC (50Hz) – 3 PHASE"
+         ]
+        ]
+       },
+       {
+        "name": "CRI MVC- 2/22TR (3.0 HP) - III PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "415 VOLT AC (50Hz) – 3 PHASE"
+         ]
+        ]
+       },
+       {
+        "name": "GRUNDFOS CRI 3-23 - 3.0 HP - III PHASE",
+        "spec": [
+         [
+          "Input Voltage",
+          "415 VOLT AC (50Hz) – 3 PHASE"
+         ]
+        ]
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-1000-lph-ss-four-membrane-housing-auto",
+   "name": "1000 LPH SS FOUR MEMBRANE HOUSING AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 209200,
+   "mrp": 245000,
+   "image_url": "/img/commercial/1000-lph-ss-four-membrane-housing-auto.png",
+   "summary": "View 1000 LPH SS FOUR MEMBRANE HOUSING AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 307500,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/1000-lph-ss-four-membrane-housing-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-1000-lph-ss-single-membrane-housing-auto",
+   "name": "1000 LPH SS SINGLE MEMBRANE HOUSING AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 208500,
+   "mrp": 240000,
+   "image_url": "/img/commercial/1000-lph-ss-single-membrane-housing-auto.png",
+   "summary": "View 1000 LPH SS SINGLE MEMBRANE HOUSING AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 294800,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/1000-lph-ss-single-membrane-housing-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-2000-lph-ss-classic-auto",
+   "name": "2000 LPH SS CLASSIC AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 296800,
+   "mrp": 345000,
+   "image_url": "/img/commercial/2000-lph-ss-classic-auto.png",
+   "summary": "View 2000 LPH SS CLASSIC AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 441500,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/2000-lph-ss-classic-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-2000-lph-ss-classic-auto-2mh",
+   "name": "2000 LPH SS CLASSIC AUTO - 2MH",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 304900,
+   "mrp": 355000,
+   "image_url": "/img/commercial/2000-lph-ss-classic-auto-2mh.png",
+   "summary": "View 2000 LPH SS CLASSIC AUTO - 2MH product details, available options and pricing.",
+   "extra": {
+    "max": 450400,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/2000-lph-ss-classic-auto-2mh.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-250-lph-ss-brook-auto",
+   "name": "250 LPH SS BROOK AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 145900,
+   "mrp": 170000,
+   "image_url": "/img/commercial/250-lph-ss-brook-auto.png",
+   "summary": "View 250 LPH SS BROOK AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 186000,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/250-lph-ss-brook-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-250-lph-ss-cim-dispenser",
+   "name": "250 LPH SS CIM DISPENSER",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 265600,
+   "mrp": 310000,
+   "image_url": "/img/commercial/250-lph-ss-cim-dispenser.png",
+   "summary": "View 250 LPH SS CIM DISPENSER product details, available options and pricing.",
+   "extra": {
+    "max": 304600,
+    "v": true,
+    "np": false,
+    "big": "/img/commercial/250-lph-ss-cim-dispenser.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-250-lph-ss-comfort-auto",
+   "name": "250 LPH SS COMFORT AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 0,
+   "mrp": 0,
+   "image_url": "/img/commercial/250-lph-ss-comfort-auto.png",
+   "summary": "View 250 LPH SS COMFORT AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": true,
+    "big": "/img/commercial/250-lph-ss-comfort-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-250-lph-ss-eco-auto",
+   "name": "250 LPH SS ECO AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 0,
+   "mrp": 0,
+   "image_url": "/img/commercial/250-lph-ss-eco-auto.png",
+   "summary": "View 250 LPH SS ECO AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": true,
+    "big": "/img/commercial/250-lph-ss-eco-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "commercial-3000-lph-ss-classic-auto",
+   "name": "3000 LPH SS CLASSIC AUTO",
+   "category": "industrial",
+   "subcategory": "industrial",
+   "brand": null,
+   "price": 0,
+   "mrp": 0,
+   "image_url": "/img/commercial/3000-lph-ss-classic-auto.png",
+   "summary": "View 3000 LPH SS CLASSIC AUTO product details, available options and pricing.",
+   "extra": {
+    "max": 0,
+    "v": true,
+    "np": true,
+    "big": "/img/commercial/3000-lph-ss-classic-auto.png",
+    "features": [
+     "Supplied, installed and serviced by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "configs": [
+     {
+      "label": "Membrane",
+      "options": [
+       {
+        "name": "Ploymax BW-RU – 4021"
+       },
+       {
+        "name": "LCM BW – 4021"
+       }
+      ]
+     }
+    ],
+    "enquiry": true
+   }
+  },
+  {
+   "slug": "aosmith-ao-smith-x3",
+   "name": "AO SMITH X3",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "A.O. Smith",
+   "price": 13000,
+   "mrp": 15000,
+   "image_url": "/img/aosmith/ao-smith-x3.png",
+   "summary": "The A.O. Smith X3 RO Water Purifier features a 6-stage 100% RO purification system with MIN-TECH Mineraliser Technology.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/aosmith/ao-smith-x3.png",
+    "features": [
+     "Genuine A.O. Smith product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aosmith-pro-planet-p3",
+   "name": "Pro Planet P3",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "A.O. Smith",
+   "price": 22500,
+   "mrp": 25000,
+   "image_url": "/img/aosmith/pro-planet-p3.png",
+   "summary": "Powered with the path-breaking RO+Silver Charged Membrane Technology, ProPlanet P3 gives you 100% RO purified, Baby-Safe water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/aosmith/pro-planet-p3.png",
+    "features": [
+     "Genuine A.O. Smith product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aosmith-pro-planet-p3-pro",
+   "name": "Pro Planet P3 Pro",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "A.O. Smith",
+   "price": 23000,
+   "mrp": 26500,
+   "image_url": "/img/aosmith/pro-planet-p3-pro.png",
+   "summary": "A. O. Smith ProPlanet P3 Pro is an advanced 8-stage RO water purifier with Silver Charged Membrane Technology (SCMT).",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/aosmith/pro-planet-p3-pro.png",
+    "features": [
+     "Genuine A.O. Smith product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "zerob-kitchenmate-ro-uf-undersink",
+   "name": "KitchenMate RO + UF (Undersink)",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "ZeroB",
+   "price": 23990,
+   "mrp": 28000,
+   "image_url": "/img/zerob/kitchenmate-ro-uf-undersink.png",
+   "summary": "Sleek and compact RO Water Purifier for your modular kitchen. ZeroB Kitchenmate is a sleek and stylish water purifier.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/zerob/kitchenmate-ro-uf-undersink.png",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "zerob-kitchenmate-ro-undersink-active-silver",
+   "name": "KitchenMate RO Undersink Active silver Technology",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "ZeroB",
+   "price": 26990,
+   "mrp": 31500,
+   "image_url": "/img/zerob/kitchenmate-ro-undersink-active-silver.png",
+   "summary": "The ZeroB Kitchenmate RO+ESS Water Purifier is a sleek under-the-sink water purifier designed for modern modular kitchens.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/zerob/kitchenmate-ro-undersink-active-silver.png",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "zerob-power-flow-50lph",
+   "name": "Power Flow 50LPH",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "ZeroB",
+   "price": 50991,
+   "mrp": 59999,
+   "image_url": "/img/zerob/power-flow-50lph.png",
+   "summary": "Experience the perfect balance of elegant design and powerhouse performance with the Power Flow RO Water Purifier.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/zerob/power-flow-50lph.png",
+    "features": [
+     "Genuine ZeroB product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "wave-5g-pro-black",
+   "name": "5G PRO Hot, Ambient & Cold Alkaline Water Purifier-BLACK",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Sarwan's Wave",
+   "price": 25600,
+   "mrp": 29400,
+   "image_url": "/img/wave/5g-pro-black.png",
+   "summary": "The 5G PRO Hot, Ambient & Cold Alkaline Water Purifier is a premium RO water purifier designed to deliver safe drinking water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/wave/5g-pro-black.png",
+    "features": [
+     "Genuine Sarwan's Wave product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "wave-5g-pro-blue",
+   "name": "5G PRO Hot, Ambient & Cold Alkaline Water Purifier-BLUE",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Sarwan's Wave",
+   "price": 25600,
+   "mrp": 29400,
+   "image_url": "/img/wave/5g-pro-blue.png",
+   "summary": "The 5G PRO Hot, Ambient & Cold Alkaline Water Purifier is a premium RO water purifier designed to deliver safe drinking water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/wave/5g-pro-blue.png",
+    "features": [
+     "Genuine Sarwan's Wave product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "wave-5g-pro-maroon",
+   "name": "5G PRO Hot, Ambient & Cold Alkaline Water Purifier-MAROON",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Sarwan's Wave",
+   "price": 25600,
+   "mrp": 29400,
+   "image_url": "/img/wave/5g-pro-maroon.png",
+   "summary": "The 5G PRO Hot, Ambient & Cold Alkaline Water Purifier is a premium RO water purifier designed to deliver safe drinking water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "np": false,
+    "big": "/img/wave/5g-pro-maroon.png",
+    "features": [
+     "Genuine Sarwan's Wave product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aquaguard-designo-utc",
+   "name": "Aquaguard Designo UTC",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aquaguard",
+   "price": 26299,
+   "mrp": 30500,
+   "image_url": "/img/aquaguard/designo-utc.png",
+   "summary": "The Aquaguard Aspire Designo UTC RO+UV is a premium under-the-counter water purifier that combines 9-stage RO+UV purification.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "p": "RO + UV",
+    "np": false,
+    "big": "/img/aquaguard/designo-utc.png",
+    "features": [
+     "Genuine Aquaguard product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aquaguard-enrich-hyde",
+   "name": "Aquaguard Enrich Hyde",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aquaguard",
+   "price": 20999,
+   "mrp": 24500,
+   "image_url": "/img/aquaguard/enrich-hyde.png",
+   "summary": "Aquaguard Enrich Hyde is a premium under-the-counter water purifier with an integrated single-unit design and advanced 10-stage RO+UV purification.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "p": "RO + UV",
+    "np": false,
+    "big": "/img/aquaguard/enrich-hyde.png",
+    "features": [
+     "Genuine Aquaguard product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  },
+  {
+   "slug": "aquaguard-aspire-blaze",
+   "name": "Aquaguard Aspire Blaze",
+   "category": "domestic",
+   "subcategory": "ro",
+   "brand": "Aquaguard",
+   "price": 24999,
+   "mrp": 29000,
+   "image_url": "/img/aquaguard/aspire-blaze.png",
+   "summary": "The Aquaguard ASPIRE Blaze Smart Purifier (RO+UV) is a premium smart water purifier designed to deliver safe, healthy, and convenient drinking water.",
+   "extra": {
+    "max": 0,
+    "v": false,
+    "p": "RO + UV",
+    "np": false,
+    "big": "/img/aquaguard/aspire-blaze.png",
+    "features": [
+     "Genuine Aquaguard product supplied by Aakash Pure Aqua Tech",
+     "Free installation and 24 hours service",
+     "Free water quality & TDS testing",
+     "Affordable AMC plans"
+    ],
+    "enquiry": false
+   }
+  }
+ ],
+ "spares": [
+  {
+   "slug": "cyclone-inline-filter-cartridge",
+   "name": "CYCLONE - INLINE FILTER CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-inline",
+   "brand": "Olivar",
+   "price": 499,
+   "mrp": 499,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-4-03-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-inline-filter-cartridge",
+   "name": "STORM - INLINE FILTER CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-inline",
+   "brand": "Olivar",
+   "price": 599,
+   "mrp": 599,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-4-02-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-inline-filter-cartridge",
+   "name": "THUNDER - INLINE FILTER CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-inline",
+   "brand": "Olivar",
+   "price": 699,
+   "mrp": 699,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-4-01-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "volcano-inline-filter-cartridge",
+   "name": "VOLCANO - INLINE FILTER CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-inline",
+   "brand": "Olivar",
+   "price": 699,
+   "mrp": 699,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/VOLCANO-300x300.jpg",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "tornado-inline-filter-cartridge",
+   "name": "TORNADO - INLINE FILTER CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-inline",
+   "brand": "Olivar",
+   "price": 799,
+   "mrp": 799,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/TORNADO-300x300.jpg",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-alkaline-filter",
+   "name": "CYCLONE - ALKALINE FILTER",
+   "category": "spares",
+   "subcategory": "spares-alkaline",
+   "brand": "Olivar",
+   "price": 1499,
+   "mrp": 1499,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Cyclone20Alkaline20Inline-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-alkaline-filter",
+   "name": "STORM - ALKALINE FILTER",
+   "category": "spares",
+   "subcategory": "spares-alkaline",
+   "brand": "Olivar",
+   "price": 1699,
+   "mrp": 1699,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Storm20Alkaline20Inline-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-alkaline-filter",
+   "name": "THUNDER - ALKALINE FILTER",
+   "category": "spares",
+   "subcategory": "spares-alkaline",
+   "brand": "Olivar",
+   "price": 1999,
+   "mrp": 1999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Thunder20Alkaline20Inline-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-3-in-1-copper-alkaline-zinc-alkaline-filter",
+   "name": "CYCLONE 3 IN 1 COPPER ALKALINE ZINC - ALKALINE FILTER",
+   "category": "spares",
+   "subcategory": "spares-alkaline",
+   "brand": "Olivar",
+   "price": 1999,
+   "mrp": 1999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Copper20Alkaline20Inline-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-membrane-element",
+   "name": "CYCLONE - MEMBRANE ELEMENT",
+   "category": "spares",
+   "subcategory": "spares-membrane",
+   "brand": "Olivar",
+   "price": 1999,
+   "mrp": 1999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/membrane20cyclone208020GPD20new20color-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": 2999,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-membrane-element",
+   "name": "STORM - MEMBRANE ELEMENT",
+   "category": "spares",
+   "subcategory": "spares-membrane",
+   "brand": "Olivar",
+   "price": 2499,
+   "mrp": 2499,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/MEMBRANE20Storm2080-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": 3999,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-membrane-element",
+   "name": "THUNDER - MEMBRANE ELEMENT",
+   "category": "spares",
+   "subcategory": "spares-membrane",
+   "brand": "Olivar",
+   "price": 2999,
+   "mrp": 2999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Membraine20Thunder2080-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-pre-filter-housing",
+   "name": "STORM - PRE FILTER HOUSING",
+   "category": "spares",
+   "subcategory": "spares-prefilter",
+   "brand": "Olivar",
+   "price": 2999,
+   "mrp": 2999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-10-04-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-pre-filter-housing",
+   "name": "CYCLONE - PRE FILTER HOUSING",
+   "category": "spares",
+   "subcategory": "spares-prefilter",
+   "brand": "Olivar",
+   "price": 699,
+   "mrp": 699,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/cyclone20bowl-300x300.jpg",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-membrane-housing",
+   "name": "CYCLONE - MEMBRANE HOUSING",
+   "category": "spares",
+   "subcategory": "spares-memhousing",
+   "brand": "Olivar",
+   "price": 499,
+   "mrp": 499,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Strom20Membrane20housing-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-membrane-housing",
+   "name": "THUNDER - MEMBRANE HOUSING",
+   "category": "spares",
+   "subcategory": "spares-memhousing",
+   "brand": "Olivar",
+   "price": 599,
+   "mrp": 599,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-5-01-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-float-valve",
+   "name": "CYCLONE - FLOAT VALVE",
+   "category": "spares",
+   "subcategory": "spares-float",
+   "brand": "Olivar",
+   "price": 299,
+   "mrp": 299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-3-06-02-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-float-valve",
+   "name": "STORM - FLOAT VALVE",
+   "category": "spares",
+   "subcategory": "spares-float",
+   "brand": "Olivar",
+   "price": 299,
+   "mrp": 299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-3-06-03-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-float-valve",
+   "name": "THUNDER - FLOAT VALVE",
+   "category": "spares",
+   "subcategory": "spares-float",
+   "brand": "Olivar",
+   "price": 299,
+   "mrp": 299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-3-06-01-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-smps",
+   "name": "THUNDER - SMPS",
+   "category": "spares",
+   "subcategory": "spares-smps",
+   "brand": "Olivar",
+   "price": 999,
+   "mrp": 999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-12-02-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "tornado-smps",
+   "name": "TORNADO - SMPS",
+   "category": "spares",
+   "subcategory": "spares-smps",
+   "brand": "Olivar",
+   "price": 1199,
+   "mrp": 1199,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/TORNADO-1-300x300.jpg",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-booster-pump",
+   "name": "CYCLONE - BOOSTER PUMP",
+   "category": "spares",
+   "subcategory": "spares-booster",
+   "brand": "Olivar",
+   "price": 2699,
+   "mrp": 2699,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Cyclone-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-booster-pump",
+   "name": "STORM - BOOSTER PUMP",
+   "category": "spares",
+   "subcategory": "spares-booster",
+   "brand": "Olivar",
+   "price": 2999,
+   "mrp": 2999,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Storm2010020new-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-booster-pump",
+   "name": "THUNDER - BOOSTER PUMP",
+   "category": "spares",
+   "subcategory": "spares-booster",
+   "brand": "Olivar",
+   "price": 3499,
+   "mrp": 3499,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Thunder20300-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": 4599,
+    "np": false
+   }
+  },
+  {
+   "slug": "volcano-booster-pump",
+   "name": "VOLCANO - BOOSTER PUMP",
+   "category": "spares",
+   "subcategory": "spares-booster",
+   "brand": "Olivar",
+   "price": 3299,
+   "mrp": 3299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/VOLCANO_PUMP.481-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-teflon-tape",
+   "name": "THUNDER - TEFLON TAPE",
+   "category": "spares",
+   "subcategory": "spares-teflon",
+   "brand": "Olivar",
+   "price": 39,
+   "mrp": 39,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Asset203-100-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "uv-led-olivar-uv-led-olivar",
+   "name": "UV LED OLIVAR - UV LED OLIVAR",
+   "category": "spares",
+   "subcategory": "spares-uvled",
+   "brand": "Olivar",
+   "price": 249,
+   "mrp": 249,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/uv20led-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-solenoid-valve",
+   "name": "STORM - SOLENOID VALVE",
+   "category": "spares",
+   "subcategory": "spares-solenoid",
+   "brand": "Olivar",
+   "price": 599,
+   "mrp": 599,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Untitled-13-02-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "cyclone-pp-spun-filter",
+   "name": "CYCLONE - PP SPUN FILTER",
+   "category": "spares",
+   "subcategory": "spares-pp",
+   "brand": "Olivar",
+   "price": 249,
+   "mrp": 249,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Cyclone20PP-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "storm-pp-spun-filter",
+   "name": "STORM - PP SPUN FILTER",
+   "category": "spares",
+   "subcategory": "spares-pp",
+   "brand": "Olivar",
+   "price": 299,
+   "mrp": 299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Strom20PP-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": 699,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-pp-spun-filter",
+   "name": "THUNDER - PP SPUN FILTER",
+   "category": "spares",
+   "subcategory": "spares-pp",
+   "brand": "Olivar",
+   "price": 349,
+   "mrp": 349,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Thunder20PP-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-replacable-filter-cartridge-kit",
+   "name": "THUNDER - REPLACABLE FILTER CARTRIDGE KIT",
+   "category": "spares",
+   "subcategory": "spares-kit",
+   "brand": "Olivar",
+   "price": 0,
+   "mrp": 0,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Thunder20Replacable20Filter-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": null,
+    "np": true
+   }
+  },
+  {
+   "slug": "storm-uv-chamber",
+   "name": "STORM - UV CHAMBER",
+   "category": "spares",
+   "subcategory": "spares-uvchamber",
+   "brand": "Olivar",
+   "price": 599,
+   "mrp": 599,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/UV20Chamber20stroma-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "thunder-uv-chamber",
+   "name": "THUNDER - UV CHAMBER",
+   "category": "spares",
+   "subcategory": "spares-uvchamber",
+   "brand": "Olivar",
+   "price": 799,
+   "mrp": 799,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/Thunder20UV20Chamber-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  },
+  {
+   "slug": "mineral-cartridge-4-inch-mineral-cartridge",
+   "name": "Mineral Cartridge 4 Inch - MINERAL CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-mineral",
+   "brand": "Olivar",
+   "price": 299,
+   "mrp": 299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/mineral20cartridge20420Inch-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": 499,
+    "np": false
+   }
+  },
+  {
+   "slug": "mineral-cartridge-8-inch-mineral-cartridge",
+   "name": "Mineral Cartridge 8 Inch - MINERAL CARTRIDGE",
+   "category": "spares",
+   "subcategory": "spares-mineral",
+   "brand": "Olivar",
+   "price": 299,
+   "mrp": 299,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/mineral20cartridge-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": true,
+    "max": 499,
+    "np": false
+   }
+  },
+  {
+   "slug": "olivar-uf-membrane",
+   "name": "Olivar - UF MEMBRANE",
+   "category": "spares",
+   "subcategory": "spares-uf",
+   "brand": "Olivar",
+   "price": 599,
+   "mrp": 599,
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/05/uf20membrane-300x300.png",
+   "summary": "Olivar · RO purifier spare",
+   "extra": {
+    "enquiry": false,
+    "max": null,
+    "np": false
+   }
+  }
+ ],
+ "testimonials": [
+  {
+   "customer_name": "Ramesh",
+   "city": "Salem",
+   "feedback": "Mr. Gubenthiran installed our home RO purifier very neatly. He explained the maintenance process clearly and checked everything before leaving. Water taste is excellent now.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Priya",
+   "city": "Coimbatore",
+   "feedback": "Tamil Selvan responded quickly when our purifier stopped working. The issue was fixed within one visit itself. Very professional and polite service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Arun Kumar",
+   "city": "Bangalore",
+   "feedback": "Thamarai Kannan handled the commercial RO installation for our office perfectly. The work was completed on time without any delay. Highly satisfied with the support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Deepa",
+   "city": "Trichy",
+   "feedback": "K Sathish serviced our water purifier professionally and changed only the required parts. Pricing was reasonable and transparent. Good customer approach.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Vignesh",
+   "city": "Dharmapuri",
+   "feedback": "Very happy with Gubenthiran service and technical knowledge. He identified the issue quickly and solved it immediately. Highly recommended for RO service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Karthika",
+   "city": "Salem",
+   "feedback": "Tamil Selvan arrived on time and completed the installation cleanly. He also explained filter replacement timings properly. Excellent support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Sathish Kumar",
+   "city": "Attur",
+   "feedback": "Thamarai Kannan provided genuine suggestions based on our water quality. The purifier is working smoothly without any issues. Great experience overall.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Meena",
+   "city": "Pollachi",
+   "feedback": "K Sathish repaired our old purifier instead of forcing us to buy a new one. Honest work and affordable service charges. Really appreciated.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Rajesh",
+   "city": "Tiruppur",
+   "feedback": "Gubenthiran installed a commercial RO unit for our shop. Water quality improved significantly after installation. Customers are happy too.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Hari Prasad",
+   "city": "Krishnagiri",
+   "feedback": "Tamil Selvan was very polite and explained every detail patiently. The installation was neat and professional. Happy with the overall service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Ganesh",
+   "city": "Salem",
+   "feedback": "Thamarai Kannan handled our apartment RO project efficiently. The work was completed within the promised time. Good coordination and support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Sunil",
+   "city": "Bangalore",
+   "feedback": "K Sathish responded immediately during an emergency breakdown. The purifier started working perfectly after service. Reliable technician.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Lakshmi",
+   "city": "Trichy",
+   "feedback": "Gubenthiran provided excellent maintenance service for our home purifier. He checked all filters and cleaned the unit properly. Very satisfied.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Ravi",
+   "city": "Coimbatore",
+   "feedback": "Tamil Selvan installed the purifier without making any mess. Water flow and taste improved immediately. Professional service experience.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Kishore",
+   "city": "Dharmapuri",
+   "feedback": "Very good support from Thamarai Kannan during installation and follow-up. He answered all our questions patiently. Recommended service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Vinoth",
+   "city": "Krishnagiri",
+   "feedback": "K Sathish arrived exactly on time and completed the service quickly. He explained what caused the issue and how to avoid it. Excellent work.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Prakash",
+   "city": "Pollachi",
+   "feedback": "Gubenthiran handled our commercial water purifier maintenance professionally. Water output improved a lot after service. Good technical knowledge.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Anitha",
+   "city": "Bangalore",
+   "feedback": "Tamil Selvan gave honest suggestions and did not recommend unnecessary replacements. Very trustworthy service. Happy customer.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Murugan",
+   "city": "Salem",
+   "feedback": "Thamarai Kannan installed our hotel RO system perfectly. The machine is running smoothly even with heavy usage. Good support team.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Arvind",
+   "city": "Tiruppur",
+   "feedback": "K Sathish fixed the low water pressure issue quickly. He checked the entire unit carefully before leaving. Professional technician.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Suresh",
+   "city": "Coimbatore",
+   "feedback": "Gubenthiran provided timely service and regular maintenance reminders. The purifier performance has been excellent since installation. Very reliable.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Selvi",
+   "city": "Dharmapuri",
+   "feedback": "Tamil Selvan was friendly and professional throughout the service. He explained filter conditions clearly. Very satisfied with the experience.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Naveen",
+   "city": "Salem",
+   "feedback": "Thamarai Kannan completed the installation neatly and tested everything properly. Water quality is much better now. Recommended.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Aarthi",
+   "city": "Trichy",
+   "feedback": "K Sathish responded quickly through phone and arrived on the same day. Service was clean and professional. Good customer support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Vijay",
+   "city": "Krishnagiri",
+   "feedback": "Gubenthiran solved our purifier issue that other technicians could not fix. Very experienced and knowledgeable person. Great service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Harini",
+   "city": "Pollachi",
+   "feedback": "Tamil Selvan installed the purifier exactly as promised. He explained maintenance tips clearly for long-term usage. Happy with the service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Rohit",
+   "city": "Bangalore",
+   "feedback": "Thamarai Kannan handled our office RO installation professionally. The entire process was smooth and hassle-free. Excellent work.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Muthu",
+   "city": "Salem",
+   "feedback": "K Sathish serviced our purifier quickly and replaced only necessary parts. Pricing was fair and transparent. Good experience.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Keerthana",
+   "city": "Coimbatore",
+   "feedback": "Gubenthiran provided excellent customer support even after installation. He responds quickly whenever needed. Highly recommended.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Ashok",
+   "city": "Attur",
+   "feedback": "Tamil Selvan completed the work neatly and professionally. Water taste improved immediately after service. Very satisfied.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Bala",
+   "city": "Tiruppur",
+   "feedback": "Thamarai Kannan suggested the correct RO capacity for our business needs. Installation was completed on time. Good technical support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Rohini",
+   "city": "Bangalore",
+   "feedback": "K Sathish gave proper AMC support and regular maintenance updates. The purifier is functioning perfectly. Reliable service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Kumar",
+   "city": "Salem",
+   "feedback": "Gubenthiran arrived on time and handled the service professionally. He explained the issue clearly before starting work. Honest technician.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Saranya",
+   "city": "Trichy",
+   "feedback": "Tamil Selvan installation work was very neat and clean. He checked the water quality after setup too. Excellent support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Dinesh",
+   "city": "Coimbatore",
+   "feedback": "Thamarai Kannan installed a commercial purifier for our restaurant. Water output and quality are very good now. Professional service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Nagaraj",
+   "city": "Dharmapuri",
+   "feedback": "K Sathish solved the purifier leakage issue quickly. He also checked the complete unit for safety. Good experience overall.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Srinivasan",
+   "city": "Krishnagiri",
+   "feedback": "Gubenthiran provided excellent technical support during installation. He ensured everything was working properly before leaving. Highly satisfied.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Anand",
+   "city": "Bangalore",
+   "feedback": "Tamil Selvan handled our industrial RO setup efficiently. The project was completed within schedule. Great teamwork.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Kavin",
+   "city": "Pollachi",
+   "feedback": "Thamarai Kannan was polite and very knowledgeable about water purification systems. Service quality was excellent. Recommended.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Manoj",
+   "city": "Salem",
+   "feedback": "K Sathish repaired our purifier at a reasonable price. Water flow improved significantly after service. Happy customer.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Rajalakshmi",
+   "city": "Trichy",
+   "feedback": "Gubenthiran provided quick service and genuine spare parts. The purifier is working smoothly now. Very trustworthy.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Pradeep",
+   "city": "Bangalore",
+   "feedback": "Tamil Selvan explained every maintenance detail clearly. Installation was completed professionally without delays. Excellent service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Vinay",
+   "city": "Coimbatore",
+   "feedback": "Thamarai Kannan gave honest recommendations based on our water condition. The purifier performance is excellent. Very satisfied.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Murali",
+   "city": "Dharmapuri",
+   "feedback": "K Sathish handled the maintenance work professionally and neatly. He checked all filters properly before leaving. Good support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Harish",
+   "city": "Salem",
+   "feedback": "Gubenthiran installed our purifier perfectly and tested water quality immediately. Water tastes much better now. Great service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Kumaravel",
+   "city": "Attur",
+   "feedback": "Tamil Selvan responded quickly and completed the installation on the same day. Very professional approach. Highly recommended.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Ramesh B",
+   "city": "Tiruppur",
+   "feedback": "Thamarai Kannan completed the commercial RO setup smoothly. He coordinated everything properly from start to finish. Excellent experience.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Jaya",
+   "city": "Pollachi",
+   "feedback": "K Sathish explained how to maintain the purifier correctly. Service was clean, fast, and affordable. Happy with the support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Sathya",
+   "city": "Krishnagiri",
+   "feedback": "Gubenthiran identified the issue immediately and fixed it professionally. Very experienced technician. Recommended for RO service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Mohan",
+   "city": "Salem",
+   "feedback": "Tamil Selvan provided timely service and good customer support. Water quality improved noticeably after maintenance. Satisfied customer.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Divya",
+   "city": "Coimbatore",
+   "feedback": "Thamarai Kannan completed the purifier installation neatly and professionally. He explained all features clearly. Good service experience.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Balaji",
+   "city": "Bangalore",
+   "feedback": "K Sathish serviced our office purifier quickly and efficiently. The machine is working perfectly now. Reliable technician.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Karthik",
+   "city": "Trichy",
+   "feedback": "Gubenthiran provided excellent after-sales support and maintenance guidance. Very genuine service provider. Happy with the work.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Rani",
+   "city": "Dharmapuri",
+   "feedback": "Tamil Selvan repaired our purifier quickly and checked the entire system thoroughly. Professional work and affordable pricing.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Suresh Kumar",
+   "city": "Salem",
+   "feedback": "Thamarai Kannan installed the purifier exactly as promised. Water quality improved immediately after installation. Great support.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Vetri",
+   "city": "Attur",
+   "feedback": "K Sathish handled the maintenance professionally and replaced filters neatly. Very polite and knowledgeable technician.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Arthi",
+   "city": "Tiruppur",
+   "feedback": "Gubenthiran arrived on time and solved our water purifier issue quickly. Honest work and reasonable charges. Highly satisfied.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Shankar",
+   "city": "Pollachi",
+   "feedback": "Tamil Selvan installed a commercial purifier for our business successfully. Water output is excellent now. Professional service.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Nithya",
+   "city": "Krishnagiri",
+   "feedback": "Thamarai Kannan explained maintenance schedules clearly after installation. The purifier is working smoothly without problems. Good experience.",
+   "rating": 5
+  },
+  {
+   "customer_name": "Raj Kumar",
+   "city": "Bangalore",
+   "feedback": "K Sathish provided excellent industrial RO service support. The entire setup was completed professionally and on time. Highly recommended.",
+   "rating": 5
+  }
+ ],
+ "faqs": [
+  {
+   "question": "Do I need an RO water purifier?",
+   "answer": "If your water TDS is above 500 ppm, or if you use borewell, tanker or hard water, an RO purifier is recommended. Our experts provide a free water quality check to help you choose the right purifier.",
+   "display_order": 10
+  },
+  {
+   "question": "Does RO purification remove essential minerals?",
+   "answer": "Modern RO systems with Mineralizer, Alkaline Filter or TDS Controller restore essential minerals like calcium and magnesium for healthier drinking water.",
+   "display_order": 20
+  },
+  {
+   "question": "Can an RO purifier remove bacteria and viruses?",
+   "answer": "Yes. Advanced RO systems with UV and UF purification effectively remove bacteria, viruses, cysts and other harmful microorganisms.",
+   "display_order": 30
+  },
+  {
+   "question": "What maintenance does an RO water purifier require?",
+   "answer": "Filter replacement, RO membrane inspection, storage tank cleaning, pump & electrical component checks and water quality testing.",
+   "display_order": 40
+  },
+  {
+   "question": "Can one RO purifier work with borewell and municipal water?",
+   "answer": "Yes. Most modern RO purifiers can treat borewell, municipal, tanker and mixed water supplies depending on the TDS level.",
+   "display_order": 50
+  }
+ ],
+ "blog_posts": [
+  {
+   "title": "Benefits of AMC for RO Water Purifier Maintenance",
+   "slug": "benefits-of-amc-for-ro-water-purifier-maintenance",
+   "published_at": "2026-06-05",
+   "excerpt": "Discover the benefits of an RO purifier AMC plan, including timely service, filter checks, breakdown support, better water taste, and long-term maintenance savings.",
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_7599-1024x538.png",
+   "body": {
+    "lead": "An RO AMC keeps purifier service planned, reduces surprise breakdowns, and helps maintain water quality through the year.",
+    "sections": [
+     {
+      "h": "What is an RO AMC?",
+      "p": [
+       "An AMC (Annual Maintenance Contract) lets you schedule regular service for your RO water purifier, instead of calling for help only after something breaks."
+      ]
+     },
+     {
+      "h": "Timely filter checks",
+      "p": [
+       "Filters and membranes need to be checked at the right intervals. With an AMC, your service schedule is tracked for you, so there are no long gaps between visits."
+      ]
+     },
+     {
+      "h": "Better water taste and flow",
+      "p": [
+       "Regular maintenance means better taste, steadier flow and fewer unexpected issues. It also helps protect important parts such as the pump and the membrane."
+      ]
+     },
+     {
+      "h": "Transparent service support",
+      "p": [
+       "A good AMC makes it clear when service is due, what was checked, and whether a part is really needed."
+      ]
+     },
+     {
+      "h": "Why choose Aakash Aqua Tech",
+      "p": [
+       "Aakash Aqua Tech provides professional RO service, installation, guidance and after-sales support for home and commercial customers."
+      ]
+     }
+    ],
+    "cta": {
+     "h": "Need help choosing or servicing your purifier?",
+     "list": [
+      "Installation",
+      "Filter replacement",
+      "Water quality checks",
+      "Regular maintenance"
+     ]
+    }
+   }
+  },
+  {
+   "title": "Why TDS Matters in Drinking Water",
+   "slug": "why-tds-matters-in-drinking-water",
+   "published_at": "2026-06-05",
+   "excerpt": "Learn what TDS means in drinking water, why it affects taste and purifier selection, and how RO systems help manage high TDS water at home.",
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_7600-1-1024x538.png",
+   "body": {
+    "lead": "TDS helps identify dissolved impurities and choose the right RO purifier for taste, safety, and daily use.",
+    "sections": [
+     {
+      "h": "What is TDS?",
+      "p": [
+       "TDS means total dissolved solids. The reading covers dissolved minerals, salts and other substances in your water.",
+       "It is measured in PPM and shows whether your water needs basic filtration or stronger purification."
+      ]
+     },
+     {
+      "h": "Why TDS affects taste",
+      "p": [
+       "Very high TDS can make water taste salty, bitter or heavy, while very low TDS can make it taste flat."
+      ],
+      "list": [
+       "Very high TDS: salty, bitter or heavy",
+       "Very low TDS: flat taste",
+       "A good purifier improves both safety and taste"
+      ]
+     },
+     {
+      "h": "How RO helps with high TDS",
+      "p": [
+       "RO membranes are built to reduce dissolved impurities. That makes RO systems useful for borewell and tanker water, which often has higher TDS than normal."
+      ]
+     },
+     {
+      "h": "Do not depend only on taste",
+      "p": [
+       "Water can look clear and still contain high dissolved solids. A TDS meter reading, together with what you know about your water source, helps you choose the right purifier."
+      ]
+     },
+     {
+      "h": "Aakash Aqua Tech support",
+      "p": [
+       "Our technicians can test your water, explain the reading, and recommend a purifier or service plan based on your actual water quality."
+      ]
+     }
+    ],
+    "cta": {
+     "h": "Need help choosing or servicing your purifier?",
+     "list": [
+      "Installation",
+      "Filter replacement",
+      "Water quality checks",
+      "Regular maintenance"
+     ]
+    }
+   }
+  },
+  {
+   "title": "RO vs UV vs UF Water Purifier: Which One Is Best?",
+   "slug": "ro-vs-uv-vs-uf-water-purifier-which-one-is-best",
+   "published_at": "2026-06-05",
+   "excerpt": "Understand the difference between RO, UV, and UF water purifiers and choose the right purifier based on TDS, water source, bacteria risk, and home usage.",
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_7601-1024x538.png",
+   "body": {
+    "lead": "Choose RO for high TDS, UV for microbial safety, UF for low-TDS filtration, and combined systems for broader protection.",
+    "sections": [
+     {
+      "h": "What RO purification does",
+      "p": [
+       "RO purification is useful when water has dissolved salts, hardness or higher TDS. Water passes through a membrane that reduces dissolved impurities and improves taste.",
+       "RO is commonly preferred for borewell, tanker and mixed-source water."
+      ]
+     },
+     {
+      "h": "What UV purification does",
+      "p": [
+       "UV uses ultraviolet light to help deactivate microorganisms. It helps where microbial risk is a concern, but it does not reduce dissolved salts or hardness by itself."
+      ]
+     },
+     {
+      "h": "What UF purification does",
+      "p": [
+       "UF works without electricity in many designs. It helps reduce suspended particles and some microbial impurities.",
+       "It suits low-TDS water, but it is not a replacement for RO when dissolved salts are high."
+      ]
+     },
+     {
+      "h": "Which purifier should you choose?",
+      "p": [
+       "The right choice depends on your water source and TDS level."
+      ],
+      "listTitle": "Quick guide",
+      "list": [
+       "High TDS (borewell / tanker): RO",
+       "Microbial safety: UV",
+       "Low-TDS water, suspended particles: UF",
+       "Broader protection: RO + UV + UF together"
+      ]
+     },
+     {
+      "h": "Get water quality checked",
+      "p": [
+       "Aakash Aqua Tech can check your water condition and suggest a suitable purifier capacity and technology, instead of one model for every home."
+      ]
+     }
+    ],
+    "cta": {
+     "h": "Need help choosing or servicing your purifier?",
+     "list": [
+      "Installation",
+      "Filter replacement",
+      "Water quality checks",
+      "Regular maintenance"
+     ]
+    }
+   }
+  },
+  {
+   "title": "7 Signs Your RO Filter Needs Replacement",
+   "slug": "signs-your-ro-filter-needs-replacement",
+   "published_at": "2026-06-05",
+   "excerpt": "Know the common signs that your RO filter needs replacement, including bad taste, slow water flow, high TDS, leakage, odor, and poor purification performance.",
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_7602-1024x538.png",
+   "body": {
+    "lead": "Replace RO filters when taste, smell, flow, TDS, or filter life indicates reduced performance.",
+    "sections": [
+     {
+      "h": "Bad taste or smell in water",
+      "p": [
+       "A sudden change in water taste or smell is one of the easiest signs to notice. Pre-carbon and post-carbon filters help with taste and odour, and when they wear out, water can seem dull, salty or off."
+      ]
+     },
+     {
+      "h": "Slow water filling",
+      "p": [
+       "If the storage tank fills much more slowly than usual, filters may be clogged or the membrane may have pressure problems. Low inlet pressure can cause the same symptom, so a technician should check the full system."
+      ]
+     },
+     {
+      "h": "Higher TDS reading",
+      "p": [
+       "A rising TDS level after purification can mean the membrane is losing efficiency. Taste alone is not a reliable way to judge TDS, so use a proper meter for a clear picture of purifier health."
+      ]
+     },
+     {
+      "h": "Visible dirt or filter age",
+      "p": [
+       "Replace a filter when it passes its recommended service life, or when water looks cloudy before purification. Old filters strain the pump and membrane, so replacement should not be delayed."
+      ]
+     },
+     {
+      "h": "Professional replacement is safer",
+      "p": [
+       "We recommend genuine compatible filters and a water quality check after replacement. Proper installation prevents leakage, loose fittings and poor purification."
+      ]
+     }
+    ],
+    "cta": {
+     "h": "Need help choosing or servicing your purifier?",
+     "list": [
+      "Installation",
+      "Filter replacement",
+      "Water quality checks",
+      "Regular maintenance"
+     ]
+    }
+   }
+  },
+  {
+   "title": "How Often Should You Service Your RO Water Purifier?",
+   "slug": "how-often-should-you-service-your-ro-water-purifier",
+   "published_at": "2026-06-05",
+   "excerpt": "Learn how often to service an RO water purifier, when to replace filters, and why regular RO maintenance keeps drinking water safe, clean, and better tasting.",
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_7603-1024x538.png",
+   "body": {
+    "lead": "Service your home RO purifier every three to six months, and check it sooner when taste, flow, or TDS changes.",
+    "sections": [
+     {
+      "h": "Why regular RO service matters",
+      "p": [
+       "Your purifier runs every day to remove dissolved impurities, sediment, taste problems and contaminants. Filters, membrane, tubing and the storage tank all need timely attention.",
+       "Regular service supports taste, steady flow and safe daily performance."
+      ]
+     },
+     {
+      "h": "Ideal service interval for homes",
+      "p": [
+       "A basic check every three to six months is good practice for most homes. Sediment and carbon filters may need earlier replacement with heavy dust, odour or high usage.",
+       "The membrane usually lasts longer. Assess it through TDS readings and flow performance, instead of guessing."
+      ]
+     },
+     {
+      "h": "Signs your purifier needs service",
+      "p": [
+       "It is better to book service early rather than waiting until the purifier stops completely."
+      ],
+      "listTitle": "Watch out for",
+      "list": [
+       "Slow water flow",
+       "Unusual taste",
+       "Leakage",
+       "Pump noise",
+       "Frequent tank emptying",
+       "Sudden TDS changes"
+      ]
+     },
+     {
+      "h": "How Aakash Aqua Tech helps",
+      "p": [
+       "Our technicians check these points, so service is reliable and you avoid unnecessary part replacement."
+      ],
+      "list": [
+       "Filter condition",
+       "Water pressure",
+       "TDS",
+       "Membrane performance",
+       "Leakage points",
+       "Electrical safety"
+      ]
+     }
+    ],
+    "cta": {
+     "h": "Need help choosing or servicing your purifier?",
+     "list": [
+      "Installation",
+      "Filter replacement",
+      "Water quality checks",
+      "Regular maintenance"
+     ]
+    }
+   }
+  },
+  {
+   "title": "Tips to Prevent Waterborne Diseases",
+   "slug": "tips-to-prevent-waterborne-diseases-aakash-water-purifier",
+   "published_at": "2026-05-13",
+   "excerpt": "5 Easy Ways to Improve Your Immune System Naturally People across different countries, cultures, lifestyles, and food habits may be",
+   "image_url": "https://aakashaquatech.in/wp-content/uploads/2026/06/IMG_7604.png",
+   "body": {
+    "lead": "A strong immune system helps your body fight illness. Stress, poor food, lack of sleep and dehydration can weaken it, but small daily habits make a big difference. Here are 5 easy ways to boost immunity naturally.",
+    "sections": [
+     {
+      "h": "Get proper sleep every day",
+      "p": [
+       "Sleep helps the body repair itself and supports immunity. People who sleep under 6 hours are more likely to get colds, coughs and fatigue.",
+       "Recommended sleep: adults at least 7 hours, teenagers 8–10 hours, children and infants up to 14 hours."
+      ],
+      "listTitle": "Tips for better sleep",
+      "list": [
+       "Avoid phones before bed",
+       "Eat dinner at least an hour before sleeping",
+       "Keep a regular sleep schedule",
+       "Create a calm, comfortable sleeping space"
+      ]
+     },
+     {
+      "h": "Stay hydrated with clean drinking water",
+      "p": [
+       "Water moves nutrients, removes toxins and keeps organs working. Healthy adults should drink about 4–6 litres a day, depending on lifestyle and climate. Start the day with a glass of water and keep drinking through the day.",
+       "The water should be clean, so use a reliable purifier such as one from Aakash Water Purifier."
+      ],
+      "listTitle": "Benefits of drinking purified water",
+      "list": [
+       "Supports immunity",
+       "Helps remove toxins",
+       "Improves digestion",
+       "Maintains energy",
+       "Keeps the body hydrated"
+      ]
+     },
+     {
+      "h": "Eat healthy and balanced meals",
+      "p": [
+       "Vitamins, minerals, antioxidants and fibre help the body fight infection. Wash fruits and vegetables before eating to remove dirt, pesticides and germs."
+      ],
+      "listTitle": "Include daily",
+      "list": [
+       "Fresh fruits",
+       "Green vegetables",
+       "Nuts and seeds",
+       "Legumes and whole grains",
+       "Healthy fats such as Omega-3"
+      ]
+     },
+     {
+      "h": "Exercise for at least 20 minutes daily",
+      "p": [
+       "Regular activity strengthens immunity and improves circulation, and you do not need expensive equipment. Experts recommend about 150 minutes of moderate exercise a week, which is just 20 minutes a day."
+      ],
+      "listTitle": "Simple exercises",
+      "list": [
+       "Brisk walking",
+       "Jogging",
+       "Cycling",
+       "Swimming",
+       "Stretching"
+      ]
+     },
+     {
+      "h": "Manage stress and anxiety",
+      "p": [
+       "Long-term stress weakens immunity and can lead to poor eating, smoking, drinking and lack of sleep. Even 5–10 minutes of deep breathing and relaxation daily can help."
+      ],
+      "listTitle": "Simple ways to reduce stress",
+      "list": [
+       "Deep breathing exercises",
+       "Daily meditation",
+       "Time with family and friends",
+       "Short work breaks",
+       "Calming music",
+       "A positive routine"
+      ]
+     }
+    ],
+    "closing": "Clean and safe drinking water is one of the first steps toward a healthier life. Choose healthy habits today and build a stronger tomorrow.",
+    "cta": {
+     "h": "Need help choosing or servicing your purifier?",
+     "list": [
+      "Installation",
+      "Filter replacement",
+      "Water quality checks",
+      "Regular maintenance"
+     ]
+    }
+   }
+  }
+ ]
+}

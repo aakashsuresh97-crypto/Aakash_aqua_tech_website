@@ -1,0 +1,205 @@
+/* =====================================================================
+   ZONES WE SERVE PAGE (zn-*)   sandal-cream · tan · navy · teal
+   import in main.jsx BEFORE theme.css / polish.css:  import './zones.css'
+===================================================================== */
+.zn {
+  --navy: #0d2540; --blue: #0d8d97; --teal: #0d8d97; --teal-d: #0b3f66; --mute: #5b4c3a;
+  --cream-1: #fbf7f0; --cream-2: #f3e9da; --cream-3: #e8d7bd; --tan: #c9a273; --tan-d: #a77f4f;
+  position: relative; overflow: hidden; overflow: clip; padding-top: 6.4rem; padding-bottom: 4rem;
+  font-family: 'Outfit', 'DM Sans', sans-serif; color: var(--navy);
+  background:
+    radial-gradient(60rem 28rem at 12% 18%, rgba(201, 162, 115, .22), transparent 60%),
+    radial-gradient(52rem 26rem at 90% 55%, rgba(13, 141, 151, .1), transparent 60%),
+    linear-gradient(180deg, var(--cream-1), var(--cream-2) 55%, var(--cream-1));
+}
+/* ---------- PAGE BACKGROUND PICTURE ----------
+   The illustrated map is the background of the whole page. It is pinned to the screen (sticky, so it also works on phones)
+   and the page content scrolls over it. A cream veil keeps the text readable.
+   Tune:  --zn-veil (0 = picture only, 1 = plain cream)   --zn-focus (which part of the picture stays centred) */
+.zn { --zn-veil: .12; --zn-focus: 44% 50% }
+.zn-bg { position: sticky; top: 0; z-index: 0; height: 100vh; height: 100svh; margin-bottom: -100vh; margin-bottom: -100svh; pointer-events: none; overflow: hidden }
+.zn-bg::before { content: ''; position: absolute; inset: -3%; background: url('./assets/zones/zones-bg.webp') var(--zn-focus) / cover no-repeat;
+  transform-origin: var(--zn-focus); animation: znBgDrift 26s ease-in-out infinite alternate }
+.zn-bg::after { content: ''; position: absolute; inset: 0;
+  background:
+    linear-gradient(180deg, rgba(251, 247, 240, calc(var(--zn-veil) + .1)), rgba(243, 233, 218, var(--zn-veil)) 40%, rgba(251, 247, 240, calc(var(--zn-veil) + .08))),
+    radial-gradient(60rem 30rem at 50% 40%, rgba(255, 255, 255, .1), transparent 70%) }
+@keyframes znBgDrift { from { transform: scale(1) translate(0, 0) } to { transform: scale(1.06) translate(-1.2%, -.8%) } }
+/* everything else sits above the picture */
+.zn > :not(.zn-bg) { position: relative; z-index: 1 }
+@media (max-width: 860px) { .zn { --zn-focus: 40% 50%; --zn-veil: .16 } }
+
+.zn h1, .zn h2, .zn h3 { font-family: 'Outfit', sans-serif; margin: 0 }
+.zn p { max-width: none }
+.zn-wrap { width: min(1240px, 92%); margin: 0 auto }
+.zn-ic { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none }
+
+/* ---------- scroll reveal ---------- */
+.zn-rv { opacity: 0; transform: translateY(34px) scale(.97); filter: blur(6px);
+  transition: opacity .8s cubic-bezier(.2, .8, .2, 1), transform .8s cubic-bezier(.2, .8, .2, 1), filter .8s;
+  transition-delay: calc(var(--i, 0) * .09s) }
+.zn-rv.in { opacity: 1; transform: none; filter: none }
+
+/* =============== 1. FULL-WIDTH MAP =============== */
+.zn-map { position: relative; width: 100%; overflow: hidden; border-radius: 0 0 44px 44px;
+  box-shadow: 0 26px 60px rgba(120, 90, 50, .25), inset 0 -1px 0 #fff }
+.zn-map-in { position: relative; width: 100% }
+.zn-map-in img { display: block; width: 100%; height: auto; transform-origin: 44% 50%; animation: znKen 22s ease-in-out infinite alternate }
+@keyframes znKen { from { transform: scale(1) } to { transform: scale(1.05) } }
+.zn-sweep { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, .5) 50%, transparent 65%);
+  transform: translateX(-100%); animation: znSweep 6.5s ease-in-out 1.2s infinite }
+@keyframes znSweep { 0% { transform: translateX(-100%) } 45%, 100% { transform: translateX(100%) } }
+/* ripples around the big water-drop pin in the middle of the picture */
+.zn-ripple { position: absolute; left: 43.8%; top: 51.5%; width: 7%; aspect-ratio: 3 / 1; border-radius: 50%; pointer-events: none;
+  border: 2px solid rgba(13, 141, 151, .75); transform: translate(-50%, -50%) scale(.2); opacity: 0; animation: znRip 3.3s ease-out var(--d) infinite }
+@keyframes znRip { 0% { opacity: .9; transform: translate(-50%, -50%) scale(.2) } 100% { opacity: 0; transform: translate(-50%, -50%) scale(2.6) } }
+/* bubbles rising over the picture */
+.zn-bub { position: absolute; bottom: -30px; border-radius: 50%; pointer-events: none; opacity: 0;
+  background: radial-gradient(circle at 32% 30%, #fff, rgba(108, 208, 224, .35) 60%, rgba(108, 208, 224, .1));
+  border: 1.5px solid rgba(108, 208, 224, .7); animation: znRise linear infinite }
+@keyframes znRise { 0% { opacity: 0; transform: translate(0, 0) } 10% { opacity: .9 } 50% { transform: translate(14px, -40vh) } 100% { opacity: 0; transform: translate(-10px, -80vh) } }
+/* small screens: the picture keeps its detail and slowly pans left <-> right */
+@media (max-width: 860px) {
+  .zn-map-in { width: 860px; animation: znPan 24s ease-in-out infinite alternate }
+  @keyframes znPan { to { transform: translateX(calc(100vw - 860px)) } }
+  .zn { padding-top: 6.2rem }
+}
+
+/* =============== HEADLINE =============== */
+.zn-head { text-align: center; padding: 3.4rem 0 1rem }
+.zn-eyebrow { display: inline-flex; align-items: center; gap: .45rem; padding: .45rem 1rem; border-radius: 999px; font-weight: 700; font-size: .85rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--teal-d); background: rgba(201, 162, 115, .26); border: 1px solid rgba(201, 162, 115, .6) }
+.zn-eyebrow .zn-ic { animation: znBounce 1.8s ease-in-out infinite }
+@keyframes znBounce { 50% { transform: translateY(-4px) } }
+.zn-head h1 { margin: 1rem auto .8rem; max-width: 22ch; font-size: clamp(2rem, 4.6vw, 3.6rem); line-height: 1.1; font-weight: 800; letter-spacing: -.01em }
+.zn-head h1 em { font-style: normal; background: linear-gradient(100deg, var(--teal-d), var(--teal), var(--tan-d), var(--teal-d)); background-size: 300% 100%;
+  -webkit-background-clip: text; background-clip: text; color: transparent; animation: znGrad 7s linear infinite }
+@keyframes znGrad { to { background-position: 300% 0 } }
+.zn-head p { margin: 0 auto; max-width: 62ch; font-size: clamp(1rem, 1.6vw, 1.18rem); line-height: 1.7; color: var(--mute) }
+.zn-line { display: block; width: 120px; height: 5px; margin: 1.6rem auto 0; border-radius: 9px; background: linear-gradient(90deg, var(--tan), var(--teal), var(--tan)); background-size: 200% 100%; animation: znGrad 3s linear infinite }
+
+/* =============== SECTIONS =============== */
+.zn-sec { padding-top: 3.4rem }
+.zn-sec-h { display: flex; align-items: center; gap: .8rem; margin-bottom: 1.8rem }
+.zn-sec-h h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); font-weight: 800 }
+.zn-sec-ic { width: 2.1rem; height: 2.1rem; padding: .45rem; border-radius: 50%; color: #fff; background: linear-gradient(135deg, var(--teal-d), var(--teal)); box-sizing: content-box; stroke-width: 1.8; animation: znBounce 2.4s ease-in-out infinite }
+.zn-sec-h::after { content: ''; flex: 1; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--tan), transparent) }
+
+/* =============== WHO WE SERVE – cards =============== */
+.zn-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.2rem }
+.zn-card { position: relative; overflow: hidden; padding: 1.5rem 1.3rem 1.4rem; border-radius: 22px; border: 1px solid rgba(255, 255, 255, .9);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0) 45%), rgba(251, 247, 240, .78);
+  box-shadow: 0 12px 30px rgba(120, 90, 50, .14), inset 0 1px 0 #fff;
+  transition: opacity .8s cubic-bezier(.2, .8, .2, 1), transform .35s cubic-bezier(.2, .8, .2, 1), box-shadow .35s, filter .8s }
+.zn-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(110deg, transparent 30%, rgba(201, 162, 115, .28) 50%, transparent 70%); transform: translateX(-120%); transition: transform .8s }
+.zn-card::after { content: ''; position: absolute; left: 0; bottom: 0; height: 4px; width: 0; background: linear-gradient(90deg, var(--tan), var(--teal)); transition: width .5s }
+.zn-card.in:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 22px 44px rgba(120, 90, 50, .28), inset 0 1px 0 #fff }
+.zn-card:hover::before { transform: translateX(120%) }
+.zn-card:hover::after { width: 100% }
+.zn-card-ic { position: relative; display: grid; place-items: center; width: 58px; height: 58px; margin-bottom: 1rem; border-radius: 18px; color: #fff;
+  background: linear-gradient(135deg, var(--teal-d), var(--teal)); box-shadow: 0 10px 22px rgba(11, 63, 102, .28) }
+.zn-card-ic::after { content: ''; position: absolute; inset: -6px; border-radius: 22px; border: 2px solid rgba(13, 141, 151, .45); animation: znPulse 2.8s ease-out infinite }
+@keyframes znPulse { 0% { opacity: .9; transform: scale(.92) } 100% { opacity: 0; transform: scale(1.3) } }
+.zn-card-ic .zn-ic { width: 28px; height: 28px; transition: transform .5s }
+.zn-card:hover .zn-card-ic .zn-ic { transform: rotate(-12deg) scale(1.2) }
+.zn-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .4rem }
+.zn-card p { margin: 0; font-size: .94rem; line-height: 1.6; color: var(--mute) }
+.zn-card-no { position: absolute; right: 1rem; top: .6rem; font-size: 2.6rem; font-weight: 800; color: rgba(201, 162, 115, .3); line-height: 1 }
+
+/* =============== CITY STRIP (marquee) =============== */
+.zn-strip { margin-top: 3.4rem; overflow: hidden; padding: .9rem 0; background: linear-gradient(90deg, var(--teal-d), #0d7a8a, var(--teal-d)) }
+.zn-strip-t { display: flex; width: max-content; gap: 2.6rem; animation: znMarq 28s linear infinite }
+.zn-strip span { display: inline-flex; align-items: center; gap: .5rem; color: #fff; font-weight: 700; font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap }
+.zn-strip .zn-ic { color: #f0d9b0 }
+@keyframes znMarq { to { transform: translateX(-50%) } }
+
+/* =============== LOCATIONS =============== */
+.zn-loc { display: grid; grid-template-columns: 1fr; gap: 1.4rem; align-items: stretch }
+.zn-svgbox { position: relative; padding: 1rem; border-radius: 26px; border: 1px solid #fff; box-shadow: 0 16px 40px rgba(120, 90, 50, .2), inset 0 1px 0 #fff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .65), rgba(255, 255, 255, 0) 45%), rgba(243, 233, 218, .85) }
+.zn-svgbox svg { display: block; width: 100%; height: auto }
+.zn-svgbox small { position: absolute; right: 1.2rem; bottom: .7rem; font-size: .72rem; color: var(--tan-d) }
+.zn-dots circle { fill: rgba(167, 127, 79, .3) }
+.zn-ring { fill: none; stroke: var(--teal); stroke-width: 2; transform-box: fill-box; transform-origin: center; opacity: 0; animation: znRing 3.6s ease-out infinite }
+@keyframes znRing { 0% { opacity: .7; transform: scale(.3) } 100% { opacity: 0; transform: scale(3.6) } }
+.zn-route { fill: none; stroke: var(--tan-d); stroke-width: 2.4; stroke-dasharray: 8 8; stroke-linecap: round; stroke-linejoin: round; opacity: .8; animation: znDash 1.4s linear infinite; transition: stroke .3s, stroke-width .3s, opacity .3s }
+@keyframes znDash { to { stroke-dashoffset: -32 } }
+g.on .zn-route { stroke: var(--teal); stroke-width: 3.6; opacity: 1 }
+.zn-drop { fill: #0d8d97; stroke: #fff; stroke-width: 1.5 }
+.zn-pin { cursor: pointer }
+.zn-pin path { fill: var(--navy); stroke: #fff; stroke-width: 1.6; transition: fill .3s }
+.zn-pin circle { fill: #fff }
+.zn-pin.on path { fill: var(--teal) }
+/* head office + branches = sandal cream, every other location = navy */
+.zn-pin.branch path { fill: #dcbf93; stroke: #a77f4f; stroke-width: 2 }
+.zn-pin.branch circle { fill: #fffdf9 }
+.zn-pin.branch.on path { fill: var(--tan-d) }
+.zn-pin text { font: 700 13px 'Outfit', sans-serif; fill: var(--navy); paint-order: stroke; stroke: rgba(251, 247, 240, .95); stroke-width: 5px; stroke-linejoin: round }
+.zn-pin.hub text { font-size: 16px }
+.zn-pp { fill: rgba(13, 37, 64, .22); transform-box: fill-box; transform-origin: center; animation: znShadow 2.2s ease-in-out infinite }
+@keyframes znShadow { 50% { transform: scale(1.5); opacity: .5 } }
+.zn-bob { transform-box: fill-box; transform-origin: 50% 100%; animation: znPinBob 2.2s ease-in-out infinite }
+@keyframes znPinBob { 50% { transform: translateY(-7px) } }
+.zn-pin.on .zn-bob { animation-duration: .6s }
+
+.zn-cities { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: .7rem; align-content: start }
+.zn-city { display: flex; align-items: center; gap: .75rem; padding: .6rem .85rem; border-radius: 18px; cursor: pointer; border: 1px solid #fff;
+  background: rgba(251, 247, 240, .85); box-shadow: 0 8px 20px rgba(120, 90, 50, .12);
+  transition: opacity .8s, filter .8s, transform .3s, box-shadow .3s, background .3s }
+.zn-city.in:hover, .zn-city[data-on] { transform: translateX(8px); background: #fff; box-shadow: 0 14px 30px rgba(120, 90, 50, .25) }
+.zn-city-ic { display: grid; place-items: center; flex: none; width: 38px; height: 38px; border-radius: 50%; color: #fff; background: linear-gradient(135deg, var(--navy), #0d8d97); animation: znBounce 2.2s ease-in-out infinite }
+.zn-city.branch .zn-city-ic { color: var(--navy); background: linear-gradient(135deg, #e8d7bd, #c9a273); box-shadow: 0 0 0 2px rgba(167, 127, 79, .45) }
+.zn-city.branch { border-color: rgba(201, 162, 115, .8) }
+.zn-city b { display: block; font-size: 1rem }
+.zn-city small { color: var(--tan-d); font-weight: 600 }
+.zn-city-ar { margin-left: auto; color: var(--teal-d); opacity: 0; transform: translateX(-8px); transition: .3s }
+.zn-city[data-on] .zn-city-ar, .zn-city:hover .zn-city-ar { opacity: 1; transform: none }
+
+/* =============== CTA =============== */
+.zn-cta { position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.4rem; padding: 2.2rem 2.4rem; border-radius: 30px; color: #fff;
+  background: linear-gradient(120deg, var(--teal-d), #0d7a8a, var(--teal-d)); background-size: 200% 100%; animation: znGrad 9s linear infinite; box-shadow: 0 22px 50px rgba(11, 63, 102, .35) }
+.zn-cta h2 { font-size: clamp(1.4rem, 2.6vw, 2rem); font-weight: 800; margin-bottom: .4rem }
+.zn-cta p { margin: 0; color: rgba(255, 255, 255, .88); max-width: 48ch }
+.zn-cta-b { position: absolute; bottom: -20px; width: 22px; height: 22px; border-radius: 50%; border: 2px solid rgba(255, 255, 255, .6); background: rgba(255, 255, 255, .15); animation: znRise 6s linear infinite }
+.zn-cta-btns { position: relative; display: flex; flex-wrap: wrap; gap: .8rem }
+.zn-btn { display: inline-flex; align-items: center; gap: .5rem; padding: .85rem 1.5rem; border: 0; border-radius: 999px; cursor: pointer; text-decoration: none; font: 700 1rem 'Outfit', sans-serif;
+  color: var(--teal-d); background: linear-gradient(120deg, #fff, var(--cream-3)); box-shadow: 0 10px 24px rgba(0, 0, 0, .2); transition: transform .25s, box-shadow .25s }
+.zn-btn:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 16px 30px rgba(0, 0, 0, .28) }
+.zn-btn .zn-ic { transition: transform .25s }
+.zn-btn:hover .zn-ic { transform: translateX(4px) }
+.zn-btn.ghost { color: #fff; background: rgba(255, 255, 255, .14); border: 1.5px solid rgba(255, 255, 255, .7); box-shadow: none }
+
+/* =============== responsive + reduced motion =============== */
+@media (max-width: 900px) {
+  .zn-loc { grid-template-columns: 1fr }
+  .zn-cta { padding: 1.6rem }
+}
+@media (prefers-reduced-motion: reduce) {
+  .zn *, .zn *::before, .zn *::after { animation: none !important; transition-duration: .01s !important }
+  .zn-rv { opacity: 1; transform: none; filter: none }
+}
+
+/* =====================================================================
+   PICTURE BACKGROUND – readability layer
+   The photo now shows clearly, so everything that sits on it gets a frosted-glass panel.
+   Make the glass more / less see-through with --zn-glass (0 = clear, 1 = solid cream)
+===================================================================== */
+.zn { --zn-glass: .93 }
+.zn .zn-card, .zn .zn-city, .zn .zn-svgbox {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, 0) 45%), rgba(251, 247, 240, var(--zn-glass));
+  -webkit-backdrop-filter: blur(14px) saturate(1.1); backdrop-filter: blur(14px) saturate(1.1) }
+.zn .zn-city.in:hover, .zn .zn-city[data-on] { background: #fff }
+/* page title + section headings sit on a glass bar so they stay readable over the picture */
+.zn .zn-head { width: min(900px, 92%); margin: 2.2rem auto 0; padding: 2.2rem 1.6rem 2rem; border-radius: 32px; border: 1px solid rgba(255, 255, 255, .9);
+  background: rgba(251, 247, 240, .8); -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); box-shadow: 0 18px 44px rgba(60, 45, 25, .22) }
+.zn .zn-sec-h { padding: .7rem 1.2rem .7rem .8rem; border-radius: 999px; border: 1px solid rgba(255, 255, 255, .9);
+  background: rgba(251, 247, 240, .8); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 10px 26px rgba(60, 45, 25, .16) }
+.zn .zn-sec-h::after { margin-right: .4rem }
+@media (max-width: 860px) { .zn .zn-head { padding: 1.6rem 1rem 1.4rem } }
+@media (prefers-reduced-motion: reduce) { .zn-bg::before { animation: none } }
+
+/* phones: keep the 24 pin labels readable – the map scrolls sideways inside its card */
+@media (max-width: 760px) {
+  .zn-svgbox { overflow-x: auto; -webkit-overflow-scrolling: touch }
+  .zn-svgbox svg { min-width: 760px }
+}

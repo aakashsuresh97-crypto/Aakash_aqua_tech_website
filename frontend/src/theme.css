@@ -1,0 +1,542 @@
+/* =====================================================================
+   SAND-CREAM THEME – applied to EVERY page (Home, About, Shop, Product, Contact), header, menus, footer, modal.
+   Imported last in main.jsx. Change --sand / --tan / --deep here to re-colour the whole site.
+===================================================================== */
+:root {
+  --sand: #eadfcc;
+  --sand-tan: #c9a273;
+  --tan-d: #a77f4f;
+  --txt: #0d2540;
+  /* text on glass = navy (was teal) */
+  --teal: #0d8d97;
+  --teal-d: #0b3f66;
+  /* old pale teal replaced by hero's deep blue / teal */
+  --line: rgba(255, 255, 255, .85);
+}
+
+body {
+  color: #0d2540
+}
+
+/* header + menus */
+.hdr {
+  box-shadow: 0 10px 34px rgba(120, 90, 50, .2), inset 0 1px 0 rgba(255, 255, 255, .9)
+}
+
+.hdr.sc {
+  background: rgba(251, 247, 240, .86)
+}
+
+.ni>a {
+  font-family: 'Outfit', 'DM Sans', sans-serif;
+  font-weight: 600;
+  color: #0d2540
+}
+
+.ni>a:hover,
+.ni>a.act {
+  background: rgba(201, 162, 115, .26);
+  color: #0b3f66
+}
+
+.menu a:hover {
+  background: rgba(201, 162, 115, .26)
+}
+
+.menu {
+  background: linear-gradient(160deg, rgba(255, 253, 249, .96), rgba(243, 233, 218, .96));
+  box-shadow: 0 22px 50px rgba(120, 90, 50, .28), inset 0 1px 0 #fff
+}
+
+.menu.imgmenu {
+  display: grid;
+  grid-template-columns: repeat(3, 128px);
+  gap: .4rem;
+  padding: .7rem;
+  min-width: 0
+}
+
+.dd:nth-of-type(n+4) .menu.imgmenu {
+  left: auto;
+  right: 0
+}
+
+.imgmenu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .3rem;
+  padding: .6rem .3rem;
+  text-align: center;
+  font-size: .78rem;
+  line-height: 1.2
+}
+
+.imgmenu a:hover {
+  padding-left: .3rem;
+  transform: translateY(-2px)
+}
+
+.imgmenu img {
+  width: 76px;
+  height: 76px;
+  object-fit: contain
+}
+
+.imgmenu a.only-m {
+  display: none
+}
+
+.cartp {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  margin-left: .4rem;
+  padding: .45rem .8rem;
+  border-radius: 999px;
+  font: 700 .85rem 'Outfit', sans-serif;
+  color: #0b3f66;
+  background: rgba(201, 162, 115, .26);
+  border: 1px solid rgba(201, 162, 115, .6);
+  white-space: nowrap
+}
+
+.cartp:hover {
+  background: rgba(201, 162, 115, .42)
+}
+
+/* buttons / ripples / focus */
+.btn {
+  color: #0b3f66
+}
+
+.btn::before {
+  background: linear-gradient(100deg, transparent, rgba(201, 162, 115, .38), transparent)
+}
+
+.ripple {
+  background: rgba(201, 162, 115, .5)
+}
+
+.btn.sm {
+  background: linear-gradient(120deg, #0b3f66, #0d7a8a);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(11, 63, 102, .28)
+}
+
+.btn.sm:hover {
+  box-shadow: 0 14px 28px rgba(11, 63, 102, .36)
+}
+
+:focus-visible {
+  outline-color: #0b3f66
+}
+
+/* forms (demo modal) */
+input,
+select,
+textarea {
+  border-color: rgba(201, 162, 115, .7)
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0b3f66;
+  box-shadow: 0 0 0 4px rgba(11, 63, 102, .14)
+}
+
+/* stats / FAQ / marquee / back-to-top: teal -> deep blue + tan */
+.stat b {
+  background: linear-gradient(120deg, #0b3f66, #1a62ad);
+  -webkit-background-clip: text;
+  background-clip: text
+}
+
+.fq button:hover,
+.fq span,
+.totop:hover {
+  color: #0b3f66
+}
+
+.track span {
+  color: #0b3f66;
+  background: rgba(251, 247, 240, .8)
+}
+
+/* footer */
+.ftr {
+  background: linear-gradient(160deg, rgba(251, 247, 240, .75), rgba(232, 215, 189, .75));
+  border-top: 1px solid #fff;
+  color: #0d2540
+}
+
+.ftr p,
+.ftr small,
+.ftr a {
+  color: #4a3f33
+}
+
+.ftr .fl a:hover {
+  color: #0b3f66
+}
+
+/* WhatsApp / floating */
+.wa.btn {
+  background: linear-gradient(120deg, #0b3f66, #0d7a8a);
+  color: #fff
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .55), rgba(255, 255, 255, 0) 45%), rgba(251, 247, 240, .6)
+}
+
+/* header fit: 10 menu items + cart + demo button on one line */
+.hdr {
+  width: min(1500px, 98%);
+  gap: .6rem;
+  padding: .45rem .8rem
+}
+
+.logo img {
+  height: 48px
+}
+
+.ni>a {
+  padding: .5rem .5rem;
+  font-size: .84rem
+}
+
+.btn.sm {
+  margin-left: .2rem;
+  padding: .55rem 1rem;
+  font-size: .82rem
+}
+
+.cartp {
+  margin-left: .2rem;
+  padding: .4rem .7rem
+}
+
+/* dropdown must be solid (the generic .glass rule would otherwise make it see-through) */
+.menu.glass {
+  background: linear-gradient(160deg, #fffdf9, #f3e9da);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none
+}
+
+@media (max-width: 1359px) {
+  .menu.imgmenu {
+    grid-template-columns: repeat(3, 1fr);
+    width: auto
+  }
+
+  .imgmenu a.only-m {
+    display: flex
+  }
+}
+
+@media (max-width: 1359px) {
+  nav {
+    background: linear-gradient(160deg, #fffdf9, #f3e9da) !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none
+  }
+
+  .imgmenu a.only-m {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: .5rem .8rem;
+    font-size: .9rem
+  }
+}
+
+/* ===== FOOTER (4 columns + legal row), sand-cream ===== */
+.ftr {
+  padding: 4rem 0 1.6rem;
+  background: linear-gradient(160deg, #f6eddc, #e8d7bd);
+  border-top: 1px solid #fff;
+  color: #0d2540
+}
+
+.ftr .ft {
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr .9fr .9fr;
+  gap: 2.6rem;
+  align-items: start
+}
+
+.ft-logo img {
+  height: 96px;
+  width: 96px;
+  object-fit: contain;
+  padding: 8px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid rgba(201, 162, 115, .7);
+  box-shadow: 0 8px 20px rgba(120, 90, 50, .2)
+}
+
+.ft-brand p {
+  margin: 1.1rem 0 0;
+  font-size: .95rem;
+  line-height: 1.75;
+  color: #4a3f33;
+  max-width: 34ch
+}
+
+.ft-brand p+p {
+  margin-top: .3rem
+}
+
+.ft-col h4 {
+  margin: 0 0 1.4rem;
+  padding-bottom: .5rem;
+  width: max-content;
+  font: 600 1.25rem 'Outfit', sans-serif;
+  color: #0d2540;
+  border-bottom: 2px solid #c9a273
+}
+
+.ft-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+.ft-contact li {
+  display: flex;
+  gap: .8rem;
+  margin-bottom: 1rem;
+  font-size: .95rem;
+  line-height: 1.6;
+  color: #4a3f33
+}
+
+.ft-contact i {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: #0b3f66
+}
+
+.ft-contact i svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor
+}
+
+.ft-links li {
+  margin-bottom: .75rem
+}
+
+.ftr a {
+  color: #4a3f33;
+  transition: color .25s
+}
+
+.ftr a:hover {
+  color: #0b3f66
+}
+
+.ft-soc {
+  display: flex;
+  gap: .7rem
+}
+
+.ft-soc a {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(135deg, #0b3f66, #0d7a8a);
+  box-shadow: 0 8px 18px rgba(11, 63, 102, .25);
+  transition: transform .3s
+}
+
+.ft-soc a:hover {
+  transform: translateY(-3px);
+  color: #fff
+}
+
+.ft-soc svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor
+}
+
+.ft-bot {
+  margin-top: 2.6rem;
+  padding-top: 1.4rem;
+  text-align: center;
+  border-top: 1px solid rgba(167, 127, 79, .55)
+}
+
+.ft-bot p {
+  max-width: none;
+  margin: 0
+}
+
+.ft-copy {
+  font-size: 1.1rem;
+  color: #0d2540
+}
+
+.ft-copy b {
+  font-weight: 600
+}
+
+.ft-legal {
+  margin-top: 1.4rem !important;
+  font-size: .92rem;
+  color: #4a3f33
+}
+
+@media (max-width: 980px) {
+  .ftr .ft {
+    grid-template-columns: 1fr 1fr
+  }
+}
+
+@media (max-width: 560px) {
+  .ftr .ft {
+    grid-template-columns: 1fr
+  }
+}
+
+/* ===== FOOTER – same layout as the reference, but SANDAL CREAM colours ===== */
+.ftr {
+  padding: 4.2rem 0 1.4rem;
+  background: linear-gradient(160deg, #f6eddc, #e8d7bd);
+  border-top: 1px solid #fff;
+  color: #0d2540;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none
+}
+
+.ftr .wrap {
+  width: min(1140px, 92%)
+}
+
+.ftr .ft {
+  grid-template-columns: 1.4fr 1fr .85fr .85fr;
+  gap: 2rem
+}
+
+.ftr .ft-logo img {
+  height: 98px;
+  width: 98px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: none;
+  box-shadow: 0 8px 20px rgba(120, 90, 50, .22);
+  object-fit: cover;
+  display: block
+}
+
+.ftr .ft-brand p {
+  max-width: 320px;
+  margin: 1.1rem 0 0;
+  font: 400 14.5px/1.6 'Open Sans', sans-serif;
+  color: #4a3f33
+}
+
+.ftr .ft-col h4 {
+  margin: 0 0 1.3rem;
+  padding-bottom: .55rem;
+  font: 500 1.35rem 'Poppins', sans-serif;
+  color: #0d2540;
+  border-bottom: 1px solid #c9a273
+}
+
+.ftr .ft-contact li {
+  gap: .85rem;
+  margin-bottom: .95rem;
+  font: 400 .9rem/1.6 'Poppins', sans-serif;
+  color: #4a3f33
+}
+
+.ftr .ft-contact i {
+  color: #0b3f66
+}
+
+.ftr .ft-contact a,
+.ftr .ft-contact span {
+  color: #4a3f33
+}
+
+.ftr .ft-links li {
+  margin-bottom: .7rem
+}
+
+.ftr .ft-links a {
+  font: 400 .9rem 'Poppins', sans-serif;
+  color: #4a3f33
+}
+
+.ftr a:hover {
+  color: #0b3f66
+}
+
+.ftr .ft-soc a {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #0b3f66, #0d7a8a);
+  box-shadow: 0 8px 18px rgba(11, 63, 102, .25);
+  color: #fff
+}
+
+.ftr .ft-soc a:hover {
+  color: #fff
+}
+
+.ftr .ft-bot {
+  width: min(1140px, 92%);
+  margin-top: 2.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(167, 127, 79, .55)
+}
+
+.ftr .ft-copy {
+  font: 400 1.15rem 'Poppins', sans-serif;
+  color: #0d2540
+}
+
+.ftr .ft-copy b {
+  font-weight: 500;
+  color: #0b3f66
+}
+
+.ftr .ft-legal {
+  margin-top: 2rem !important;
+  font: 400 .92rem 'Poppins', sans-serif;
+  color: #4a3f33
+}
+
+.ftr .ft-legal a {
+  color: #4a3f33
+}
+
+.ftr .ft-legal a:hover {
+  color: #0b3f66
+}
+
+.ftr .ft-col h3 {
+  margin: 0 0 1.3rem;
+  padding-bottom: .55rem;
+  width: max-content;
+  font: 500 1.35rem 'Poppins', sans-serif;
+  color: #0d2540;
+  border-bottom: 1px solid #c9a273
+}
+
+.ftr .ft-contact address {
+  font: inherit;
+  color: #4a3f33
+}

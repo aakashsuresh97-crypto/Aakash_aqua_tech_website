@@ -1,0 +1,338 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://api.aakashaquatech.in/api/:path*"
+    },
+    {
+      "source": "/uploads/:path*",
+      "destination": "https://api.aakashaquatech.in/uploads/:path*"
+    },
+    {
+      "source": "/((?!assets/|img/|admin/|catalog/|api/|uploads/|sitemap.xml|robots.txt).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/ro-water-purifier-brand",
+      "destination": "/shop/domestic/ro",
+      "statusCode": 301
+    },
+    {
+      "source": "/ro-water-purifier-brand/",
+      "destination": "/shop/domestic/ro",
+      "statusCode": 301
+    },
+    {
+      "source": "/uv-water-purifier-brands",
+      "destination": "/shop/domestic/uv",
+      "statusCode": 301
+    },
+    {
+      "source": "/uv-water-purifier-brands/",
+      "destination": "/shop/domestic/uv",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/alkaline",
+      "destination": "/shop/domestic/alkaline",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/alkaline/",
+      "destination": "/shop/domestic/alkaline",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/gravity",
+      "destination": "/shop/domestic/gravity",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/gravity/",
+      "destination": "/shop/domestic/gravity",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/under-sink",
+      "destination": "/shop/domestic/undersink",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/under-sink/",
+      "destination": "/shop/domestic/undersink",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/ss-water-dispenser-2",
+      "destination": "/shop/dispenser",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/ss-water-dispenser-2/",
+      "destination": "/shop/dispenser",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/industrial-ro-system",
+      "destination": "/shop/industrial",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/industrial-ro-system/",
+      "destination": "/shop/industrial",
+      "statusCode": 301
+    },
+    {
+      "source": "/spares",
+      "destination": "/shop/spares",
+      "statusCode": 301
+    },
+    {
+      "source": "/spares/",
+      "destination": "/shop/spares",
+      "statusCode": 301
+    },
+    {
+      "source": "/softner",
+      "destination": "/shop/wtp/softner",
+      "statusCode": 301
+    },
+    {
+      "source": "/softner/",
+      "destination": "/shop/wtp/softner",
+      "statusCode": 301
+    },
+    {
+      "source": "/iron-remover-filter",
+      "destination": "/shop/wtp/iron",
+      "statusCode": 301
+    },
+    {
+      "source": "/iron-remover-filter/",
+      "destination": "/shop/wtp/iron",
+      "statusCode": 301
+    },
+    {
+      "source": "/sand-filter",
+      "destination": "/shop/wtp/sand",
+      "statusCode": 301
+    },
+    {
+      "source": "/sand-filter/",
+      "destination": "/shop/wtp/sand",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/frp-pressure-vessels",
+      "destination": "/shop/wtp/vessel",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/frp-pressure-vessels/",
+      "destination": "/shop/wtp/vessel",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/ss-tanks",
+      "destination": "/shop/wtp/sstank",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/ss-tanks/",
+      "destination": "/shop/wtp/sstank",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/dm-plant",
+      "destination": "/shop/wtp/dm",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/dm-plant/",
+      "destination": "/shop/wtp/dm",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/heat-pump-water-heater",
+      "destination": "/shop/heatpump",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/heat-pump-water-heater/",
+      "destination": "/shop/heatpump",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro-aakash",
+      "destination": "/shop/domestic/ro/aakash",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro-aakash/",
+      "destination": "/shop/domestic/ro/aakash",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/kent/ro-water-purifier-kent",
+      "destination": "/shop/domestic/ro/kent",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/kent/ro-water-purifier-kent/",
+      "destination": "/shop/domestic/ro/kent",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/ao-smith/ro-water-purifier",
+      "destination": "/shop/domestic/ro/aosmith",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/ao-smith/ro-water-purifier/",
+      "destination": "/shop/domestic/ro/aosmith",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/zerob/ro-water-purifier-zerob",
+      "destination": "/shop/domestic/ro/zerob",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/zerob/ro-water-purifier-zerob/",
+      "destination": "/shop/domestic/ro/zerob",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/wave",
+      "destination": "/shop/domestic/ro/wave",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/wave/",
+      "destination": "/shop/domestic/ro/wave",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/conway-domestic-ro",
+      "destination": "/shop/domestic/ro/conway",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/conway-domestic-ro/",
+      "destination": "/shop/domestic/ro/conway",
+      "statusCode": 301
+    },
+    {
+      "source": "/shop",
+      "destination": "/shop/domestic",
+      "statusCode": 301
+    },
+    {
+      "source": "/shop/",
+      "destination": "/shop/domestic",
+      "statusCode": 301
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/zones",
+      "destination": "/zones-we-serve",
+      "statusCode": 301
+    },
+    {
+      "source": "/zones/",
+      "destination": "/zones-we-serve",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy-policy",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy/",
+      "destination": "/privacy-policy",
+      "statusCode": 301
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms-and-conditions",
+      "statusCode": 301
+    },
+    {
+      "source": "/terms/",
+      "destination": "/terms-and-conditions",
+      "statusCode": 301
+    },
+    {
+      "source": "/shipping-policy",
+      "destination": "/shipping-and-cancellation",
+      "statusCode": 301
+    },
+    {
+      "source": "/shipping-policy/",
+      "destination": "/shipping-and-cancellation",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro",
+      "destination": "/shop/domestic",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/domestic-ro/",
+      "destination": "/shop/domestic",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/water-treatment-plant",
+      "destination": "/shop/wtp",
+      "statusCode": 301
+    },
+    {
+      "source": "/product-category/water-treatment-plant/",
+      "destination": "/shop/wtp",
+      "statusCode": 301
+    },
+    {
+      "source": "/my-account",
+      "destination": "/account",
+      "statusCode": 301
+    },
+    {
+      "source": "/my-account/",
+      "destination": "/account",
+      "statusCode": 301
+    }
+  ]
+}
